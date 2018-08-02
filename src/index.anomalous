@@ -18,8 +18,8 @@
 
     <!-- Main content -->
     <div class="container">
-        <h1>Design Guide</h1>
-        <partial src="partials/content.html" />
+        <h1>Website Design Guide</h1>
+        <partial src="partials/cards-index.html" />
     </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
