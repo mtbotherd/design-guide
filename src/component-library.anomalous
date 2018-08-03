@@ -14,12 +14,11 @@
 
 <body>
     <!-- Main navigation -->
-    <partial src="./partials/header.html" />
+    <partial src="./partials/main-nav.html" />
 
     <!-- Main content -->
-    <div id="mainContent" class="container">
-        <h1 class="mt-3 mb-5">Website Design Guide</h1>
-        <partial src="partials/card-deck.html" />
+    <div class="container">
+        <h1 class="mt-3 mb-5">Component Library</h1>
     </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>

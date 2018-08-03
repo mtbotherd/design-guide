@@ -1,5 +1,17 @@
-// .navbar-brand {
-//     img {
-//         width: 20%;
-//     }
-// }
+/************************************************
+    Header and Navigation Styles
+************************************************/
+.skiplink {
+    display: none;
+
+    &:focus {
+        display: block;
+    }
+}
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar li {
+    text-align: right;
+}
