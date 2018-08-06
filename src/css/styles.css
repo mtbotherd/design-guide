@@ -6367,10 +6367,19 @@ a.text-dark:hover, a.text-dark:focus {
 /************************************************
     Header and Navigation Styles
 ************************************************/
-.skiplink {
-  display: none; }
-  .skiplink:focus {
-    display: block; }
+a.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transition: top 1s ease-out; }
+  a.skip-to-content:focus {
+    background-color: #ed1b2e;
+    color: #fff;
+    left: 0;
+    padding: 1rem;
+    text-decoration: underline;
+    top: 0;
+    transition: top .1s ease-in; }
 
 .navbar a {
   text-decoration: none; }
