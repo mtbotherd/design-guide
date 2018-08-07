@@ -6393,4 +6393,14 @@ a.skip-to-content {
 a.btn {
   text-decoration: none; }
 
+/************************************************
+    Layout Styles
+************************************************/
+.card {
+  margin-bottom: 1.5em; }
+
+/************************************************
+    Component Library Styles
+************************************************/
+
 /*# sourceMappingURL=../maps/styles.css.map */
