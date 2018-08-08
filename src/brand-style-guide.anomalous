@@ -4,26 +4,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Metro Transit | Website Design Guide</title>
+    <title>Metro Transit - Website Design Guide</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
     <!-- build:css css/styles.css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#leftNav">
     <!-- Main navigation -->
-    <partial src="./partials/main-nav.html" />
+    <header>
+        <partial src="./partials/header.html" />
+    </header>
 
-    <!-- Main content -->
-    <div class="container">
-        <h1 class="mt-3 mb-5">Brand Style Guide</h1>
-    </div>
+    <main class="row" id="body-row">
+        <!-- Sidebar -->
+        <partial src="./partials/left-nav.html" />
+
+        <!-- Main content -->
+        <div class="col py-3">
+            <h1>Component Library</h1>
+            <partial src="./partials/cl/alerts.html" />
+        </div>
+
+    </main>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
     <!-- build:js js/scripts.js -->
     <script type="text/javascript" src="js/scripts.js"></script>
     <!-- endbuild -->
