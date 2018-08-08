@@ -35,12 +35,12 @@ gulp.task('javascript', function() {
 });
 
 // Copy vendor css to src
-// gulp.task('vendorCss', function() {
-//     return gulp.src([
-//             'node_modules/font-awesome/scss/font-awesome.scss'
-//         ])
-//         .pipe(gulp.dest('src/scss'))
-// });
+gulp.task('vendorCss', function() {
+    return gulp.src([
+            'src/css/**/*.css'
+        ])
+        .pipe(gulp.dest('dist/css'))
+});
 
 // Compile sass to css
 gulp.task('sass', function() {
@@ -110,7 +110,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'images'],
+        'sass', ['useref', 'vendorCss', 'images'],
         callback
     )
 });
