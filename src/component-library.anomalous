@@ -12,22 +12,27 @@
     <!-- endbuild -->
 </head>
 
-<body data-spy="scroll" data-target="#leftNav">
+<body>
     <!-- Main navigation -->
-    <header>
-        <partial src="./partials/header.html" />
+    <header role="banner">
+        <partial src="./partials/header+nav.html" />
     </header>
 
-    <main class="row" id="body-row">
-        <!-- Sidebar -->
-        <partial src="./partials/left-nav.html" />
-
-        <!-- Main content -->
-        <div class="col py-3">
-            <h1>Component Library</h1>
-            <partial src="./partials/cl/alerts.html" />
+    <!-- Main content -->
+    <main id="mainContent">
+        <div class="container">
+            <div clas="row">
+                <div class="col-3">
+                    <!-- Sidebar -->
+                    <partial src="./partials/cl/cl-left-nav.html" />
+                </div>
+                <div class="col">
+                    <!-- Content -->
+                    <h1>Component Library</h1>
+                    <partial src="./partials/cl/alerts.html" />
+                </div>
+            </div>
         </div>
-
     </main>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -14,19 +14,23 @@
 
 <body>
     <!-- Main navigation -->
-    <partial src="./partials/main-nav.html" />
+    <partial src="./partials/header+nav.html" />
 
     <!-- Main content -->
-    <div class="container">
-        <h1 class="mt-3 mb-5">Pattern Library</h1>
-    </div>
+    <main id="mainContent">
+        <div class="container">
+            <!-- Sidebar -->
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- build:js js/scripts.js -->
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <!-- endbuild -->
+            <!-- Content -->
+            <h1>Pattern Library</h1>
+        </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- build:js js/scripts.js -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <!-- endbuild -->
 </body>
 
 </html>

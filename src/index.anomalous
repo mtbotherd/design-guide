@@ -13,16 +13,19 @@
     <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
 </head>
 
-<body data-spy="scroll" data-target="#leftNav">
+<body>
     <!-- Main navigation -->
     <header role="banner">
-        <partial src="./partials/index-header.html" />
+        <partial src="./partials/header+nav.html" />
     </header>
 
     <!-- Main content -->
     <main id="mainContent">
         <div class="container">
-            <h1 class="mt-3 mb-5">Website Design Guide</h1>
+            <!-- Sidebar -->
+
+            <!-- Content -->
+            <h1>Website Design Guide</h1>
             <partial src="partials/card-deck.html" />
         </div>
         </div>

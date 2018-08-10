@@ -13,21 +13,19 @@
     <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
 </head>
 
-<body data-spy="scroll" data-target="#leftNav">
+<body>
     <!-- Main navigation -->
-    <header>
-        <partial src="./partials/header.html" />
+    <header role="banner">
+        <partial src="./partials/header+nav.html" />
     </header>
 
-    <main class="row" id="body-row">
-        <!-- Sidebar -->
-        <partial src="./partials/left-nav.html" />
+    <!-- Main content -->
+    <main id="mainContent">
+        <div class="container">
+            <!-- Sidebar -->
 
-        <!-- Main content -->
-        <div class="col py-3">
+            <!-- Content -->
             <h1>Component Library</h1>
-            <partial src="./partials/cl/alerts.html" />
-        </div>
 
     </main>
 
