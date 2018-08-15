@@ -17,8 +17,11 @@ a.skip-to-content {
         transition: top .1s ease-in;
     }
 }
+
+// Align component content with fixed Header
 .navbar a {
     text-decoration: none;
+    border: none;
 }
 
 .navbar li {

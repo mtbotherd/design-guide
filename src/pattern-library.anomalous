@@ -13,8 +13,9 @@
 </head>
 
 <body>
-    <!-- Main navigation -->
-    <partial src="./partials/header+nav.html" />
+    <header role="banner">
+        <partial src="./partials/header+nav.html" />
+    </header>
 
     <!-- Main content -->
     <main id="mainContent">

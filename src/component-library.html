@@ -10,151 +10,349 @@
     <!-- build:css css/styles.css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
 </head>
 
 <body>
-    <!-- Main navigation -->
-    <header role="banner">
-        <!-- This header is for index.html only -->
-<nav class="navbar sticky-top navbar-light bg-light" aria-laebl="primary">
-    <a class="skip-to-content" href="#mainContent">Skip to main content</a>
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="brand-style-guide.html">Brand Style Guide</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pattern-library.html">Pattern Library</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#component-library.html">Component Library</a>
-                </li>
-            </ul>
-        </div>
+    <!-- Header -->
+    <header>
+        <!-- Top NavBar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <!-- Skip nav - for accessibility -->
+            <a class="skip-to-content" href="#mainContent">Skip to main content</a>
+
+            <div class="container">
+                <a class="navbar-brand" href="inde.html">
+                    <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+    <a class="nav-link" href="brand-style-guide.html">Brand Style Guide <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="pattern-library.html">Pattern Library</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="component-library.html">Component Library</a>
+</li>
+                        <!-- This menu is hidden in bigger devices with d-sm-none.
+The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
+<li class="nav-item dropdown d-sm-block d-md-none">
+    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+        <a class="dropdown-item" href="#alerts">Alerts</a>
+        <a class="dropdown-item" href="#badges">Badges</a>
+        <a class="dropdown-item" href="#breadcrumbs">Breadcrumbs</a>
+        <a class="dropdown-item" href="#buttons">Buttons</a>
+        <a class="dropdown-item" href="#buttonGroups">Button Groups</a>
+        <a class="dropdown-item" href="#cards">Cards</a>
+        <a class="dropdown-item" href="#Carousel">Carousel</a>
+        <a class="dropdown-item" href="#collapse">Collapse/Expand</a>
+        <a class="dropdown-item" href="#dropdowns">Dropdowns</a>
+        <a class="dropdown-item" href="#forms">Forms</a>
+        <a class="dropdown-item" href="#inputGroups">Input Groups</a>
+        <a class="dropdown-item" href="#listGroups">List Groups</a>
+        <a class="dropdown-item" href="#modal">Modal</a>
+        <a class="dropdown-item" href="#navigation">Navigation</a>
+        <a class="dropdown-item" href="#pagination">Pagination</a>
+        <a class="dropdown-item" href="#popovers">Popovers</a>
+        <a class="dropdown-item" href="#tooltips">Tooltips</a>
     </div>
-</nav>
+</li>
+<!-- Smaller devices menu END -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Main content -->
-    <main id="mainContent">
-        <div class="container">
-            <div clas="row">
-                <div class="col-3">
-                    <!-- Sidebar -->
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-alerts" role="tab" aria-controls="v-pills-alerts" aria-selected="true">Alerts</a>
-    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-</div>
-<!-- <div class="col-9">
-        <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+    <main class="container">
+        <div id="body-row" class="row">
+            <!-- Sidebar -->
+            <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
+                <ul class="list-group sticky-top sticky-offset">
+    <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
+        <small>COMPONENT LIBRARY</small>
+    </li>
+    <a href="#alerts" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Alerts
         </div>
+    </a>
+    <a href="#badges" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Badges
+        </div>
+    </a>
+    <a href="#breadcrumbs" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Breadcrumbs
+        </div>
+    </a>
+    <a href="#buttons" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Buttons
+        </div>
+    </a>
+    <a href="#buttonGroup" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Button Groups
+        </div>
+    </a>
+    <a href="#card" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Cards
+        </div>
+    </a>
+    <a href="#carousel" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Carousel
+        </div>
+    </a>
+    <a href="#collapse" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Collapse/Expand
+        </div>
+    </a>
+    <a href="#dropdowns" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Dropdowns
+        </div>
+    </a>
+    <a href="#forms" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Forms
+        </div>
+    </a>
+    <a href="#inputGroup" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Input Groups
+        </div>
+    </a>
+    <a href="#listGroup" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            List Groups
+        </div>
+    </a>
+    <a href="#modal" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Modal
+        </div>
+    </a>
+    <a href="#navigation" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Navigation
+        </div>
+    </a>
+    <a href="#pagination" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Pagination
+        </div>
+    </a>
+    <a href="#popovers" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Popovers
+        </div>
+    </a>
+    <a href="#tooltips" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            Tooltips
+        </div>
+    </a>
+    <!-- <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-dashboard fa-fw mr-3"></span>
+            <span class="menu-collapsed">Dashboard</span>
+            <span class="submenu-icon ml-auto"></span>
+        </div>
+    </a>
+    <div id="submenu1" class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed">Charts</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed">Reports</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed">Tables</span>
+        </a>
+    </div>
+    <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-user fa-fw mr-3"></span>
+            <span class="menu-collapsed">Profile</span>
+            <span class="submenu-icon ml-auto"></span>
+        </div>
+    </a>
+    <div id="submenu2" class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed">Settings</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed">Password</span>
+        </a>
     </div> -->
-                </div>
-                <div class="col">
-                    <!-- Content -->
-                    <h1>Component Library</h1>
-                    <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-        <h2>Alerts</h2>
-        <!-- Primary alert -->
-        <div class="card">
-            <div class="card-body">
-                <div class="alert alert-primary" role="alert">
-                    This is a primary alert.
-                </div>
-                <figure>
-                    <code>
-                        &lt;div class="alert alert-primary" role="alert"&gt;This is a primary alert.&lt;/div&gt;
-                    </code>
-                </figure>
+</ul>
+            </div>
+
+            <!-- Main content -->
+            <div id="mainContent" class="col-9 py-3">
+                <h1 class="sr-only">Component Library</h1>
+                <div id="alerts" class="component">
+    <h2>Alerts</h2>
+    <p>Alerts are available for any length of text, as well as an optional <a href="#dismiss">dismiss button</a>.</p>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-primary" role="alert">
+                This is a primary alert. <span class="sr-only">This alert contains dark blue text on a ligher blue background.</span>
             </div>
         </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                &lt;div class="alert alert-primary" role="alert"&gt;This is a primary alert.&lt;/div&gt;
+            </code>
+            </figure>
+        </div>
+    </div>
 
-        <!-- Secondary alert -->
-        <div class="card">
-            <div class="card-body">
-                <div class="alert alert-secondary" role="alert">
-                    This is a secondary alert.
-                </div>
-                <figure>
-                    <code>
-                        &lt;div class="alert alert-secondary" role="alert"&gt;This is a secondary alert.&lt;/div&gt;
-                    </code>
-                </figure>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-secondary" role="alert">
+                This is a secondary alert. <span class="sr-only"> This alert contains black text on a gray background.</span>
             </div>
         </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                &lt;div class="alert alert-secondary" role="alert"&gt;This is a secondary alert.&lt;/div&gt;
+            </code>
+            </figure>
+        </div>
+    </div>
 
-        <!-- Success alert -->
-        <div class="card">
-            <div class="card-body">
-                <div class="alert alert-success" role="alert">
-                    This is a success alert.
-                </div>
-                <figure>
-                    <code>
-                        &lt;div class="alert alert-success" role="alert"&gt;This is a success alert.&lt;/div&gt;
-                    </code>
-                </figure>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-success" role="alert">
+                This is a success alert. <span class="sr-only">This alert contains dark green text on a lighter green background.</span>
             </div>
         </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                &lt;div class="alert alert-success" role="alert"&gt;This is a success alert.&lt;/div&gt;
+            </code>
+            </figure>
+        </div>
+    </div>
 
-        <!-- Danger alert -->
-        <div class="card">
-            <div class="card-body">
-                <div class="alert alert-danger" role="alert">
-                    This is a danger alert.
-                </div>
-                <figure>
-                    <code>
-                        &lt;div class="alert alert-danger" role="alert"&gt;This is a danger alert.&lt;/div&gt;
-                    </code>
-                </figure>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                This is a danger alert. <span class="sr-only">This alert contains dark red text on a lighter red background.</span>
             </div>
         </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                &lt;div class="alert alert-danger" role="alert"&gt;This is a danger alert.&lt;/div&gt;
+            </code>
+            </figure>
+        </div>
+    </div>
 
-        <!-- Warning alert -->
-        <div class="card">
-            <div class="card-body">
-                <div class="alert alert-warning" role="alert">
-                    This is a warning alert.
-                </div>
-                <figure>
-                    <code>
-                        &lt;div class="alert alert-warning" role="alert"&gt;This is a warning alert.&lt;/div&gt;
-                    </code>
-                </figure>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-warning" role="alert">
+                This is a warning alert. <span class="sr-only">This alert contains dark yellow text on a lighter yellow background.</span>
             </div>
         </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                &lt;div class="alert alert-warning" role="alert"&gt;This is a warning alert.&lt;/div&gt;
+            </code>
+            </figure>
+        </div>
+    </div>
 
-        <!-- Info alert -->
-        <div class="card">
-            <div class="card-body">
-                <div class="alert alert-info" role="alert">
-                    This is a info alert.
-                </div>
-                <figure>
-                    <code>
-                        &lt;div class="alert alert-info" role="alert"&gt;This is a info alert.&lt;/div&gt;
-                    </code>
-                </figure>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-info" role="alert">
+                This is a info alert. <span class="sr-only">This alert contains blue text on a lighter blue background.</span>
             </div>
+        </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                &lt;div class="alert alert-info" role="alert"&gt;This is a info alert.&lt;/div&gt;
+            </code>
+            </figure>
+        </div>
+    </div>
+    <h3>Link color</h3>
+    <p>Use the <code class="highlighter-rouge">.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-primary" role="alert">
+                This is an alert with <a href="#" class="alert-link">linked text</a>. <span class="sr-only">This alert contains dark blue text on a ligher blue background.</span>
+            </div>
+        </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                    &lt;div class="alert alert-primary" role="alert"&gt;This is an alert with &lt;a href="#" class="alert-link"&gt;linked text&lt;/a&gt;&lt;/div&gt;.
+                </code>
+            </figure>
+        </div>
+    </div>
+    <h3 id="dismiss">Dismissing</h3>
+    <p>Dismiss any alert inline.</p>
+    <div class="card">
+        <div class="card-body">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Click the X icon to close this alert.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="card-footer">
+            <figure>
+                <code>
+                    &lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
+                        Click the X icono to close this alert.
+                        &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                            &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+                        &lt;/button&gt;
+                    </div>
+                </code>
+            </figure>
         </div>
     </div>
 </div>
-                </div>
+                <div id="badges" class="component">
+    <h2>Badges</h2>
+    <div class="card">
+        <div class="card-body">
+            <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+            <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+            <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+            <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+            <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+            <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+        </div>
+        <div class="card-footer">
+            &lt;h1&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h1&gt; &lt;h2&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h2&gt; &lt;h3&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h3&gt;
+            &lt;h4&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h4&gt; &lt;h5&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h5&gt; &lt;h6&gt;Example heading &lt;span class="badge
+            badge-secondary"&gt;New&lt;/span&gt;&lt;/h6&gt;
+        </div>
+    </div>
+</div>
             </div>
         </div>
     </main>

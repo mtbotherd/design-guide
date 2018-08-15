@@ -14,15 +14,31 @@
 </head>
 
 <body>
-    <!-- Main navigation -->
-    <header role="banner">
-        <partial src="./partials/header+nav.html" />
+    <header>
+        <!-- Top NavBar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <!-- Skip nav - for accessibility -->
+            <a class="skip-to-content" href="#mainContent">Skip to main content</a>
+
+            <div class="container">
+                <a class="navbar-brand" href="inde.html">
+                    <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <partial src="./partials/header+nav.html" />
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Main content -->
     <main id="mainContent">
         <div class="container">
-            <!-- Sidebar -->
 
             <!-- Content -->
             <h1>Website Design Guide</h1>
