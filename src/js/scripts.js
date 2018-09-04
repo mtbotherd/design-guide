@@ -28,4 +28,12 @@ $(document).ready(function() {
         // Collapse/Expand icon
         $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
     }
+
+    // Copy to clipboard - clipboard.js
+    //new ClipboardJS('.btn-clipboard ');
+    // new ClipboardJS('.btn-clipboard', {
+    //     target: function(trigger) {
+    //         return trigger.nextElementSibling;
+    //     }
+    // });
 });
