@@ -7,10 +7,10 @@
     <title>Metro Transit | Website Design Guide</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
     <!-- build:css css/styles.css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
 </head>
 
 <body>
@@ -40,16 +40,15 @@
 
     <main class="container">
         <div id="body-row" class="row">
+            <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
-            <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
+            <nav id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
                 <partial src="./partials/cl/cl-sidebar.html" />
-            </div>
+            </nav>
 
             <!-- Main content -->
             <div id="mainContent" class="col py-3">
-                <h1 class="sr-only">Component Library</h1>
                 <partial src="./partials/cl/alerts.html" />
-                <hr />
                 <partial src="./partials/cl/badges.html" />
             </div>
         </div>

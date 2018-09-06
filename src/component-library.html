@@ -7,10 +7,10 @@
     <title>Metro Transit | Website Design Guide</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
     <!-- build:css css/styles.css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
 </head>
 
 <body>
@@ -72,22 +72,33 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 
     <main class="container">
         <div id="body-row" class="row">
+            <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
-            <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
+            <nav id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
                 <ul class="list-group sticky-top sticky-offset">
     <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
-        <small>COMPONENT LIBRARY</small>
+        <small>COMPONENT LIBRARY MENU</small>
     </li>
     <a href="#alerts" class="bg-dark list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-start align-items-center">
             Alerts
         </div>
     </a>
+    <!-- <li class="bg-dark list-group-item list-group-item-action active">
+        <a href="#alerts" class="d-flex w-100 justify-content-start align-items-center">
+            Alerts
+        </a>
+    </li> -->
     <a href="#badges" class="bg-dark list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-start align-items-center">
             Badges
         </div>
     </a>
+    <!-- <li class="bg-dark list-group-item list-group-item-action">
+        <a href="#badges" class="d-flex w-100 justify-content-start align-items-center">
+            Badges
+        </a>
+    </li> -->
     <a href="#breadcrumbs" class="bg-dark list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-start align-items-center">
             Breadcrumbs
@@ -163,46 +174,13 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             Tooltips
         </div>
     </a>
-    <!-- <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            <span class="fa fa-dashboard fa-fw mr-3"></span>
-            <span class="menu-collapsed">Dashboard</span>
-            <span class="submenu-icon ml-auto"></span>
-        </div>
-    </a>
-    <div id="submenu1" class="collapse sidebar-submenu">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Charts</span>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Reports</span>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Tables</span>
-        </a>
-    </div>
-    <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            <span class="fa fa-user fa-fw mr-3"></span>
-            <span class="menu-collapsed">Profile</span>
-            <span class="submenu-icon ml-auto"></span>
-        </div>
-    </a>
-    <div id="submenu2" class="collapse sidebar-submenu">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Settings</span>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Password</span>
-        </a>
-    </div> -->
 </ul>
-            </div>
+
+            </nav>
 
             <!-- Main content -->
             <div id="mainContent" class="col py-3">
-                <h1 class="sr-only">Component Library</h1>
-                <div id="alerts" class="component">
+                <div id="alerts" class="components">
     <h2>Alerts</h2>
     <div class="bd-example">
         <div class="alert alert-primary" role="alert">
@@ -213,7 +191,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code class="language-html" data-lang="html">&lt;div class="alert alert-primary" role="alert"&gt;This is a primary alert.&lt;/div&gt;</code></pre>
+        <pre><code>&lt;div class="alert alert-primary" role="alert"&gt;<span>This is a primary alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -225,7 +203,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code class="language-html" data-lang="html">&lt;div class="alert alert-secondary" role="alert"&gt;This is a secondary alert.&lt;/div&gt;</code></pre>
+        <pre><code>&lt;div class="alert alert-secondary" role="alert"&gt;<span>This is a secondary alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -237,7 +215,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>This is a success alert.<span class="nt">&lt;/div&gt;</span></code></pre>
+        <pre><code>&lt;div class="alert alert-success" role="alert"&gt;<span>This is a success alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -249,7 +227,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>This is a danger alert.<span class="nt">&lt;/div&gt;</span></code></pre>
+        <pre><code>&lt;div class="alert alert-danger" role="alert"&gt;<span>This is a danger alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -261,7 +239,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>This is a warning alert.<span class="nt">&lt;/div&gt;</span></code></pre>
+        <pre><code>&lt;div class="alert alert-warning" role="alert"&gt;<span>This is a warning alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -273,7 +251,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>This is a info alert.<span class="nt">&lt;/div&gt;</span></code></pre>
+        <pre><code>&lt;div class="alert alert-info" role="alert"&gt;<span>This is a info alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <h3>Link color</h3>
@@ -287,7 +265,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>This is a info alert.<span class="nt">&lt;/div&gt;</span></code></pre>
+        <pre><code>&lt;div class="alert alert-info" role="alert"&gt;<span>This is an alert with</span> &lt;a href="#"&gt;<span>linked text</span>&lt;/a&gt;<span>.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <h3 id="dismiss">Dismissing</h3>
@@ -300,19 +278,17 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             </button>
         </div>
     </div>
-    <figure>
-        <code>
-            &lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
-                Click the X icono to close this alert.
-                &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
-                    &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
-                &lt;/button&gt;
-        </code>
+    <figure class="highlight">
+        <pre><code>&lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
+    <span>Click the X icon to close this alert.</span>
+    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+        &lt;span aria-hidden="true"&gt;<span>&times;</span>&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre>
     </figure>
 </div>
 
-                <hr />
-                <div id="badges" class="component">
+                <div id="badges" class="components">
     <h2>Badges</h2>
     <div class="bd-example">
         <div class="h1">Example heading <span class="badge badge-secondary">New</span></div>

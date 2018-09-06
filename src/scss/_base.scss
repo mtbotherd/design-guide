@@ -9,3 +9,15 @@ a:link {
     text-decoration: none;
     border-bottom: 1px solid $primary;
 }
+
+.highlight pre {
+    //overflow: auto;
+    white-space: pre-wrap;
+    code {
+        color: $pink;
+
+        span {
+            color: $gray-700;
+        }
+    }
+}
