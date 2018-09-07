@@ -13,6 +13,6 @@ $(document).ready(function() {
 
     // Copy to clipboard
     (function() {
-        new Clipboard('.btn-clipboard');
+        new Clipboard('.copy');
     })();
 });
