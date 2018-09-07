@@ -6435,47 +6435,16 @@ body {
   min-height: 100vh;
   background-color: #333;
   padding: 0; }
-  #sidebar-container .list-group a {
-    height: 50px;
-    color: white; }
-    #sidebar-container .list-group a .sidebar-submenu a {
-      height: 45px;
-      padding-left: 30px; }
-  #sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
-    content: " \f0d7";
-    font-family: FontAwesome;
-    display: inline;
-    text-align: right;
-    padding-left: 10px; }
-  #sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
-    content: " \f0da";
-    font-family: FontAwesome;
-    display: inline;
-    text-align: right;
-    padding-left: 10px; }
-
-/* Sidebar sizes when expanded and expanded */
-.sidebar-expanded {
-  width: 230px; }
-
-.sidebar-collapsed {
-  width: 60px; }
-
-.sidebar-submenu {
-  font-size: 0.9rem; }
-
-/* Separators */
-.sidebar-separator-title {
-  background-color: #333;
-  height: 35px; }
-
-.sidebar-separator {
-  background-color: #333;
-  height: 25px; }
-
-.logo-separator {
-  background-color: #333;
-  height: 60px; }
+  #sidebar-container h2 {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 100; }
+  #sidebar-container a:link {
+    color: #fff;
+    border-bottom: 1px solid #212529;
+    border-radius: 0; }
+  #sidebar-container .active {
+    background-color: #6c757d; }
 
 /************************************************
     Component Library Styles

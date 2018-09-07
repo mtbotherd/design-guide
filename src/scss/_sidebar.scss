@@ -8,7 +8,7 @@ body {
 .sticky-offset {
     top: 61px;
 }
-
+//
 #body-row {
     margin-left:0;
     margin-right:0;
@@ -18,56 +18,25 @@ body {
     background-color: #333;
     padding: 0;
 
-    .list-group {
-        a {
-            height: 50px;
-            color: white;
+    h2 {
+        color: $gray-600;
+        font-size: 1rem;
+        font-weight: 100;
+    }
 
-            .sidebar-submenu a {
-                height: 45px;
-                padding-left: 30px;
-            }
-        }
+    a:link {
+        color: $white;
+        border-bottom: 1px solid $gray-900;
+        border-radius: 0;
 
-        .list-group-item[aria-expanded="false"] .submenu-icon::after {
-            content: " \f0d7";
-            font-family: FontAwesome;
-            display: inline;
-            text-align: right;
-            padding-left: 10px;
-        }
+        &:active,
+        &:hover,
+        &:focus {
 
-        .list-group-item[aria-expanded="true"] .submenu-icon::after {
-            content: " \f0da";
-            font-family: FontAwesome;
-            display: inline;
-            text-align: right;
-            padding-left: 10px;
         }
     }
-}
 
-/* Sidebar sizes when expanded and expanded */
-.sidebar-expanded {
-    width: 230px;
-}
-.sidebar-collapsed {
-    width: 60px;
-}
-.sidebar-submenu {
-    font-size: 0.9rem;
-}
-
-/* Separators */
-.sidebar-separator-title {
-    background-color: #333;
-    height: 35px;
-}
-.sidebar-separator {
-    background-color: #333;
-    height: 25px;
-}
-.logo-separator {
-    background-color: #333;
-    height: 60px;
+    .active {
+        background-color: $gray-600;
+    }
 }

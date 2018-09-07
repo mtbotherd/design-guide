@@ -22,7 +22,7 @@
             <a class="skip-to-content" href="#mainContent">Skip to main content</a>
 
             <div class="container">
-                <a class="navbar-brand" href="inde.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,112 +75,36 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
             <nav id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-                <ul class="list-group sticky-top sticky-offset">
-    <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
-        <small>COMPONENT LIBRARY MENU</small>
-    </li>
-    <a href="#alerts" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Alerts
-        </div>
-    </a>
-    <!-- <li class="bg-dark list-group-item list-group-item-action active">
-        <a href="#alerts" class="d-flex w-100 justify-content-start align-items-center">
-            Alerts
-        </a>
-    </li> -->
-    <a href="#badges" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Badges
-        </div>
-    </a>
-    <!-- <li class="bg-dark list-group-item list-group-item-action">
-        <a href="#badges" class="d-flex w-100 justify-content-start align-items-center">
-            Badges
-        </a>
-    </li> -->
-    <a href="#breadcrumbs" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Breadcrumbs
-        </div>
-    </a>
-    <a href="#buttons" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Buttons
-        </div>
-    </a>
-    <a href="#buttonGroup" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Button Groups
-        </div>
-    </a>
-    <a href="#card" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Cards
-        </div>
-    </a>
-    <a href="#carousel" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Carousel
-        </div>
-    </a>
-    <a href="#collapse" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Collapse/Expand
-        </div>
-    </a>
-    <a href="#dropdowns" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Dropdowns
-        </div>
-    </a>
-    <a href="#forms" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Forms
-        </div>
-    </a>
-    <a href="#inputGroup" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Input Groups
-        </div>
-    </a>
-    <a href="#listGroup" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            List Groups
-        </div>
-    </a>
-    <a href="#modal" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Modal
-        </div>
-    </a>
-    <a href="#navigation" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Navigation
-        </div>
-    </a>
-    <a href="#pagination" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Pagination
-        </div>
-    </a>
-    <a href="#popovers" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Popovers
-        </div>
-    </a>
-    <a href="#tooltips" class="bg-dark list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-            Tooltips
-        </div>
-    </a>
-</ul>
+                <div class="nav flex-column nav-pills sticky-top sticky-offset" id="v-pills-tab" role="menu" aria-orientation="vertical">
+    <li class="nav-link"><h2>COMPONENT LIBRARY MENU</h2></li>
+    <a class="nav-link active" id="v-pills-alerts-tab" data-toggle="pill" href="#v-pills-alerts" role="menuitem" aria-controls="v-pills-alerts" aria-selected="true">Alerts</a>
+    <a class="nav-link" id="v-pills-badges-tab" data-toggle="pill" href="#v-pills-badges" role="menuitem" aria-controls="v-pills-badges" aria-selected="false">badges</a>
+    <a class="nav-link" id="v-pills-breadcrumbs-tab" data-toggle="pill" href="#v-pills-breadcrumbs" role="menuitem" aria-controls="v-pills-breadcrumbs" aria-selected="false">Breadcrumbs</a>
+    <a class="nav-link" id="v-pills-buttons-tab" data-toggle="pill" href="#v-pills-buttons" role="menuitem" aria-controls="v-pills-buttons" aria-selected="false">Buttons</a>
+    <a class="nav-link" id="v-pills-button-group-tab" data-toggle="pill" href="#v-pills-button-group" role="menuitem" aria-controls="v-pills-button-group" aria-selected="false">Button Group</a>
+    <a class="nav-link" id="v-pills-cards-tab" data-toggle="pill" href="#v-pills-cards" role="menuitem" aria-controls="v-pills-cards" aria-selected="false">Cards</a>
+    <a class="nav-link" id="v-pills-carousel-tab" data-toggle="pill" href="#v-pills-carousel" role="menuitem" aria-controls="v-pills-carousel" aria-selected="false">Carousel</a>
+    <a class="nav-link" id="v-pills-collapse-tab" data-toggle="pill" href="#v-pills-collapse" role="menuitem" aria-controls="v-pills-collapse" aria-selected="false">Collapse</a>
+    <a class="nav-link" id="v-pills-dropdowns-tab" data-toggle="pill" href="#v-pills-dropdowns" role="menuitem" aria-controls="v-pills-dropdowns" aria-selected="false">Dropdowns</a>
+    <a class="nav-link" id="v-pills-forms-tab" data-toggle="pill" href="#v-pills-cards" role="menuitem" aria-controls="v-pills-cards" aria-selected="false">Forms</a>
+    <a class="nav-link" id="v-pills-input-group-tab" data-toggle="pill" href="#v-pills-input-group" role="menuitem" aria-controls="v-pills-input-group" aria-selected="false">Input Group</a>
+    <a class="nav-link" id="v-pills-list-group-tab" data-toggle="pill" href="#v-pills-list-group" role="menuitem" aria-controls="v-pills-list-group" aria-selected="false">List Group</a>
+    <a class="nav-link" id="v-pills-modals-tab" data-toggle="pill" href="#v-pills-modals" role="menuitem" aria-controls="v-pills-modals" aria-selected="false">Modals</a>
+    <a class="nav-link" id="v-pills-navs-tab" data-toggle="pill" href="#v-pills-navs" role="menuitem" aria-controls="v-pills-navs" aria-selected="false">Navs</a>
+    <a class="nav-link" id="v-pills-navbar-tab" data-toggle="pill" href="#v-pills-navbar" role="menuitem" aria-controls="v-pills-navbar" aria-selected="false">Navbar</a>
+    <a class="nav-link" id="v-pills-pagination-tab" data-toggle="pill" href="#v-pills-pagination" role="menuitem" aria-controls="v-pills-pagination" aria-selected="false">Pagination</a>
+    <a class="nav-link" id="v-pills-popovers-tab" data-toggle="pill" href="#v-pills-popovers" role="menuitem" aria-controls="v-pills-popovers" aria-selected="false">Popovers</a>
+    <a class="nav-link" id="v-pills-tooltips-tab" data-toggle="pill" href="#v-pills-tooltips" role="menuitem" aria-controls="v-pills-tooltips" aria-selected="false">Tooltips</a>
+</div>
 
             </nav>
 
             <!-- Main content -->
             <div id="mainContent" class="col py-3">
-                <div id="alerts" class="components">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- <input id="post-shortlink" value="https://ac.me/qmE_jpnYXFo">
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button> -->
+                    <div class="tab-pane fade show active" id="v-pills-alerts" role="tabpanel" aria-labelledby="v-pills-alerts-tab">
     <h2>Alerts</h2>
     <div class="bd-example">
         <div class="alert alert-primary" role="alert">
@@ -188,10 +112,10 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+        <button class="btn-clipboard" data-clipboard-target="#alertPrimary">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code>&lt;div class="alert alert-primary" role="alert"&gt;<span>This is a primary alert.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertPrimary">&lt;div class="alert alert-primary" role="alert"&gt;<span>This is a primary alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -200,10 +124,10 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+        <button class="btn-clipboard">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code>&lt;div class="alert alert-secondary" role="alert"&gt;<span>This is a secondary alert.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertSecondary">&lt;div class="alert alert-secondary" role="alert"&gt;<span>This is a secondary alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -254,7 +178,9 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <pre><code>&lt;div class="alert alert-info" role="alert"&gt;<span>This is a info alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
-    <h3>Link color</h3>
+    <hr />
+
+    <h3>Matching link color</h3>
     <p>Use the <code class="highlighter-rouge">.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
     <div class="bd-example">
         <div class="alert alert-primary" role="alert">
@@ -268,7 +194,9 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <pre><code>&lt;div class="alert alert-info" role="alert"&gt;<span>This is an alert with</span> &lt;a href="#"&gt;<span>linked text</span>&lt;/a&gt;<span>.</span>&lt;/div&gt;</code></pre>
     </figure>
 
-    <h3 id="dismiss">Dismissing</h3>
+    <hr />
+
+    <h3 id="dismiss">Dismissable</h3>
     <p>Dismiss any alert inline.</p>
     <div class="bd-example">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -288,42 +216,30 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </figure>
 </div>
 
-                <div id="badges" class="components">
+                    <div class="tab-pane fade" id="v-pills-badges" role="tabpanel" aria-labelledby="v-pills-badges-tab">
     <h2>Badges</h2>
     <div class="bd-example">
         <div class="h1">Example heading <span class="badge badge-secondary">New</span></div>
+        <div class="h2">Example heading <span class="badge badge-secondary">New</span></div>
+        <div class="h3">Example heading <span class="badge badge-secondary">New</span></div>
+        <div class="h4">Example heading <span class="badge badge-secondary">New</span></div>
+        <div class="h5">Example heading <span class="badge badge-secondary">New</span></div>
+        <div class="h6">Example heading <span class="badge badge-secondary">New</span></div>
     </div>
     <div class="bd-clipboard">
         <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
     </div>
     <figure class="highlight">
-<pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h6&gt;</span></code></pre>
+<pre><code>&lt;h1&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h3&gt;
+&lt;h4&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h6&gt;</code></pre>
     </figure>
-    <!-- <div class="card">
-        <div class="card-body">
-            <h1>Example heading <span class="badge badge-secondary">New</span></h1>
-            <h2>Example heading <span class="badge badge-secondary">New</span></h2>
-            <h3>Example heading <span class="badge badge-secondary">New</span></h3>
-            <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-            <h5>Example heading <span class="badge badge-secondary">New</span></h5>
-            <h6>Example heading <span class="badge badge-secondary">New</span></h6>
-        </div>
-        <div class="card-footer">
-            <figure>
-                <code>
-                    &lt;h1&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h1&gt; &lt;h2&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h2&gt; &lt;h3&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h3&gt; &lt;h4&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h4&gt; &lt;h5&gt;Example heading
-                &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h5&gt; &lt;h6&gt;Example heading &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h6&gt;
-                </code>
-            </figure>
-        </div>
-    </div> -->
 </div>
 
+                </div>
             </div>
         </div>
     </main>
@@ -331,10 +247,12 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <!-- <script type="text/javascript" src="js/clipboard.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
     <!-- build:js js/scripts.js -->
     <script type="text/javascript" src="js/scripts.js"></script>
     <!-- endbuild -->
+
 </body>
 
 </html>

@@ -22,7 +22,7 @@
             <a class="skip-to-content" href="#mainContent">Skip to main content</a>
 
             <div class="container">
-                <a class="navbar-brand" href="inde.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +43,17 @@
             <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
             <nav id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-                <partial src="./partials/cl/cl-sidebar.html" />
+                <partial src="./partials/cl/cl-sidebar2.html" />
             </nav>
 
             <!-- Main content -->
             <div id="mainContent" class="col py-3">
-                <partial src="./partials/cl/alerts.html" />
-                <partial src="./partials/cl/badges.html" />
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- <input id="post-shortlink" value="https://ac.me/qmE_jpnYXFo">
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button> -->
+                    <partial src="./partials/cl/alerts.html" />
+                    <partial src="./partials/cl/badges.html" />
+                </div>
             </div>
         </div>
     </main>
@@ -57,10 +61,12 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <!-- <script type="text/javascript" src="js/clipboard.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
     <!-- build:js js/scripts.js -->
     <script type="text/javascript" src="js/scripts.js"></script>
     <!-- endbuild -->
+
 </body>
 
 </html>
