@@ -11,8 +11,6 @@ $(document).ready(function() {
         SidebarCollapse();
     });
 
-    // Copy to clipboard
-    (function() {
-        new Clipboard('.copy');
-    })();
+    //Copy to clipboard
+    var clipboard = new Clipboard('.btn-clipboard');
 });
