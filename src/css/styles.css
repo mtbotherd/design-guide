@@ -6439,15 +6439,19 @@ body {
     color: #6c757d;
     font-size: 1rem;
     font-weight: 100; }
-  #sidebar-container a:link {
+  #sidebar-container .nav-link {
     color: #fff;
     border-bottom: 1px solid #212529;
     border-radius: 0; }
+    #sidebar-container .nav-link:hover {
+      background-color: #6c757d; }
   #sidebar-container .active {
     background-color: #6c757d; }
 
 /************************************************
     Component Library Styles
 ************************************************/
+.badge {
+  border-radius: 0.5rem; }
 
 /*# sourceMappingURL=../maps/styles.css.map */

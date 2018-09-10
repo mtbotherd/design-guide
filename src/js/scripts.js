@@ -11,6 +11,13 @@ $(document).ready(function() {
         SidebarCollapse();
     });
 
-    //Copy to clipboard
+    //Copy to clipboard - clipboard.js
+    //var btns = document.getElementByClassName('btn-clipboard');
     var clipboard = new Clipboard('.btn-clipboard');
+    // clipboard.on('success', function(e) {
+    //     console.log(e);
+    // });
+    // clipboard.on('error', function(e) {
+    //     console.log(e);
+    // });
 });

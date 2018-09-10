@@ -24,15 +24,13 @@ body {
         font-weight: 100;
     }
 
-    a:link {
+    .nav-link {
         color: $white;
         border-bottom: 1px solid $gray-900;
         border-radius: 0;
 
-        &:active,
-        &:hover,
-        &:focus {
-
+        &:hover {
+            background-color: $gray-600;
         }
     }
 

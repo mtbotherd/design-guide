@@ -42,15 +42,12 @@
         <div id="body-row" class="row">
             <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
-            <nav id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-                <partial src="./partials/cl/cl-sidebar2.html" />
-            </nav>
+            <partial src="./partials/cl/cl-sidebar2.html" />
+
 
             <!-- Main content -->
             <div id="mainContent" class="col py-3">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <!-- <input id="post-shortlink" value="https://ac.me/qmE_jpnYXFo">
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button> -->
                     <partial src="./partials/cl/alerts.html" />
                     <partial src="./partials/cl/badges.html" />
                 </div>

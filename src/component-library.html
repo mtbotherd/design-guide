@@ -75,7 +75,27 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
             <nav id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-                <div class="nav flex-column nav-pills sticky-top sticky-offset" id="v-pills-tab" role="menu" aria-orientation="vertical">
+<!-- <ul class="nav flex-column sticky-top sticky-offset">
+    <li class="nav-item active"><a href="#alerts" class="nav-link">Alerts</a></li>
+    <li class="nav-item"><a href="#badges" class="nav-link">Badges</a></li>
+    <li class="nav-item"><a href="#breadcrumbs" class="nav-link">Breadcrumbs</a></li>
+    <li class="nav-item"><a href="#buttons" class="nav-link">Buttons</a></li>
+    <li class="nav-item"><a href="#buttonGroup" class="nav-link">Button Group</a></li>
+    <li class="nav-item"><a href="#card" class="nav-link">Card</a></li>
+    <li class="nav-item"><a href="#carousel" class="nav-link">Carousel</a></li>
+    <li class="nav-item"><a href="#collapse" class="nav-link">Collapse</a></li>
+    <li class="nav-item"><a href="#dropdowns" class="nav-link">Dropdowns</a></li>
+    <li class="nav-item"><a href="#forms" class="nav-link">Forms</a></li>
+    <li class="nav-item"><a href="#inputGroup" class="nav-link">Input Group</a></li>
+    <li class="nav-item"><a href="#listgroup" class="nav-link">List Group</a></li>
+    <li class="nav-item"><a href="#modals" class="nav-link">Modals</a></li>
+    <li class="nav-item"><a href="#navs" class="nav-link">Navs</a></li>
+    <li class="nav-item"><a href="#navbar" class="nav-link">Navbar</a></li>
+    <li class="nav-item"><a href="#pagination" class="nav-link">Pagination</a></li>
+    <li class="nav-item"><a href="#popovers" class="nav-link">Popovers</a></li>
+    <li class="nav-item"><a href="#tooltips" class="nav-link">Tooltips</a></li>
+</ul> -->
+<div class="nav flex-column nav-pills sticky-top sticky-offset" id="v-pills-tab" role="menu" aria-orientation="vertical">
     <li class="nav-link"><h2>COMPONENT LIBRARY MENU</h2></li>
     <a class="nav-link active" id="v-pills-alerts-tab" data-toggle="pill" href="#v-pills-alerts" role="menuitem" aria-controls="v-pills-alerts" aria-selected="true">Alerts</a>
     <a class="nav-link" id="v-pills-badges-tab" data-toggle="pill" href="#v-pills-badges" role="menuitem" aria-controls="v-pills-badges" aria-selected="false">badges</a>
@@ -96,16 +116,16 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <a class="nav-link" id="v-pills-popovers-tab" data-toggle="pill" href="#v-pills-popovers" role="menuitem" aria-controls="v-pills-popovers" aria-selected="false">Popovers</a>
     <a class="nav-link" id="v-pills-tooltips-tab" data-toggle="pill" href="#v-pills-tooltips" role="menuitem" aria-controls="v-pills-tooltips" aria-selected="false">Tooltips</a>
 </div>
+</nav>
 
-            </nav>
+
 
             <!-- Main content -->
             <div id="mainContent" class="col py-3">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <!-- <input id="post-shortlink" value="https://ac.me/qmE_jpnYXFo">
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button> -->
                     <div class="tab-pane fade show active" id="v-pills-alerts" role="tabpanel" aria-labelledby="v-pills-alerts-tab">
     <h2>Alerts</h2>
+    <p>Provides for contextual feedback messages for typical user actions.</p>
     <div class="bd-example">
         <div class="alert alert-primary" role="alert">
             This is a primary alert. <span class="sr-only">This alert contains dark blue text on a ligher blue background.</span>
@@ -127,7 +147,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" data-clipboard-target="#alertSecondary">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code id="alertSecondary">&lt;div class="alert alert-secondary" role="alert"&gt;<span>This is a secondary alert.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertSecondary" class="language-html">&lt;div class="alert alert-secondary" role="alert"&gt;<span>This is a secondary alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -139,7 +159,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" data-clipboard-target="#alertSuccess">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code id="alertSuccess">&lt;div class="alert alert-success" role="alert"&gt;<span>This is a success alert.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertSuccess" class="language-html">&lt;div class="alert alert-success" role="alert"&gt;<span>This is a success alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -151,7 +171,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" data-clipboard-target="#alertDanger">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code id="alertDanger">&lt;div class="alert alert-danger" role="alert"&gt;<span>This is a danger alert.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertDanger" class="language-html">&lt;div class="alert alert-danger" role="alert"&gt;<span>This is a danger alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -163,7 +183,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" data-clipboard-target="#alertWarning">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code id="alertWarning">&lt;div class="alert alert-warning" role="alert"&gt;<span>This is a warning alert.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertWarning" class="language-html">&lt;div class="alert alert-warning" role="alert"&gt;<span>This is a warning alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <div class="bd-example">
@@ -175,7 +195,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" data-clipboard-target="#alertInfo">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code id="alertInfo">&lt;div class="alert alert-info" role="alert"&gt;<span>This is a info alert.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertInfo" class="language-html">&lt;div class="alert alert-info" role="alert"&gt;<span>This is a info alert.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <hr />
@@ -191,7 +211,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" data-clipboard-target="#alertLink">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code id="alertLink">&lt;div class="alert alert-info" role="alert"&gt;<span>This is an alert with</span> &lt;a href="#"&gt;<span>linked text</span>&lt;/a&gt;<span>.</span>&lt;/div&gt;</code></pre>
+        <pre><code id="alertLink" class="language-html">&lt;div class="alert alert-info" role="alert"&gt;<span>This is an alert with</span> &lt;a href="#"&gt;<span>linked text</span>&lt;/a&gt;<span>.</span>&lt;/div&gt;</code></pre>
     </figure>
 
     <hr />
@@ -210,7 +230,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <button class="btn-clipboard" data-clipboard-target="#alertDismiss">Copy</button>
     </div>
     <figure class="highlight">
-        <pre><code id="alertDismiss">&lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
+        <pre><code id="alertDismiss" class="language-html">&lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
     <span>Click the X icon to close this alert.</span>
     &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
         &lt;span aria-hidden="true"&gt;<span>&times;</span>&lt;/span&gt;
@@ -221,24 +241,32 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 
                     <div class="tab-pane fade" id="v-pills-badges" role="tabpanel" aria-labelledby="v-pills-badges-tab">
     <h2>Badges</h2>
+    <p>Use for displaying counts and labels.</p>
+    <h3>Contextual variations</h3>
+    <h4>Badge header label</h4>
     <div class="bd-example">
         <div class="h1">Example heading <span class="badge badge-secondary">New</span></div>
-        <div class="h2">Example heading <span class="badge badge-secondary">New</span></div>
-        <div class="h3">Example heading <span class="badge badge-secondary">New</span></div>
-        <div class="h4">Example heading <span class="badge badge-secondary">New</span></div>
-        <div class="h5">Example heading <span class="badge badge-secondary">New</span></div>
-        <div class="h6">Example heading <span class="badge badge-secondary">New</span></div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#badges">Copy</button>
+        <button class="btn-clipboard" data-clipboard-target="#badgeHeader">Copy</button>
     </div>
     <figure class="highlight">
-<pre><code id="badges">&lt;h1&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h1&gt;
-&lt;h2&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h2&gt;
-&lt;h3&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h3&gt;
-&lt;h4&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h4&gt;
-&lt;h5&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h5&gt;
-&lt;h6&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h6&gt;</code></pre>
+<pre><code id="badgeHeader">&lt;h1&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h1&gt;</code></pre>
+    </figure>
+    <hr />
+    <h4>Badge counter</h4>
+    <div class="bd-example">
+        <button type="button" class="btn btn-primary">
+            Notifications <span class="badge badge-light">4</span>
+        </button>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#badgeCounter">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="badgeCounter">&lt;button type="button" class="btn btn-primary"&gt;
+  <span>Notifications</span> &lt;span class="badge badge-light"&gt;<span>4</span>&lt;/span&gt;
+&lt;/button&gt;</code></pre>
     </figure>
 </div>
 
