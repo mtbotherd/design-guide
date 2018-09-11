@@ -242,8 +242,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
                     <div class="tab-pane fade" id="v-pills-badges" role="tabpanel" aria-labelledby="v-pills-badges-tab">
     <h2>Badges</h2>
     <p>Use for displaying counts and labels.</p>
-    <h3>Contextual variations</h3>
-    <h4>Badge header label</h4>
+    <h3>Header with a badge label</h3>
     <div class="bd-example">
         <div class="h1">Example heading <span class="badge badge-secondary">New</span></div>
     </div>
@@ -254,7 +253,16 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 <pre><code id="badgeHeader">&lt;h1&gt;<span>Example heading</span>&lt;span class="badge badge-secondary"&gt;<span>New</span>&lt;/span&gt;&lt;/h1&gt;</code></pre>
     </figure>
     <hr />
-    <h4>Badge counter</h4>
+    <h3>List with a badge label</h3>
+    <div class="bd-example">
+        <ul>
+            <li>List item <span class="badge badge-info">New</span></li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+    </div>
+    <hr />
+    <h3>Button with a badge counter</h3>
     <div class="bd-example">
         <button type="button" class="btn btn-primary">
             Notifications <span class="badge badge-light">4</span>
@@ -265,8 +273,94 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </div>
     <figure class="highlight">
         <pre><code id="badgeCounter">&lt;button type="button" class="btn btn-primary"&gt;
-  <span>Notifications</span> &lt;span class="badge badge-light"&gt;<span>4</span>&lt;/span&gt;
+    <span>Notifications</span> &lt;span class="badge badge-light"&gt;<span>4</span>&lt;/span&gt;
 &lt;/button&gt;</code></pre>
+    </figure>
+    <hr />
+    <h3>Contextual varioations</h3>
+    <p>Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
+    <div class="bd-example">
+        <span class="badge badge-primary">Primary</span>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#badgePrimary">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="badgePrimary">&lt;span class="badge badge-primary"&gt;<span>Primary</span>&lt;/span&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <span class="badge badge-secondary">Secondary</span>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#badgeSecondary">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="badgeSecondary">&lt;span class="badge badge-secondary"&gt;<span>Secondary</span>&lt;/span&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <span class="badge badge-success">Success</span>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#badgeSuccess">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="badgeSuccess">&lt;span class="badge badge-success"&gt;<span>Success</span>&lt;/span&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <span class="badge badge-danger">Danger</span>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#badgeDanger">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="badgeDanger">&lt;span class="badge badge-danger"&gt;<span>Danger</span>&lt;/span&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <span class="badge badge-warning">Warning</span>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#badgeWarning">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="badgeWarning">&lt;span class="badge badge-warning"&gt;<span>Warning</span>&lt;/span&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <span class="badge badge-info">Info</span>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#badgeInfo">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="badgeInfo">&lt;span class="badge badge-info"&gt;<span>Info</span>&lt;/span&gt;</code></pre>
+    </figure>
+</div>
+
+                    <div class="tab-pane fade" id="v-pills-breadcrumbs" role="tabpanel" aria-labelledby="v-pills-breadcrumbs-tab">
+    <h2>Breadcrumbs</h2>
+    <p>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+    <h3>Accessibility</h3>
+    <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code class="highlighter-rogue">aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code class="highlighter-rogue">&lt;nav&gt;</code> element, as well as applying an aria-current="page" to the last item of the set to indicate that it represents the current page.</p>
+    <p>For more information, see the <a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" target="_blank">WAI-ARIA Authoring Practices for the breadcrumb pattern</a>.</p>
+    <div class="bd-example">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-clipboard-target="#breadcrumbs">Copy</button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="breadcrumbs">&lt;nav aria-label="breadcrumb"&gt;
+    &lt;ol class="breadcrumb"&gt;
+        &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;<span>Home</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;<span>Library</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="breadcrumb-item active" aria-current="page"&gt;<span>Data</span>&lt;/li&gt;
+    &lt;/ol>
+&lt;/nav&gt;</code></pre>
     </figure>
 </div>
 

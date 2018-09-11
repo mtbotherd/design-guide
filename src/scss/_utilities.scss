@@ -1,0 +1,31 @@
+/************************************************
+    Utility Styles
+************************************************/
+// Background colors
+.bg-blue {
+    background-color: $blue;
+    color: $white;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+    color: $white;
+}
+
+.bg-red {
+    background-color: $red;
+    color: $white;
+}
+
+// Border Colors
+.border-blue {
+    border: 1px solid $blue;
+}
+
+.border-yellow {
+    border: 1px solid $yellow;
+}
+
+.border-red {
+    border: 1px solid $red;
+}

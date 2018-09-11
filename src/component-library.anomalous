@@ -50,6 +50,7 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <partial src="./partials/cl/alerts.html" />
                     <partial src="./partials/cl/badges.html" />
+                    <partial src="./partials/cl/breadcrumbs.html" />
                 </div>
             </div>
         </div>

@@ -1,3 +1,4 @@
+//@import "./variables.scss";
 @import "./bootstrapCustom.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "./base.scss";
@@ -6,3 +7,4 @@
 @import "./layout.scss";
 @import "./sidebar.scss";
 @import "./component-library.scss";
+@import "./_utilities.scss";
