@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Metro Transit | Website Design Guide</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
-    <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
     <!-- build:css css/styles.css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -42,7 +41,7 @@
         <div id="body-row" class="row">
             <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
-            <partial src="./partials/cl/cl-sidebar2.html" />
+            <partial src="./partials/cl/cl-sidebar.html" />
 
 
             <!-- Main content -->
@@ -51,6 +50,7 @@
                     <partial src="./partials/cl/alerts.html" />
                     <partial src="./partials/cl/badges.html" />
                     <partial src="./partials/cl/breadcrumbs.html" />
+                    <partial src="./partials/cl/buttons.html" />
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="js/clipboard.min.js"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
     <!-- build:js js/scripts.js -->
     <script type="text/javascript" src="js/scripts.js"></script>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /************************************************
     Bootstrap Overrides
 ************************************************/
@@ -3283,7 +3284,7 @@ input[type="button"].btn-block {
     display: inline-block;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: ">"; }
+    content: "»"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }
@@ -6364,6 +6365,10 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/*############################################
+        Must have Mixins
+        http://w3bits.com/sass-mixins/
+############################################*/
 /************************************************
     Base Styles
 ************************************************/

@@ -14,48 +14,77 @@
 </head>
 
 <body>
-    <header role="banner">
-        <!-- Section navigation -->
-<nav class="navbar fixed-top navbar-light bg-light" aria-label="primary">
-    <a class="skip-to-content" href="#mainContent">Skip to main content</a>
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="brand-style-guide.html">Brand Style Guide</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pattern-library.html">Pattern Library</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#component-library.html">Component Library</a>
-                </li>
-            </ul>
-        </div>
+    <!-- Header -->
+    <header>
+        <!-- Top NavBar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <!-- Skip nav - for accessibility -->
+            <a class="skip-to-content" href="#mainContent">Skip to main content</a>
+
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+    <a class="nav-link" href="brand-style-guide.html">Brand Style Guide <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="pattern-library.html">Pattern Library</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="component-library.html">Component Library</a>
+</li>
+                        <!-- This menu is hidden in bigger devices with d-sm-none.
+The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
+<li class="nav-item dropdown d-sm-block d-md-none">
+    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+        <a class="dropdown-item" href="#alerts">Alerts</a>
+        <a class="dropdown-item" href="#badges">Badges</a>
+        <a class="dropdown-item" href="#breadcrumbs">Breadcrumbs</a>
+        <a class="dropdown-item" href="#buttons">Buttons</a>
+        <a class="dropdown-item" href="#buttonGroups">Button Groups</a>
+        <a class="dropdown-item" href="#cards">Cards</a>
+        <a class="dropdown-item" href="#Carousel">Carousel</a>
+        <a class="dropdown-item" href="#collapse">Collapse/Expand</a>
+        <a class="dropdown-item" href="#dropdowns">Dropdowns</a>
+        <a class="dropdown-item" href="#forms">Forms</a>
+        <a class="dropdown-item" href="#inputGroups">Input Groups</a>
+        <a class="dropdown-item" href="#listGroups">List Groups</a>
+        <a class="dropdown-item" href="#modal">Modal</a>
+        <a class="dropdown-item" href="#navigation">Navigation</a>
+        <a class="dropdown-item" href="#pagination">Pagination</a>
+        <a class="dropdown-item" href="#popovers">Popovers</a>
+        <a class="dropdown-item" href="#tooltips">Tooltips</a>
     </div>
-</nav>
+</li>
+<!-- Smaller devices menu END -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Main content -->
-    <main id="mainContent">
-        <div class="container">
+    <main class="container">
+        <div id="body-row" class="row">
+            <h1 class="sr-only">Brand Style Guide</h1>
             <!-- Sidebar -->
 
             <!-- Content -->
-            <h1>Component Library</h1>
-
+        </div>
     </main>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
     <!-- build:js js/scripts.js -->
     <script type="text/javascript" src="js/scripts.js"></script>
     <!-- endbuild -->

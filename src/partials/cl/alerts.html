@@ -1,13 +1,14 @@
 <div class="tab-pane fade show active" id="v-pills-alerts" role="tabpanel" aria-labelledby="v-pills-alerts-tab">
     <h2>Alerts</h2>
-    <p>Provides for contextual feedback messages for typical user actions.</p>
+    <p class="bd-lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+    <h3>Examples</h3>
     <div class="bd-example">
         <div class="alert alert-primary" role="alert">
             This is a primary alert. <span class="sr-only">This alert contains dark blue text on a ligher blue background.</span>
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertPrimary">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertPrimary"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertPrimary">&lt;div class="alert alert-primary" role="alert"&gt;<span>This is a primary alert.</span>&lt;/div&gt;</code></pre>
@@ -19,7 +20,7 @@
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertSecondary">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertSecondary"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertSecondary" class="language-html">&lt;div class="alert alert-secondary" role="alert"&gt;<span>This is a secondary alert.</span>&lt;/div&gt;</code></pre>
@@ -31,7 +32,7 @@
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertSuccess">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertSuccess"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertSuccess" class="language-html">&lt;div class="alert alert-success" role="alert"&gt;<span>This is a success alert.</span>&lt;/div&gt;</code></pre>
@@ -43,7 +44,7 @@
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertDanger">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertDanger"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertDanger" class="language-html">&lt;div class="alert alert-danger" role="alert"&gt;<span>This is a danger alert.</span>&lt;/div&gt;</code></pre>
@@ -55,7 +56,7 @@
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertWarning">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertWarning"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertWarning" class="language-html">&lt;div class="alert alert-warning" role="alert"&gt;<span>This is a warning alert.</span>&lt;/div&gt;</code></pre>
@@ -67,7 +68,7 @@
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertInfo">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertInfo"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertInfo" class="language-html">&lt;div class="alert alert-info" role="alert"&gt;<span>This is a info alert.</span>&lt;/div&gt;</code></pre>
@@ -75,7 +76,7 @@
 
     <hr />
 
-    <h3>Matching link color</h3>
+    <h4>Matching link color</h4>
     <p>Use the <code class="highlighter-rouge">.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
     <div class="bd-example">
         <div class="alert alert-primary" role="alert">
@@ -83,7 +84,7 @@
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertLink">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertLink"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertLink" class="language-html">&lt;div class="alert alert-info" role="alert"&gt;<span>This is an alert with</span> &lt;a href="#"&gt;<span>linked text</span>&lt;/a&gt;<span>.</span>&lt;/div&gt;</code></pre>
@@ -91,22 +92,22 @@
 
     <hr />
 
-    <h3 id="dismiss">Dismissable</h3>
+    <h4>Dismissable</h4>
     <p>Dismiss any alert inline.</p>
     <div class="bd-example">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            Click the X icon to close this alert.
+            This is an alert with a close button.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
     </div>
     <div class="bd-clipboard">
-        <button class="btn-clipboard" data-clipboard-target="#alertDismiss">Copy</button>
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertDismiss"><i class="far fa-clipboard fa-2x"></i></button>
     </div>
     <figure class="highlight">
         <pre><code id="alertDismiss" class="language-html">&lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
-    <span>Click the X icon to close this alert.</span>
+    <span>This is an alert with a close button.</span>
     &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
         &lt;span aria-hidden="true"&gt;<span>&times;</span>&lt;/span&gt;
     &lt;/button&gt;

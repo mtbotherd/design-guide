@@ -11,13 +11,14 @@ $(document).ready(function() {
         SidebarCollapse();
     });
 
-    //Copy to clipboard - clipboard.js
-    //var btns = document.getElementByClassName('btn-clipboard');
+    // Copy to clipboard tooltips
+    $('[data-toggle="tooltip"]').tooltip({
+        placement: 'top'
+    });
+    $('[data-toggle="tooltip"]').on('click', function() {
+        $(this).tooltip('hide');
+    });
+
+    //Initialize clipboard.js
     var clipboard = new Clipboard('.btn-clipboard');
-    // clipboard.on('success', function(e) {
-    //     console.log(e);
-    // });
-    // clipboard.on('error', function(e) {
-    //     console.log(e);
-    // });
 });
