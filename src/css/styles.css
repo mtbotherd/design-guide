@@ -6414,15 +6414,6 @@ a.skip-to-content {
 /************************************************
     Button Styles
 ************************************************/
-a.btn {
-  text-decoration: none;
-  border-bottom: 0;
-  color: #fff; }
-
-.btn-warning:hover,
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle {
-  color: #fff; }
-
 /************************************************
     Layout Styles
 ************************************************/
@@ -6473,8 +6464,7 @@ body {
   color: #fff; }
 
 .bg-yellow {
-  background-color: #ffd200;
-  color: #fff; }
+  background-color: #ffd200; }
 
 .bg-red {
   background-color: #ed1b2e;
