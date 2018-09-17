@@ -29,7 +29,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <partial src="./partials/header+nav.html" />
+                        <li class="nav-item">
+                            <a class="nav-link" href="brand-style-guide.html">Brand Style Guide <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pattern-library.html">Pattern Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="component-library.html">Component Library</a>
+                        </li>
                     </ul>
                 </div>
             </div>
