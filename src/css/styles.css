@@ -6419,6 +6419,8 @@ a.skip-to-content {
 ************************************************/
 .card {
   margin-bottom: 1.5em; }
+  .card .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
 
 /************************************************
     Sidebar Styles
@@ -6459,24 +6461,5 @@ body {
 /************************************************
     Utility Styles
 ************************************************/
-.bg-blue {
-  background-color: #0053a0;
-  color: #fff; }
-
-.bg-yellow {
-  background-color: #ffd200; }
-
-.bg-red {
-  background-color: #ed1b2e;
-  color: #fff; }
-
-.border-blue {
-  border: 1px solid #0053a0; }
-
-.border-yellow {
-  border: 1px solid #ffd200; }
-
-.border-red {
-  border: 1px solid #ed1b2e; }
 
 /*# sourceMappingURL=../maps/styles.css.map */
