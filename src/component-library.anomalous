@@ -7,11 +7,11 @@
     <title>Metro Transit | Website Design Guide</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
-    <!-- build:css css/styles.css -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- build:css css/component-library.css -->
+    <link rel="stylesheet" type="text/css" href="css/component-library.css" />
     <!-- endbuild -->
 </head>
-    
+
 <body>
     <!-- Header -->
     <header>
@@ -61,6 +61,7 @@
                     <partial src="./partials/cl/buttons.html" />
                     <partial src="./partials/cl/button-group.html" />
                     <partial src="./partials/cl/cards.html" />
+                    <partial src="./partials/cl/carousel.html" />
                 </div>
             </div>
         </div>

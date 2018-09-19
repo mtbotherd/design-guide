@@ -6417,4 +6417,45 @@ a.skip-to-content {
 .navbar li {
   text-align: right; }
 
-/*# sourceMappingURL=../maps/styles.css.map */
+/************************************************
+    CL Specific Styles
+************************************************/
+/************************************************
+    CL Sidebar Styles
+************************************************/
+body {
+  padding-top: 61px; }
+
+.sticky-offset {
+  top: 61px; }
+
+#body-row {
+  margin-left: 0;
+  margin-right: 0; }
+
+#sidebar-container {
+  min-height: 100vh;
+  background-color: #333;
+  padding: 0; }
+  #sidebar-container h2 {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 100; }
+  #sidebar-container .nav-link {
+    color: #fff;
+    border-bottom: 1px solid #212529;
+    border-radius: 0; }
+    #sidebar-container .nav-link:hover {
+      background-color: #6c757d; }
+  #sidebar-container .active {
+    background-color: #6c757d; }
+
+/************************************************
+    Card Styles
+************************************************/
+.card {
+  margin-bottom: 1.5em; }
+  .card .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+/*# sourceMappingURL=../maps/component-library.css.map */
