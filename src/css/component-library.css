@@ -6453,9 +6453,7 @@ body {
 /************************************************
     Card Styles
 ************************************************/
-.card {
-  margin-bottom: 1.5em; }
-  .card .card-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+.card .card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
 
 /*# sourceMappingURL=../maps/component-library.css.map */

@@ -1424,7 +1424,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <p>In browsers where the <a href="https://www.w3.org/TR/page-visibility/" target="_blank">Page Visibility API</a> is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.).</p>
     <div class="alert alert-danger">
         <h5><i class="fas fa-ban"></i> Nested carousels</h5>
-        <p>Please be aware that nested carousels are not supported.</p>
+        <p>Nested carousels are not supported.</p>
     </div>
     <div class="alert alert-info">
         <h5><i class="fas fa-exclamation-circle"></i> Accessibility</h5>
@@ -1751,6 +1751,181 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     &lt;/a&gt;
 &lt;/div&gt;</code></pre>
     </figure>
+    <hr />
+    <h3>Usage</h3>
+    <h4>Data attributes</h4>
+    <p>Use data attributes to easily control the position of the carousel. <code class="highlighter-rogue">data-slide</code> accepts the keywords <code class="highlighter-rogue">prev</code> or <code class="highlighter-rogue">next</code>, which alters the slide position relative to its current position. Alternatively, use <code class="highlighter-rogue">data-slide-to</code> to pass a raw slide index to the carousel <code class="highlighter-rogue">data-slide-to="2"</code>, which shifts the slide position to a particular index beginning with 0.</p>
+    <P>The <code class="highlighter-rogue">data-ride="carousel"</code> attribute is used to mark a carousel as animating starting at page load. It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.</P>
+    <h4>Javascript</h4>
+    <p>Call carousel manually with:</p>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#carouselUsageJAvascript"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="carouselUsageJavascript"><span>$(</span>'.carousel'<span>).carousel();</span></code></pre>
+    </figure>
+    <div class="alert alert-info">
+        <h5><i class="fas fa-exclamation-circle"></i> Carousel javascript</h5>
+        <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/carousel/#options" target="_blank">Bootstrap's documentation</a> for options, methods and events.</p>
+    </div>
+    <h4>Change transition duration</h4>
+    <p>The transition duration of <code class="highlighter-rogue">.carousel-item</code> can be changed with the <code class="highlighter-rogue">$carousel-transition</code> Sass variable in <strong>src/scss/_bootstrap-variables-custom.scss</strong>. If multiple transitions are applied, make sure the transform transition is defined first (eg. <code class="highlighter-rogue">transition: transform 2s ease, opacity .5s ease-out</code>).</p>
+</div>
+
+                    <div class="tab-pane fade show active" id="v-pills-collapse" role="tabpanel" aria-labelledby="v-pills-collapse-tab">
+    <h2>Collapse</h2>
+    <p class="bd-lead">Toggle the visibility of content with a few classes and JavaScript plugins.</p>
+    <h3>How it works</h3>
+    <p>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the <code class="highlighter-rogue">height</code> from it’s current value to <code class="highlighter-rogue">0</code>. Given how CSS handles animations, you cannot use <code class="highlighter-rogue">padding</code> on a <code class="highlighter-rogue">.collapse</code> element. Instead, use the class as an independent wrapping element.</p>
+    <h3>Example</h3>
+    <p>Click the buttons below to show and hide another element via class changes:</p>
+    <ul>
+        <li><code class="highlighter-rogue">.collapse</code> hides content</li>
+        <li><code class="highlighter-rogue">.collapsing</code> is applied during transitions</li>
+        <li><code class="highlighter-rogue">.collapse.show</code> shows content</li>
+    </ul>
+    <p>You can use a link with the <code class="highlighter-rogue">href</code> attribute, or a button with the <code class="highlighter-rogue">data-target</code> attribute. In both cases, the <code class="highlighter-rogue">data-toggle="collapse"</code> is required.</p>
+    <h4>Link with href</h4>
+    <div class="bd-example">
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample">Link with href</a>
+        </p>
+        <div class="collapse" id="collapseLinkExample">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+            </div>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseLink"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="collapseLink">&lt;p&gt;
+    &lt;a class="btn btn-primary" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample"&gt;<span>Link with href</span>&lt;/a&gt;
+&lt;/p&gt;
+&lt;div class="collapse" id="collapseLinkExample"&gt;
+    &lt;div class="card card-body"&gt;
+        <span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <h4>Button with data-target</h4>
+    <div class="bd-example">
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseButtonExample" aria-expanded="false" aria-controls="collapseButtonExample">Button with data-target</button>
+        </p>
+        <div class="collapse" id="collapseButtonExample">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+            </div>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseButton"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="collapseButton">&lt;p&gt;
+    &lt;button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"&gt;
+    Button with data-target
+  &lt;/button&gt;
+&lt;div class="collapse" id="collapseButtonExample"&gt;
+    &lt;div class="card card-body"&gt;
+        <span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <h4>Accordion</h4>
+    <p>Using the card component, you can extend the default collapse behavior to create an accordion.</p>
+    <div class="bd-example">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseAccordion"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="collapseAccordion">&lt;div class="accordion" id="accordionExample"&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="card-header" id="headingOne"&gt;
+            &lt;h5 class="mb-0"&gt;
+                &lt;button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;<span>Collapsible Group Item #1</span>&lt;/button&gt;
+            &lt;/h5&gt;
+        &lt;/div&gt;
+
+        &lt;div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"&gt;
+            &lt;div class="card-body"&gt;
+                <span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</span>
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="card-header" id="headingTwo"&gt;
+            &lt;h5 class="mb-0"&gt;
+                &lt;button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;<span>Collapsible Group Item #2</span>&lt;/button&gt;
+            &lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample"&gt;
+            &lt;div class="card-body"&gt;
+                <span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</span>
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="card-header" id="headingThree"&gt;
+            &lt;h5 class="mb-0"&gt;
+                &lt;button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"&gt;<span>Collapsible Group Item #3</span>&lt;/button&gt;
+            &lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample"&gt;
+            &lt;div class="card-body"&gt;
+                <span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</span>
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+
+    <h3>Accessibility</h3>
+    <p>Be sure to add aria-expanded to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of aria-expanded="false". If you’ve set the collapsible element to be open by default using the show class, set aria-expanded="true" on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element). If the control element’s HTML element is not a button (e.g., an <a> or <div>), the attribute role="button" should be added to the element.</p>
+        <p>If your control element is targeting a single collapsible element – i.e. the data-target attribute is pointing to an id selector – you should add the aria-controls attribute to the control element, containing the id of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
+        <p>Note that Bootstrap’s current implementation does not cover the various keyboard interactions described in the WAI-ARIA Authoring Practices 1.1 accordion pattern - you will need to include these yourself with custom JavaScript.</p>
 </div>
 
                 </div>

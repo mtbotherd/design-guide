@@ -62,6 +62,7 @@
                     <partial src="./partials/cl/button-group.html" />
                     <partial src="./partials/cl/cards.html" />
                     <partial src="./partials/cl/carousel.html" />
+                    <partial src="./partials/cl/collapse.html" />
                 </div>
             </div>
         </div>
