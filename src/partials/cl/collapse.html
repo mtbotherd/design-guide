@@ -1,4 +1,4 @@
-<div class="tab-pane fade show active" id="v-pills-collapse" role="tabpanel" aria-labelledby="v-pills-collapse-tab">
+<div class="tab-pane fade show" id="v-pills-collapse" role="tabpanel" aria-labelledby="v-pills-collapse-tab">
     <h2>Collapse</h2>
     <p class="bd-lead">Toggle the visibility of content with a few classes and JavaScript plugins.</p>
     <h3>How it works</h3>
@@ -60,7 +60,8 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </figure>
-    <h4>Accordion</h4>
+    <hr />
+    <h3>Accordion</h3>
     <p>Using the card component, you can extend the default collapse behavior to create an accordion.</p>
     <div class="bd-example">
         <div class="accordion" id="accordionExample">
@@ -147,9 +148,34 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </figure>
-
+    <hr />
     <h3>Accessibility</h3>
-    <p>Be sure to add aria-expanded to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of aria-expanded="false". If you’ve set the collapsible element to be open by default using the show class, set aria-expanded="true" on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element). If the control element’s HTML element is not a button (e.g., an <a> or <div>), the attribute role="button" should be added to the element.</p>
-        <p>If your control element is targeting a single collapsible element – i.e. the data-target attribute is pointing to an id selector – you should add the aria-controls attribute to the control element, containing the id of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
-        <p>Note that Bootstrap’s current implementation does not cover the various keyboard interactions described in the WAI-ARIA Authoring Practices 1.1 accordion pattern - you will need to include these yourself with custom JavaScript.</p>
+    <p>Be sure to add The collapse plugin utilizes a few classes to handle the heavy lifting: aria-expanded</code> to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of <code class="highlighter-rogue">aria-expanded="false"</code>. If you’ve set the collapsible element to be open by default using the <code class="highlighter-rogue">show</code> class, set <code class="highlighter-rogue">aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element). If the control element’s HTML element is not a button (e.g., an <code class="highlighter-rogue">&lt;a&gt;</code> or <code class="highlighter-rogue">&lt;div&gt;</code>), the attribute <code class="highlighter-rogue">role="button"</code> should be added to the element.</p>
+    <p>If your control element is targeting a single collapsible element – i.e. the <code class="highlighter-rogue">data-target</code> attribute is pointing to an <code class="highlighter-rogue">id</code> selector – you should add the <code class="highlighter-rogue">aria-controls</code> attribute to the control element, containing the <code class="highlighter-rogue">id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
+    <p>Note that Bootstrap’s current implementation does not cover the various keyboard interactions described in the <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#accordion" target="
+            ">WAI-ARIA Authoring Practices 1.1 accordion pattern</a> - you will need to include these yourself with custom JavaScript.</p>
+    <hr />
+    <h3>Usage</h3>
+    <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+    <ul>
+        <li><code class="highlighter-rogue">.collapse</code> hides the content</li>
+        <li><code class="highlighter-rogue">.collapse.show</code> shows the content</li>
+        <li><code class="highlighter-rogue">.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+    </ul>
+    <p>These classes can be found in <code class="highlighter-rogue">_transitions.scss</code>.</p>
+    <h4>Data attributes</h4>
+    <p>Just add <code class="highlighter-rogue">data-toggle="collapse"</code> and a <code class="highlighter-rogue">data-target</code> to the element to automatically assign control of one or more collapsible elements. The <code class="highlighter-rogue">data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code class="highlighter-rogue">collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code class="highlighter-rogue">show</code>.</p>
+    <p>To add accordion-like group management to a collapsible area, add the data attribute <code class="highlighter-rogue">data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+    <h4>JavaScript</h4>
+    <p>Enable manually with:</p>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseJavascript"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="collapseJavascript"><span>$(</span>'.collapse<span>').collapse()</span></code></pre>
+    </figure>
+    <h4>Options, Methods and Events</h4>
+    <div class="bd-callout bd-callout-info">
+        <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/collapse/#options" target="_blank">Bootstrap's documentation</a> for options, methods and events.</p>
+    </div>
 </div>

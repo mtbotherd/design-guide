@@ -1,0 +1,49 @@
+<div class="tab-pane fade show" id="v-pills-dropdowns" role="tabpanel" aria-labelledby="v-pills-dropdowns-tab">
+    <h2>Dropdowns</h2>
+    <p class="bd-lead">Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
+    <h3>Overview</h3>
+    <p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an <a href="http://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/" target="_blank">intentional design decision</a>.</p>
+    <p>Dropdowns are built on a third party library, <a href="https://popper.js.org/" target="_blank">Popper.js</a>, which provides dynamic positioning and viewport detection. Be sure to include <code class="highlighter-rogue">popper.min.js</code> before Bootstrap’s JavaScript or use <code class="highlighter-rogue">bootstrap.bundle.min.js</code> / <code class="highlighter-rogue">bootstrap.bundle.js</code> which contains Popper.js. Popper.js isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.</p>
+    <hr />
+    <h3>Accessibility</h3>
+    <p>The <a href="https://www.w3.org/TR/wai-aria/" target="_blank">WAI ARIA</a> standard defines an actual <a href="https://www.w3.org/WAI/PF/aria/roles#menu" target="_blank">role="menu" widget</a>, but this is specific to application-like menus which trigger actions or functions. ARIA menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.</p>
+    <div class="bd-callout bd-callout-warning">
+        <p>Bootstrap’s dropdowns are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, <strong>Bootstrap does not expect (nor automatically add) any of the <code class="highlighter-rogue">role</code> and <code class="highlighter-rogue">aria- attributes</code> required for true ARIA menus</strong>. Authors will have to include these more specific attributes themselves.</p>
+    </div>
+    <div class="bd-callout bd-callout-info">
+        <p>Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual <code class="highlighter-rogue">.dropdown-item</code> elements using the cursor keys and close the menu with the <kbd>ESC</kbd> key.</p>
+    </div>
+    <hr />
+    <h3>Examples</h3>
+    <p>Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code class="highlighter-rogue">.dropdown</code>, or another element that declares <code class="highlighter-rogue">position: relative;</code>. Dropdowns can be triggered from <code class="highlighter-rogue">&lt;a&gt;</code> or <code class="highlighter-rogue">&lt;button&gt;</code> elements to better fit your potential needs.</p>
+    <h4>Single button</h4>
+    <p>Any single <code class="highlighter-rogue">.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code class="highlighter-rogue">&lt;button&gt;</code> elements:</p>
+    <div class="bd-example">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#dropdownSingle"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="dropdownSingle">&lt;div class="dropdown"&gt;
+    &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;<span>Dropdown button</span>&lt;/button&gt;
+    &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;<span>Action</span>&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;<span>Another action</span>&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;<span>Something else here</span>&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+
+    <h4>Options, Methods and Events</h4>
+    <div class="bd-callout bd-callout-info">
+        <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/dropdowns/#options" target="_blank">Bootstrap's documentation</a> for options, methods and events.</p>
+    </div>
+</div>
