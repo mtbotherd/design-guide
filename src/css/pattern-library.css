@@ -6417,4 +6417,10 @@ a.skip-to-content {
 .navbar li {
   text-align: right; }
 
+/************************************************
+    Button Styles
+************************************************/
+.btn:link {
+  border-bottom: none; }
+
 /*# sourceMappingURL=../maps/pattern-library.css.map */
