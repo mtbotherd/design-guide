@@ -1,0 +1,130 @@
+<div class="tab-pane fade show active" id="v-pills-forms" role="tabpanel" aria-labelledby="v-pills-forms-tab">
+    <h2>Forms</h2>
+    <p class="bd-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+    <h3>Form controls</h3>
+    <p>Textual form controls—like <code class="highlighter-rogue">&lt;input&gt;</code>s, <code class="highlighter-rogue">&lt;select&gt;</code>s, and <code class="highlighter-rogue">&lt;textarea&gt;</code>s—are styled with the <code class="highlighter-rogue">.form-control</code> class. Included are styles for general appearance, focus state, sizing, and more.</p>
+    <h4>Inputs</h4>
+    <div class="bd-callout bd-callout-info">
+        <p>Be sure to use an appropriate type attribute on all inputs (e.g., <code class="highlighter-rogue">email</code> for email address or <code class="highlighter-rogue">number</code> for numerical information) to take advantage of newer input controls like email verification, number selection, and more.</p>
+        <p>Input types available include:</p>
+        <ul>
+            <li><code class="highlighter-rogue">type="date"</code> - used for inputs that should contain a date</li>
+            <li><code class="highlighter-rogue">type="email"</code> - used for input fields that should contain an e-mail address</li>
+            <li><code class="highlighter-rogue">type="file"</code> - defines a file-select field and a "Browse" button for file uploads (refer to example below).</li>
+            <li><code class="highlighter-rogue">type="number"</code> - defines a numeric input field</li>
+            <li><code class="highlighter-rogue">type="password"</code> - defines a password field and masks the characters entered</li>
+            <li><code class="highlighter-rogue">type="search"</code> - used for search fields (a search field behaves like a regular text field)</li>
+            <li><code class="highlighter-rogue">type="text"</code> - defines a one-line text input field</li>
+            <li><code class="highlighter-rogue">type="time"</code> - allows the user to select a time (no time zone)</li>
+            <li><code class="highlighter-rogue">type="url"</code> - used for input fields that should contain a URL address.</li>
+        </ul>
+        <p>Refer to the <strong>Buttons</strong> component for usage of <code class="highlighter-rogue">type="submit"</code> and <code class="highlighter-rogue">type="reset"</code>.</p>
+    </div>
+    <h5>Example</h5>
+    <div class="bd-example">
+        <div class="form-group">
+            <label for="text">Text input</label>
+            <input type="text" class="form-control" id="text" name="text" placeholder="Enter text...">
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputText"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="inputText">&lt;div class="form-group"&gt;
+    &lt;label for="text"&gt;<span>Text input</span>&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="text" name="text" placeholder="Enter text..."&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <div class="form-group">
+            <label for="text">File input</label>
+            <input type="file" class="form-control-file" id="file" name="file">
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputFile"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="inputFile">&lt;div class="form-group"&gt;
+    &lt;label for="file"&gt;<span>File input</span>&lt;/label&gt;
+    &lt;input type="file" class="form-control-file" id="file" name="file"&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <hr />
+    <h4>Select menu</h4>
+    <p>The <code class="highlighter-rogue">&lt;select&gt;</code> element defines a list to select one or more options from. Add the <code class="highlighter-rogue">multiple</code> attribute to select multiple options.</p>
+    <p></p>
+    <div class="bd-example">
+        <div class="form-group">
+            <label for="select">Select one</label>
+            <select class="form-control" id="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#select"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="select">&lt;div class="form-group"&gt;
+    &lt;label for="select"&gt;Example select&lt;/label&gt;
+    &lt;select class="form-control" id="select"&gt;
+        &lt;option&gt;<span>1</span>&lt;/option&gt;
+        &lt;option&gt;<span>2</span>&lt;/option&gt;
+        &lt;option&gt;<span>3</span>&lt;/option&gt;
+        &lt;option&gt;<span>4</span>&lt;/option&gt;
+        &lt;option&gt;<span>5</span>&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <div class="form-group">
+            <label for="select">Select multiple</label>
+            <select class="form-control" id="selectMultiple" multiple>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#selectMultiple"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="selectMultiple">&lt;div class="form-group"&gt;
+    &lt;label for="select"&gt;Example select&lt;/label&gt;
+    &lt;select class="form-control" id="select" multiple&gt;
+        &lt;option&gt;<span>1</span>&lt;/option&gt;
+        &lt;option&gt;<span>2</span>&lt;/option&gt;
+        &lt;option&gt;<span>3</span>&lt;/option&gt;
+        &lt;option&gt;<span>4</span>&lt;/option&gt;
+        &lt;option&gt;<span>5</span>&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <hr />
+    <h4>Textarea</h4>
+    <p>The <code class="highlighter-rogue">&lt;textarea&gt;</code> element defines a multi-line input field (a text area):</p>
+    <div class="bd-example">
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#textarea"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="textarea">&lt;div class="form-group"&gt;
+    &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+    &lt;textarea class="form-control" id="textarea" rows="3"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+</div>

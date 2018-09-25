@@ -64,6 +64,7 @@
                     <partial src="./partials/cl/carousel.html" />
                     <partial src="./partials/cl/collapse.html" />
                     <partial src="./partials/cl/dropdowns.html" />
+                    <partial src="./partials/cl/forms.html" />
                 </div>
             </div>
         </div>
