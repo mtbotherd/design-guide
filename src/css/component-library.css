@@ -6473,6 +6473,10 @@ a.skip-to-content {
 .navbar li {
   text-align: right; }
 
+.footer {
+  background-color: #e9ecef;
+  padding-top: 1rem; }
+
 /************************************************
     Button Styles
 ************************************************/
