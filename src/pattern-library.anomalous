@@ -59,12 +59,20 @@
         </div>
     </main>
 
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/popper.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!-- build:js js/scripts.js -->
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <!-- endbuild -->
+    <footer>
+        <div class="footer fixed-bottom">
+            <div class="container">
+                <partial src="partials/footer.html" />
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- build:js js/scripts.js -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

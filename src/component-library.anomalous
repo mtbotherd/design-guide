@@ -70,6 +70,14 @@
         </div>
     </main>
 
+    <footer>
+        <div class="footer fixed-bottom">
+            <div class="container">
+                <partial src="partials/footer.html" />
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
