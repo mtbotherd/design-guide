@@ -2112,6 +2112,126 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     &lt;textarea class="form-control" id="textarea" rows="3"&gt;&lt;/textarea&gt;
 &lt;/div&gt;</code></pre>
     </figure>
+    <hr />
+    <h4>Sizing</h4>
+    <p>Set heights using classes like <code class="highlight-rogue">.form-control-lg</code> and <code class="highlight-rogue">.form-control-sm</code>.</p>
+    <div class="bd-example">
+        <input class="form-control form-control-lg" type="text" placeholder="Large input">
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputLg"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="inputLg">&lt;input class="form-control form-control-lg" type="text" placeholder="Large input"&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <select class="form-control form-control-sm">
+            <option>Small select</option>
+        </select>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#selectSm"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="selectSm">&lt;select class="form-control form-control-sm"&gt;
+    &lt;option&gt;<span>Small select</span>&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+    </figure>
+    <hr />
+    <h4>Readonly</h4>
+    <p>Add the <code class="highlighter-rogue">readonly</code> boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
+    <div class="bd-example">
+        <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#readonly"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="readonly">&lt;input class="form-control" type="text" placeholder="Readonly input here…" readonly&gt;</code></pre>
+    </figure>
+    <h5>Readonly plain text</h5>
+    <p>If you want to have <code class="highlighter-rogue">&lt;input readonly&gt;</code> elements in your form styled as plain text, use the <code class="highlighter-rogue">.form-control-plaintext</code> class to remove the default form field styling and preserve the correct margin and padding.</p>
+    <div class="bd-example">
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#readonlyPlainText"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="readonlyPlainText">&lt;div class="form-group row"&gt;
+    &lt;label for="staticEmail" class="col-sm-2 col-form-label"&gt;<span>Email</span>&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+        &lt;input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group row"&gt;
+    &lt;label for="inputPassword" class="col-sm-2 col-form-label"&gt;<span>Password</span>&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+        &lt;input type="password" class="form-control" id="inputPassword" placeholder="Password"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <hr />
+    <h4> Checkboxes and radios</h4>
+    <h5>Stacked (default)</h5>
+    <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with <code class="highlighter-rogue">.form-check</code>.</p>
+    <div class="bd-example">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+            <label class="form-check-label" for="checkbox1">Checkbox 1</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+            <label class="form-check-label" for="checkbox2">Checkbox 2</label>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#checkboxStacked"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="checkboxStacked">&lt;div class="form-check"&gt;
+    &lt;input class="form-check-input" type="checkbox" value="" id="checkbox1"&gt;
+    &lt;label class="form-check-label" for="checkbox1"&gt;<span>Checkbox 1</span>&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-check"&gt;
+    &lt;input class="form-check-input" type="checkbox" value="" id="checkbox2"&gt;
+    &lt;label class="form-check-label" for="checkbox2"&gt;<span>Checkbox 2</span>&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+    <div class="bd-example">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio1">
+            <label class="form-check-label" for="radio1">Radio 1</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio2">
+            <label class="form-check-label" for="radio2">Radio 2</label>
+        </div>
+    </div>
+    <div class="bd-clipboard">
+        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#checkboxStacked"><i class="far fa-clipboard fa-2x"></i></button>
+    </div>
+    <figure class="highlight">
+        <pre><code id="checkboxStacked">&lt;div class="form-check"&gt;
+    &lt;input class="form-check-input" type="radio" value="" id="radio1"&gt;
+    &lt;label class="form-check-label" for="radio1"&gt;<span>Radio 1</span>&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-check"&gt;
+    &lt;input class="form-check-input" type="radio" value="" id="radio2"&gt;
+    &lt;label class="form-check-label" for="radio2"&gt;<span>Radio 2</span>&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
 </div>
 
                 </div>
