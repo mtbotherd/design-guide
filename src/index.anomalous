@@ -52,7 +52,6 @@
             <h1>Website Design Guide</h1>
             <partial src="partials/card-deck.html" />
         </div>
-        </div>
     </main>
 
     <footer>
