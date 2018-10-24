@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!-- Top NavBar -->
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <!-- Skip nav - for accessibility -->
@@ -45,22 +45,12 @@
     </header>
 
     <!-- Main content -->
-    <main id="mainContent">
-        <div class="container">
-
-            <!-- Content -->
-            <h1>Website Design Guide</h1>
-            <partial src="partials/card-deck.html" />
-        </div>
+    <main class="container">
+        <h1 class="sr-only">Website Design Guide</h1>
+        <partial src="partials/card-deck.html" />
     </main>
 
-    <footer>
-        <div class="footer fixed-bottom">
-            <div class="container">
-                <partial src="partials/footer.html" />
-            </div>
-        </div>
-    </footer>
+    <partial src="partials/footer.html" />
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>

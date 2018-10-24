@@ -6371,62 +6371,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-/************************************************
-    Responsive Type Scales Map
-************************************************/
-html {
-  font-size: 14px; }
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px; } }
-  @media (min-width: 992px) {
-    html {
-      font-size: 18px; } }
-
-h1, .h1 {
-  font-size: 2.48832rem; }
-
-h2, .h2 {
-  font-size: 2.0736rem; }
-
-h3, .h3 {
-  font-size: 1.728rem; }
-
-h4, .h4 {
-  font-size: 1.44rem; }
-
-h5, .h5 {
-  font-size: 1.2rem; }
-
-h6, .h6 {
-  font-size: 1rem; }
-
-.display-4 {
-  font-size: 3.48832rem; }
-
-.display-3 {
-  font-size: 4.18598rem; }
-
-.display-2 {
-  font-size: 5.02318rem; }
-
-.display-1 {
-  font-size: 6.02782rem; }
-
-@media (min-width: 768px) {
-  h1, .h1 {
-    font-size: 2.48832rem; }
-  h2, .h2 {
-    font-size: 2.0736rem; }
-  h3, .h3 {
-    font-size: 1.728rem; }
-  h4, .h4 {
-    font-size: 1.44rem; }
-  h5, .h5 {
-    font-size: 1.2rem; }
-  h6, .h6 {
-    font-size: 1rem; } }
-
 /*############################################
         Must have Mixins
         http://w3bits.com/sass-mixins/
@@ -6434,6 +6378,9 @@ h6, .h6 {
 /************************************************
     Base Styles
 ************************************************/
+.card-deck {
+  margin: 9rem 0; }
+
 h1 {
   margin-top: .5rem;
   margin-bottom: 1rem; }
@@ -6449,6 +6396,9 @@ a:link {
     .highlight pre code span {
       color: #495057; }
 
+/************************************************
+    Header
+************************************************/
 /************************************************
     Header and Navigation Styles
 ************************************************/
@@ -6473,9 +6423,12 @@ a.skip-to-content {
 .navbar li {
   text-align: right; }
 
+/************************************************
+    Footer
+************************************************/
 .footer {
-  background-color: #e9ecef;
-  padding-top: 1rem; }
+  border-top: 1px solid #e9ecef;
+  padding: 1rem 0; }
 
 /************************************************
     Button Styles
