@@ -6439,6 +6439,12 @@ a.skip-to-content {
 /************************************************
     CL Specific Styles
 ************************************************/
+/*****************************************
+    Component Library base styles.
+*****************************************/
+h2 {
+  border-bottom: 1px solid #adb5bd; }
+
 /************************************************
     CL Sidebar Styles
 ************************************************/
@@ -6463,7 +6469,8 @@ body {
   #sidebar-container .nav-link {
     color: #fff;
     border-bottom: 1px solid #212529;
-    border-radius: 0; }
+    border-radius: 0;
+    padding: 0.25rem 1rem; }
     #sidebar-container .nav-link:hover {
       background-color: #6c757d; }
   #sidebar-container .active {

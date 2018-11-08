@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Metro Transit | Website Design Guide</title>
+    <link rel='shortcut icon' href='images/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
     <!-- build:css css/component-library.css -->
@@ -28,7 +29,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="brand-style-guide.html">Brand Style Guide <span class="sr-only">(current)</span></a>
                         </li>
@@ -47,15 +48,15 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <a class="dropdown-item" href="#badges">Badges</a>
         <a class="dropdown-item" href="#breadcrumbs">Breadcrumbs</a>
         <a class="dropdown-item" href="#buttons">Buttons</a>
-        <a class="dropdown-item" href="#buttonGroups">Button Groups</a>
+        <a class="dropdown-item" href="#button-groups">Button Groups</a>
         <a class="dropdown-item" href="#cards">Cards</a>
         <a class="dropdown-item" href="#Carousel">Carousel</a>
         <a class="dropdown-item" href="#collapse">Collapse/Expand</a>
         <a class="dropdown-item" href="#dropdowns">Dropdowns</a>
         <a class="dropdown-item" href="#forms">Forms</a>
-        <a class="dropdown-item" href="#inputGroups">Input Groups</a>
-        <a class="dropdown-item" href="#listGroups">List Groups</a>
-        <a class="dropdown-item" href="#modal">Modal</a>
+        <a class="dropdown-item" href="#input-group">Input Groups</a>
+        <a class="dropdown-item" href="#list-group">List Groups</a>
+        <a class="dropdown-item" href="#modals">Modal</a>
         <a class="dropdown-item" href="#navigation">Navigation</a>
         <a class="dropdown-item" href="#pagination">Pagination</a>
         <a class="dropdown-item" href="#popovers">Popovers</a>
@@ -63,6 +64,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </div>
 </li>
 <!-- Smaller devices menu END -->
+
                     </ul>
                 </div>
             </div>
@@ -74,26 +76,26 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
             <nav id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-    <div class="nav flex-column nav-pills sticky-top sticky-offset" id="v-pills-tab" role="menu" aria-orientation="vertical">
+    <div class="nav flex-column nav-pills sticky-top sticky-offset" id="tab" role="menu" aria-orientation="vertical">
         <li class="nav-link"><h2>COMPONENT LIBRARY MENU</h2></li>
-        <a class="nav-link active" id="v-pills-alerts-tab" data-toggle="pill" href="#v-pills-alerts" role="menuitem" aria-controls="v-pills-alerts" aria-selected="true">Alerts</a>
-        <a class="nav-link" id="v-pills-badges-tab" data-toggle="pill" href="#v-pills-badges" role="menuitem" aria-controls="v-pills-badges" aria-selected="false">Badges</a>
-        <a class="nav-link" id="v-pills-breadcrumbs-tab" data-toggle="pill" href="#v-pills-breadcrumbs" role="menuitem" aria-controls="v-pills-breadcrumbs" aria-selected="false">Breadcrumbs</a>
-        <a class="nav-link" id="v-pills-buttons-tab" data-toggle="pill" href="#v-pills-buttons" role="menuitem" aria-controls="v-pills-buttons" aria-selected="false">Buttons</a>
-        <a class="nav-link" id="v-pills-button-group-tab" data-toggle="pill" href="#v-pills-button-group" role="menuitem" aria-controls="v-pills-button-group" aria-selected="false">Button Group</a>
-        <a class="nav-link" id="v-pills-cards-tab" data-toggle="pill" href="#v-pills-cards" role="menuitem" aria-controls="v-pills-cards" aria-selected="false">Cards</a>
-        <a class="nav-link" id="v-pills-carousel-tab" data-toggle="pill" href="#v-pills-carousel" role="menuitem" aria-controls="v-pills-carousel" aria-selected="false">Carousel</a>
-        <a class="nav-link" id="v-pills-collapse-tab" data-toggle="pill" href="#v-pills-collapse" role="menuitem" aria-controls="v-pills-collapse" aria-selected="false">Collapse</a>
-        <a class="nav-link" id="v-pills-dropdowns-tab" data-toggle="pill" href="#v-pills-dropdowns" role="menuitem" aria-controls="v-pills-dropdowns" aria-selected="false">Dropdowns</a>
-        <a class="nav-link" id="v-pills-forms-tab" data-toggle="pill" href="#v-pills-forms" role="menuitem" aria-controls="v-pills-forms" aria-selected="false">Forms</a>
-        <a class="nav-link" id="v-pills-input-group-tab" data-toggle="pill" href="#v-pills-input-group" role="menuitem" aria-controls="v-pills-input-group" aria-selected="false">Input Group</a>
-        <a class="nav-link" id="v-pills-list-group-tab" data-toggle="pill" href="#v-pills-list-group" role="menuitem" aria-controls="v-pills-list-group" aria-selected="false">List Group</a>
-        <a class="nav-link" id="v-pills-modals-tab" data-toggle="pill" href="#v-pills-modals" role="menuitem" aria-controls="v-pills-modals" aria-selected="false">Modals</a>
-        <a class="nav-link" id="v-pills-navs-tab" data-toggle="pill" href="#v-pills-navs" role="menuitem" aria-controls="v-pills-navs" aria-selected="false">Navs</a>
-        <a class="nav-link" id="v-pills-navbar-tab" data-toggle="pill" href="#v-pills-navbar" role="menuitem" aria-controls="v-pills-navbar" aria-selected="false">Navbar</a>
-        <a class="nav-link" id="v-pills-pagination-tab" data-toggle="pill" href="#v-pills-pagination" role="menuitem" aria-controls="v-pills-pagination" aria-selected="false">Pagination</a>
-        <a class="nav-link" id="v-pills-popovers-tab" data-toggle="pill" href="#v-pills-popovers" role="menuitem" aria-controls="v-pills-popovers" aria-selected="false">Popovers</a>
-        <a class="nav-link" id="v-pills-tooltips-tab" data-toggle="pill" href="#v-pills-tooltips" role="menuitem" aria-controls="v-pills-tooltips" aria-selected="false">Tooltips</a>
+        <a class="nav-link active" id="alerts-tab" data-toggle="pill" href="#alerts" role="menuitem" aria-controls="alerts" aria-selected="true">Alerts</a>
+        <a class="nav-link" id="badges-tab" data-toggle="pill" href="#badges" role="menuitem" aria-control="badges" aria-selected="false">Badges</a>
+        <a class="nav-link" id="breadcrumbs-tab" data-toggle="pill" href="#breadcrumbs" role="menuitem" aria-control="breadcrumbs" aria-selected="false">Breadcrumbs</a>
+        <a class="nav-link" id="buttons-tab" data-toggle="pill" href="#buttons" role="menuitem" aria-control="buttons" aria-selected="false">Buttons</a>
+        <a class="nav-link" id="button-group-tab" data-toggle="pill" href="#button-group" role="menuitem" aria-control="button-group" aria-selected="false">Button Group</a>
+        <a class="nav-link" id="cards-tab" data-toggle="pill" href="#cards" role="menuitem" aria-control="cards" aria-selected="false">Cards</a>
+        <a class="nav-link" id="carousel-tab" data-toggle="pill" href="#carousel" role="menuitem" aria-control="carousel" aria-selected="false">Carousel</a>
+        <a class="nav-link" id="collapse-tab" data-toggle="pill" href="#collapse" role="menuitem" aria-control="collapse" aria-selected="false">Collapse</a>
+        <a class="nav-link" id="dropdowns-tab" data-toggle="pill" href="#dropdowns" role="menuitem" aria-control="dropdowns" aria-selected="false">Dropdowns</a>
+        <a class="nav-link" id="forms-tab" data-toggle="pill" href="#forms" role="menuitem" aria-controls="forms" aria-selected="false">Forms</a>
+        <a class="nav-link" id="input-group-tab" data-toggle="pill" href="#input-group" role="menuitem" aria-controls="input-group" aria-selected="false">Input Group</a>
+        <a class="nav-link" id="list-group-tab" data-toggle="pill" href="#list-group" role="menuitem" aria-control="list-group" aria-selected="false">List Group</a>
+        <a class="nav-link" id="modals-tab" data-toggle="pill" href="#modals" role="menuitem" aria-control="modals" aria-selected="false">Modals</a>
+        <a class="nav-link" id="navs-tab" data-toggle="pill" href="#navs" role="menuitem" aria-control="navs" aria-selected="false">Navs</a>
+        <a class="nav-link" id="navbar-tab" data-toggle="pill" href="#navbar" role="menuitem" aria-control="navbar" aria-selected="false">Navbar</a>
+        <a class="nav-link" id="pagination-tab" data-toggle="pill" href="#pagination" role="menuitem" aria-control="pagination" aria-selected="false">Pagination</a>
+        <a class="nav-link" id="popovers-tab" data-toggle="pill" href="#popovers" role="menuitem" aria-control="popovers" aria-selected="false">Popovers</a>
+        <a class="nav-link" id="tooltips-tab" data-toggle="pill" href="#tooltips" role="menuitem" aria-control="tooltips" aria-selected="false">Tooltips</a>
     </div>
 </nav>
 
@@ -102,7 +104,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             <!-- Main content -->
             <div class="col py-3">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-alerts" role="tabpanel" aria-labelledby="v-pills-alerts-tab">
+                    <div class="tab-pane fade show active" id="alerts" role="tabpanel" aria-labelledby="alerts-tab">
     <h2>Alerts</h2>
     <p class="bd-lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
     <h3>Example</h3>
@@ -215,7 +217,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </figure>
 </div>
 
-                    <div class="tab-pane fade" id="v-pills-badges" role="tabpanel" aria-labelledby="v-pills-badges-tab">
+                    <div class="tab-pane fade" id="badges" role="tabpanel" aria-labelledby="badges-tab">
     <h2>Badges</h2>
     <p class="bd-lead">Use for displaying counts and labels.</p>
     <h3>Example</h3>
@@ -322,7 +324,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </figure>
 </div>
 
-                    <div class="tab-pane fade" id="v-pills-breadcrumbs" role="tabpanel" aria-labelledby="v-pills-breadcrumbs-tab">
+                    <div class="tab-pane fade" id="breadcrumbs" role="tabpanel" aria-labelledby="breadcrumbs-tab">
     <h2>Breadcrumbs</h2>
     <p class="bd-lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
     <h3>Example</h3>
@@ -351,7 +353,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </figure>
 </div>
 
-                    <div class="tab-pane fade" id="v-pills-buttons" role="tabpanel" aria-labelledby="v-pills-buttons-tab">
+                    <div class="tab-pane fade" id="buttons" role="tabpanel" aria-labelledby="buttons-tab">
     <h2>Buttons</h2>
     <p class="bd-lead">Custom button styles for actions in form, dialogs and more with support for multiple sizes, states and more.</p>
     <h3>Examples</h3>
@@ -627,12 +629,12 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </figure>
 </div>
 
-                    <div class="tab-pane fade" id="v-pills-button-group" role="tabpanel" aria-labelledby="v-pills-button-group-tab">
+                    <div class="tab-pane fade" id="button-group" role="tabpanel" aria-labelledby="button-group-tab">
     <h2>Button Group</h2>
     <p>Revisit if this component is warranted.</p>
 </div>
 
-                    <div class="tab-pane fade" id="v-pills-cards" role="tabpanel" aria-labelledby="v-pills-cards-tab">
+                    <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab">
     <h2>Cards</h2>
     <p class="bd-lead">Cards provide a flexible and extensible content container with multiple variants and options.</p>
     <h3>About cards</h3>
@@ -1395,7 +1397,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </figure>
 </div>
 
-                        <div class="tab-pane fade" id="v-pills-carousel" role="tabpanel" aria-labelledby="v-pills-carousel-tab">
+                        <div class="tab-pane fade" id="carousel" role="tabpanel" aria-labelledby="carousel-tab">
     <h2>Carousel</h2>
     <p class="bd-lead">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
     <h3>How it works</h3>
@@ -1751,7 +1753,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <p>The transition duration of <code class="highlighter-rogue">.carousel-item</code> can be changed with the <code class="highlighter-rogue">$carousel-transition</code> Sass variable in <strong>src/scss/_bootstrap-variables-custom.scss</strong>. If multiple transitions are applied, make sure the transform transition is defined first (eg. <code class="highlighter-rogue">transition: transform 2s ease, opacity .5s ease-out</code>).</p>
 </div>
 
-                    <div class="tab-pane fade show" id="v-pills-collapse" role="tabpanel" aria-labelledby="v-pills-collapse-tab">
+                    <div class="tab-pane fade show" id="collapse" role="tabpanel" aria-labelledby="collapse-tab">
     <h2>Collapse</h2>
     <p class="bd-lead">Toggle the visibility of content with a few classes and JavaScript plugins.</p>
     <h3>How it works</h3>
@@ -1933,7 +1935,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </div>
 </div>
 
-                    <div class="tab-pane fade show" id="v-pills-dropdowns" role="tabpanel" aria-labelledby="v-pills-dropdowns-tab">
+                    <div class="tab-pane fade show" id="dropdowns" role="tabpanel" aria-labelledby="dropdowns-tab">
     <h2>Dropdowns</h2>
     <p class="bd-lead">Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
     <h3>Overview</h3>
@@ -1983,7 +1985,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </div>
 </div>
 
-                    <div class="tab-pane fade show active" id="v-pills-forms" role="tabpanel" aria-labelledby="v-pills-forms-tab">
+                    <div class="tab-pane fade" id="forms" role="tabpanel" aria-labelledby="forms-tab">
     <h2>Forms</h2>
     <p class="bd-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
     <h3>Form controls</h3>
@@ -2232,6 +2234,18 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     &lt;label class="form-check-label" for="radio2"&gt;<span>Radio 2</span>&lt;/label&gt;
 &lt;/div&gt;</code></pre>
     </figure>
+</div>
+
+                    <div class="tab-pane" id="input-group" role="tabpanel" aria-labelledby="input-group-tab">
+    <h2>Input group</h2>
+</div>
+
+                    <div class="tab-pane fade" id="list-group" role="tabpanel" aria-labelledby="list-group-tab">
+    <h2>List group</h2>
+</div>
+
+                    <div class="tab-pane fade" id="modals" role="tabpanel" aria-labelledby="modals-tab">
+    <h2>Modals</h2>
 </div>
 
                 </div>
