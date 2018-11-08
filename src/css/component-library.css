@@ -6445,6 +6445,16 @@ a.skip-to-content {
 h2 {
   border-bottom: 1px solid #adb5bd; }
 
+/*****************************************
+    Right sidebar styles.
+*****************************************/
+ul.subnav {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
+  ul.subnav.sticky-offset {
+    top: 77px; }
+
 /************************************************
     CL Sidebar Styles
 ************************************************/
