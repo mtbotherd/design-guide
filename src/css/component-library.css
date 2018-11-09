@@ -6378,6 +6378,9 @@ a.text-dark:hover, a.text-dark:focus {
 /************************************************
     Base Styles
 ************************************************/
+body {
+  padding-top: 61px; }
+
 .card-deck {
   margin: 9rem 0; }
 
@@ -6448,6 +6451,13 @@ h2 {
 /*****************************************
     Right sidebar styles.
 *****************************************/
+h3[id]:before {
+  display: block;
+  height: 6rem;
+  margin-top: -6rem;
+  visibility: hidden;
+  content: ""; }
+
 ul.subnav {
   list-style-type: none;
   margin-left: 0;
@@ -6493,5 +6503,13 @@ body {
 ************************************************/
 .card .card-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+/*****************************************
+    Bootstrap override styles.
+*****************************************/
+.alert-dismissible .close {
+  top: 0.75rem;
+  right: 1.25rem;
+  padding: 0; }
 
 /*# sourceMappingURL=../maps/component-library.css.map */

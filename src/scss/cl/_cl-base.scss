@@ -8,6 +8,13 @@ h2 {
 /*****************************************
     Right sidebar styles.
 *****************************************/
+h3[id]:before {
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    visibility: hidden;
+    content: "";
+}
 ul.subnav {
     list-style-type: none;
     margin-left: 0;

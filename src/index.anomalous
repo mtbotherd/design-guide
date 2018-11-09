@@ -47,11 +47,11 @@
 
     <!-- Main content -->
     <main class="container">
-        <h1 class="sr-only">Website Design Guide</h1>
+        <!-- <img class="img-fluid mb-3" src="./images/sb-halftime-show.jpg" /> -->
         <partial src="partials/card-deck.html" />
     </main>
 
-    <partial src="partials/footer.html" />
+    <!-- <partial src="partials/footer.html" /> -->
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>

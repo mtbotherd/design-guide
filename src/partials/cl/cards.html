@@ -1,27 +1,29 @@
 <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab">
-    <h2>Cards</h2>
-    <p class="bd-lead">Cards provide a flexible and extensible content container with multiple variants and options.</p>
-    <h3>About cards</h3>
-    <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
-    <hr />
-    <h3>Example</h3>
-    <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code class="highlighter-rogue">margin</code> by default, so use <a href="">spacing utilities</a> as needed.</p>
-    <p>Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a href="">sizing options</a>.</p>
-    <div class="bd-example">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src='data:image/svg+xml;charset=UTF-8,<svg width="286" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165e815b66d text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:14pt } </style></defs><g id="holder_165e815b66d"><rect width="286" height="180" fill="#777"></rect><g><text x="107.203125" y="96.3">286x180</text></g></g></svg>' alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="row">
+        <div class="col">
+            <h2>Cards</h2>
+            <p class="bd-lead">Cards provide a flexible and extensible content container with multiple variants and options.</p>
+            <h3>About cards</h3>
+            <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+            <hr />
+            <h3 id="cardExample">Example</h3>
+            <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code class="highlighter-rogue">margin</code> by default, so use <a href="">spacing utilities</a> as needed.</p>
+            <p>Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a href="">sizing options</a>.</p>
+            <div class="bd-example">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src='data:image/svg+xml;charset=UTF-8,<svg width="286" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165e815b66d text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:14pt } </style></defs><g id="holder_165e815b66d"><rect width="286" height="180" fill="#777"></rect><g><text x="107.203125" y="96.3">286x180</text></g></g></svg>' alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#card"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="card">&lt;div class="card" style="width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#card"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="card">&lt;div class="card" style="width: 18rem;"&gt;
     &lt;img class="card-img-top" src="../" alt="Card image cap" /&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Card title</span>&lt;/h5&gt;
@@ -29,44 +31,44 @@
         &lt;a href="#" class="btn btn-primary"&gt;<span>Go somewhere</span>&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Content types</h3>
-    <p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p>
-    <h4>Body</h4>
-    <p>The building block of a card is the <span class="highlighter-rogue">.card-body</span>. Use it whenever you need a padded section within a card.</p>
-    <div class="bd-example">
-        <div class="card">
-            <div class="card-body">This is some text within a card body.</div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBody"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBody">&lt;div class="card"&gt;
+            </figure>
+            <hr />
+            <h3 id="cardContentTypes">Content types</h3>
+            <p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p>
+            <h4>Body</h4>
+            <p>The building block of a card is the <span class="highlighter-rogue">.card-body</span>. Use it whenever you need a padded section within a card.</p>
+            <div class="bd-example">
+                <div class="card">
+                    <div class="card-body">This is some text within a card body.</div>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBody"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBody">&lt;div class="card"&gt;
     &lt;div class="card-body"&gt;<span>This is some text within a card body.</span>&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <h4>Titles, Text and links</h4>
-    <p>Card titles are used by adding <code class="highlighter-rogue">.card-title</code> to a <code class="highlighter-rogue">&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding <code class="highlighter-rogue">.card-link</code> to an <code class="highlighter-rogue">&lt;a&gt;</code> tag.</p>
-    <p>Subtitles are used by adding a <code class="highlighter-rogue">.card-subtitle</code> to a <code class="highlighter-rogue">&lt;h*&gt;</code> tag. If the <code class="highlighter-rogue">.card-title</code> and the <code class="highlighter-rogue">.card-subtitle</code> items are placed in a <code class="highlighter-rogue">.card-body</code> item, the card title and subtitle are aligned nicely.</p>
-    <div class="bd-example">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+            </figure>
+            <h4>Titles, Text and links</h4>
+            <p>Card titles are used by adding <code class="highlighter-rogue">.card-title</code> to a <code class="highlighter-rogue">&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding <code class="highlighter-rogue">.card-link</code> to an <code class="highlighter-rogue">&lt;a&gt;</code> tag.</p>
+            <p>Subtitles are used by adding a <code class="highlighter-rogue">.card-subtitle</code> to a <code class="highlighter-rogue">&lt;h*&gt;</code> tag. If the <code class="highlighter-rogue">.card-title</code> and the <code class="highlighter-rogue">.card-subtitle</code> items are placed in a <code class="highlighter-rogue">.card-body</code> item, the card title and subtitle are aligned nicely.</p>
+            <div class="bd-example">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardText"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardText">&lt;div class="card" style="width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardText"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardText">&lt;div class="card" style="width: 18rem;"&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Card title</span>&lt;/h5&gt;
         &lt;h6 class="card-subtitle mb-2 text-muted"&gt;<span>Card subtitle</span>&lt;/h6&gt;
@@ -75,55 +77,55 @@
         &lt;a href="#" class="card-link"&gt;<span>Another link</span>&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <h4>Images</h4>
-    <p><code class="highlighter-rogue">.card-img-top</code> places an image to the top of the card. With <code class="highlighter-rogue">.card-text</code>, text can be added to the card. Text within <code class="highlighter-rogue">.card-text</code> can also be styled with the standard HTML tags.</p>
-    <div class="bd-example">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src='data:image/svg+xml;utf8,<svg width="286" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165e87f0c56 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:14pt } </style></defs><g id="holder_165e87f0c56"><rect width="286" height="180" fill="#777"></rect><g><text x="99.4375" y="96.3375">Image cap</text></g></g></svg>' alt="Card image cap">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <h4>Images</h4>
+            <p><code class="highlighter-rogue">.card-img-top</code> places an image to the top of the card. With <code class="highlighter-rogue">.card-text</code>, text can be added to the card. Text within <code class="highlighter-rogue">.card-text</code> can also be styled with the standard HTML tags.</p>
+            <div class="bd-example">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src='data:image/svg+xml;utf8,<svg width="286" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165e87f0c56 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:14pt } </style></defs><g id="holder_165e87f0c56"><rect width="286" height="180" fill="#777"></rect><g><text x="99.4375" y="96.3375">Image cap</text></g></g></svg>' alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardImage"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardImage">&lt;div class="card" style="width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardImage"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardImage">&lt;div class="card" style="width: 18rem;"&gt;
     &lt;img class="card-img-top" src=".../" alt="Card image cap"&gt;
     &lt;div class="card-body"&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Kitchen sink</h3>
-    <p>Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.</p>
-    <div class="bd-example">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src='data:image/svg+xml;utf8,<svg width="286" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165e87f0c56 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:14pt } </style></defs><g id="holder_165e87f0c56"><rect width="286" height="180" fill="#777"></rect><g><text x="99.4375" y="96.3375">Image cap</text></g></g></svg>' alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Below is a list group follow by a couple of links.</p>
+            </figure>
+            <hr />
+            <h3 id="kitchenSink">Kitchen sink</h3>
+            <p>Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.</p>
+            <div class="bd-example">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src='data:image/svg+xml;utf8,<svg width="286" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165e87f0c56 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:14pt } </style></defs><g id="holder_165e87f0c56"><rect width="286" height="180" fill="#777"></rect><g><text x="99.4375" y="96.3375">Image cap</text></g></g></svg>' alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>Below is a list group follow by a couple of links.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">List group item</li>
+                        <li class="list-group-item">List group item</li>
+                        <li class="list-group-item">List group item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">List group item</li>
-                <li class="list-group-item">List group item</li>
-                <li class="list-group-item">List group item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardKitchenSink"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardKitchenSink"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardKitchenSink">&lt;div class="card" style="width: 18rem;"&gt;
+            <figure class="highlight">
+                <pre><code id="cardKitchenSink">&lt;div class="card" style="width: 18rem;"&gt;
     &lt;img class="card-img-top" src=".../" alt="Card image cap"&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Card title</span>&lt;/h5&gt;
@@ -140,25 +142,25 @@
         &lt;a href="#" class="card-link"&gt;<span>Another link</span>&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Header and footer</h3>
-    <div class="bd-example">
-        <div class="card">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </figure>
+            <hr />
+            <h3 id="cardHeaderFooter">Header and footer</h3>
+            <div class="bd-example">
+                <div class="card">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">Footer</div>
+                </div>
             </div>
-            <div class="card-footer text-muted">Footer</div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardHeaderFooter"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardHeaderFooter">&lt;div class="card"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardHeaderFooter"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardHeaderFooter">&lt;div class="card"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Special title treatment</span>&lt;/h5&gt;
@@ -167,39 +169,39 @@
     &lt;/div&gt;
     &lt;div class="card-footer text-muted"&gt;<span>Footer</span>&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Sizing</h3>
-    <p>Cards assume no specific <code class="highlighter-rogue">width</code> to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.</p>
-    <h4>Using grid markup</h4>
-    <p>Using the grid, wrap cards in columns and rows as needed.</p>
-    <div class="bd-example">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            </figure>
+            <hr />
+            <h3 id="cardSizing">Sizing</h3>
+            <p>Cards assume no specific <code class="highlighter-rogue">width</code> to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.</p>
+            <h4>Using grid markup</h4>
+            <p>Using the grid, wrap cards in columns and rows as needed.</p>
+            <div class="bd-example">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardSizeGrid"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardSizeGrid"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardSizeGrid">&lt;div class="row"&gt;
+            <figure class="highlight">
+                <pre><code id="cardSizeGrid">&lt;div class="row"&gt;
     &lt;div class="col-sm-6"&gt;
         &lt;div class="card"&gt;
             &lt;div class="card-body"&gt;
@@ -219,30 +221,30 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <h4>USing utilities</h4>
-    <p>Use our handful of available <a href="https://getbootstrap.com/docs/4.1/utilities/sizing/" target="_blank">sizing utilities</a> to quickly set a card’s width.</p>
-    <div class="bd-example">
-        <div class="card w-75">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Button</a>
+            </figure>
+            <h4>Using utilities</h4>
+            <p>Use our handful of available <a href="https://getbootstrap.com/docs/4.1/utilities/sizing/" target="_blank">sizing utilities</a> to quickly set a card’s width.</p>
+            <div class="bd-example">
+                <div class="card w-75">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+                <div class="card w-50">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card w-50">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Button</a>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardSizeUtilities"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardSizeUtilities"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardSizeUtilities">&lt;div class="card w-75"&gt;
+            <figure class="highlight">
+                <pre><code id="cardSizeUtilities">&lt;div class="card w-75"&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>With supporting text below as a natural lead-in to additional content.</span>&lt;/p&gt;
@@ -256,35 +258,35 @@
         &lt;a href="#" class="btn btn-primary"&gt;<span>Button</span>&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Images</h3>
-    <p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.</p>
-    <h4>Image caps</h4>
-    <p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p>
-    <div class="bd-example">
-        <div class="card mb-3">
-            <img class="card-img-top" src='data:image/svg+xml;utf8,<svg width="894" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 894 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165ed78d132 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:45pt } </style></defs><g id="holder_165ed78d132"><rect width="894" height="180" fill="#777"></rect><g><text x="331.8984375" y="110.15625">894x180</text></g></g></svg>' alt="Card image cap" />
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </figure>
+            <hr />
+            <h3 id="cardImages">Images</h3>
+            <p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.</p>
+            <h4>Image caps</h4>
+            <p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p>
+            <div class="bd-example">
+                <div class="card mb-3">
+                    <img class="card-img-top" src='data:image/svg+xml;utf8,<svg width="894" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 894 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165ed78d132 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:45pt } </style></defs><g id="holder_165ed78d132"><rect width="894" height="180" fill="#777"></rect><g><text x="331.8984375" y="110.15625">894x180</text></g></g></svg>' alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <img class="card-img-bottom" src='data:image/svg+xml;utf8,<svg width="894" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 894 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165ed78d132 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:45pt } </style></defs><g id="holder_165ed78d132"><rect width="894" height="180" fill="#777"></rect><g><text x="331.8984375" y="110.15625">894x180</text></g></g></svg>' alt="Card image cap" />
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardImageCaps"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
-            <img class="card-img-bottom" src='data:image/svg+xml;utf8,<svg width="894" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 894 180" preserveAspectRatio="none"><defs><style type="text/css">#holder_165ed78d132 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:45pt } </style></defs><g id="holder_165ed78d132"><rect width="894" height="180" fill="#777"></rect><g><text x="331.8984375" y="110.15625">894x180</text></g></g></svg>' alt="Card image cap" />
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardImageCaps"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code is="cardImageCaps">&lt;div class="card mb-3"&gt;
+            <figure class="highlight">
+                <pre><code is="cardImageCaps">&lt;div class="card mb-3"&gt;
     &lt;img class="card-img-top" src=".../100px180/" alt="Card image cap"&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Card title</span>&lt;/h5&gt;
@@ -300,24 +302,24 @@
     &lt;/div&gt;
     &lt;img class="card-img-bottom" src=".../100px180/" alt="Card image cap"&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <h4>Image overlay</h4>
-    <p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
-    <div class="bd-example">
-        <div class="card bg-dark text-white">
-            <img class="card-img" src=".../100px270/#55595c:#373a3c/text:Card image" alt="Card image">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+            </figure>
+            <h4>Image overlay</h4>
+            <p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
+            <div class="bd-example">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src='data:image/svg+xml;utf8,<svg width="1035" height="270" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1035 270" preserveAspectRatio="none"><defs><style type="text/css">#holder_166fa60e805 text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:52pt } </style></defs><g id="holder_166fa60e805"><rect width="1035" height="270" fill="#777"></rect><g><text x="365.21875" y="158.7">1035x270</text></g></g></svg>'' alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardImageOverlay"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardImageOverlay">&lt;div class="card bg-dark text-white"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardImageOverlay"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardImageOverlay">&lt;div class="card bg-dark text-white"&gt;
     &lt;img class="card-img" src=".../100px270/#55595c:#373a3c/text:Card image" alt="Card image" /&gt;
     &lt;div class="card-img-overlay"&gt;
         &lt;h5 class="card-title"&gt;<span>Card title</span>&lt;/h5&gt;
@@ -325,402 +327,402 @@
         &lt;p class="card-text"&gt;<span>Last updated 3 mins ago</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Card styles</h3>
-    <p>Cards include various options for customizing their backgrounds, borders, and color.</p>
-    <h4>Background and color</h4>
-    <p>Use <a href="https://getbootstrap.com/docs/4.1/utilities/colors/" target="_blank">text and background utilities</a> to change the appearance of a card.</p>
-    <div class="bd-example">
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Primary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <hr />
+            <h3 id="cardStyles">Card styles</h3>
+            <p>Cards include various options for customizing their backgrounds, borders, and color.</p>
+            <h4>Background and color</h4>
+            <p>Use <a href="https://getbootstrap.com/docs/4.1/utilities/colors/" target="_blank">text and background utilities</a> to change the appearance of a card.</p>
+            <div class="bd-example">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorPrimary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorPrimary">&lt;div class="card text-white bg-primary mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorPrimary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorPrimary">&lt;div class="card text-white bg-primary mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Primary card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Secondary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorSecondary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorSecondary">&lt;div class="card text-white bg-secondary mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorSecondary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorSecondary">&lt;div class="card text-white bg-secondary mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Secondary card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Success card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorSuccess"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorSuccess">&lt;div class="card text-white bg-success mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorSuccess"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorSuccess">&lt;div class="card text-white bg-success mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Success card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Danger card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Danger card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorDanger"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorDanger">&lt;div class="card text-white bg-danger mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorDanger"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorDanger">&lt;div class="card text-white bg-danger mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Danger card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card bg-warning mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Warning card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Warning card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorWarning"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorWarning">&lt;div class="card bg-warning mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorWarning"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorWarning">&lt;div class="card bg-warning mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Warning card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Info card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorInfo"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorInfo">&lt;div class="card text-white bg-info mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorInfo"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorInfo">&lt;div class="card text-white bg-info mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Info card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Light carlightd title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light carlightd title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorLight"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorLight">&lt;div class="card bg-light mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorLight"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorLight">&lt;div class="card bg-light mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Light card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Dark card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dark card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorDark"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBgcolorDark">&lt;div class="card text-white bg-dark mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBgcolorDark"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBgcolorDark">&lt;div class="card text-white bg-dark mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header"&gt;<span>Header</span>&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Dakr card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="alert alert-warning">
-        <h5><i class="fas fa-exclamation-triangle"></i> Conveying meaning to assistive technologies</h5>
-        <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code class="highlighter-rogue">.sr-only</code> class.</p>
-    </div>
-    <h4>Border</h4>
-    <p>Use <a href="https://getbootstrap.com/docs/4.1/utilities/borders/" target="_blank">border utilities</a> to change just the <code class="highlighter-rogue">border-color</code> of a card. Note that you can put <code class="highlighter-rogue">.text-{color}</code> classes on the parent <code class="highlighter-rogue">.card</code> or a subset of the card’s contents as shown below.</p>
-    <div class="bd-example">
-        <div class="card border-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-primary">
-                <h5 class="card-title">Primary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="alert alert-warning">
+                <h5><i class="fas fa-exclamation-triangle"></i> Conveying meaning to assistive technologies</h5>
+                <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code class="highlighter-rogue">.sr-only</code> class.</p>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderPrimary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderPrimary">&lt;div class="card border-primary mb-3" style="max-width: 18rem;"&gt;
+            <h4>Border</h4>
+            <p>Use <a href="https://getbootstrap.com/docs/4.1/utilities/borders/" target="_blank">border utilities</a> to change just the <code class="highlighter-rogue">border-color</code> of a card. Note that you can put <code class="highlighter-rogue">.text-{color}</code> classes on the parent <code class="highlighter-rogue">.card</code> or a subset of the card’s contents as shown below.</p>
+            <div class="bd-example">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderPrimary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderPrimary">&lt;div class="card border-primary mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body text-primary"&gt;
         &lt;h5 class="card-title"&gt;<span>Primary card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card border-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-secondary">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Secondary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderSecondary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderSecondary">&lt;div class="card border-secondary mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderSecondary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderSecondary">&lt;div class="card border-secondary mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body text-secondary"&gt;
         &lt;h5 class="card-title"&gt;<span>Secondary card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card border-success mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-success">
-                <h5 class="card-title">Success card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderSuccess"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderSuccess">&lt;div class="card border-success mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderSuccess"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderSuccess">&lt;div class="card border-success mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body text-success"&gt;
         &lt;h5 class="card-title"&gt;<span>Success card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card border-danger mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-danger">
-                <h5 class="card-title">Danger card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card border-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">Danger card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderDanger"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderDanger">&lt;div class="card border-danger mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderDanger"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderDanger">&lt;div class="card border-danger mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body text-danger"&gt;
         &lt;h5 class="card-title"&gt;<span>Danger card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card border-warning mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-warning">
-                <h5 class="card-title">Warning card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-warning">
+                        <h5 class="card-title">Warning card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderWarning"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderWarning">&lt;div class="card border-warning mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderWarning"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderWarning">&lt;div class="card border-warning mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body text-warning"&gt;
         &lt;h5 class="card-title"&gt;<span>Warning card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card border-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-info">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-info">
+                        <h5 class="card-title">Info card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderInfo"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderInfo">&lt;div class="card border-info mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderInfo"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderInfo">&lt;div class="card border-info mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body text-info"&gt;
         &lt;h5 class="card-title"&gt;<span>Info card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card border-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderLight"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderLight">&lt;div class="card border-light mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderLight"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderLight">&lt;div class="card border-light mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body"&gt;
         &lt;h5 class="card-title"&gt;<span>Light card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <div class="card border-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-dark">
-                <h5 class="card-title">Dark card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </figure>
+            <div class="bd-example">
+                <div class="card border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Dark card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderDark"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardBorderDark">&lt;div class="card border-dark mb-3" style="max-width: 18rem;"&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardBorderDark"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="cardBorderDark">&lt;div class="card border-dark mb-3" style="max-width: 18rem;"&gt;
     &lt;div class="card-header">Header&lt;/div&gt;
     &lt;div class="card-body text-dark"&gt;
         &lt;h5 class="card-title"&gt;<span>Dark card title</span>&lt;/h5&gt;
         &lt;p class="card-text"&gt;<span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Card deck</h3>
-    <p>A card deck is a set of equal width and height cards that aren’t attached to one another. Card footers in decks will automatically line up.</p>
-    <div class="bd-example">
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-header">
-                    <h4>Card Header</h4>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                <div class="card-footer">
-                    <p>Card footer</p>
+            </figure>
+            <hr />
+            <h3 id="cardDeck">Card deck</h3>
+            <p>A card deck is a set of equal width and height cards that aren’t attached to one another. Card footers in decks will automatically line up.</p>
+            <div class="bd-example">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Card Header</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <p>Card footer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Card Header</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <p>Card footer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Card Header</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <p>Card footer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <h4>Card Header</h4>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                <div class="card-footer">
-                    <p>Card footer</p>
-                </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardDeck"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <h4>Card Header</h4>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                <div class="card-footer">
-                    <p>Card footer</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#cardDeck"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="cardDeck">&lt;div class="card-deck"&gt;
+            <figure class="highlight">
+                <pre><code id="cardDeck">&lt;div class="card-deck"&gt;
     &lt;div class="card"&gt;
         &lt;div class="card-header"&gt;
             &lt;h4&gt;<span>Card Header</span>&lt;/h4&gt;
@@ -758,5 +760,11 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
+            </figure>
+        </div>
+
+        <div class="col-2">
+            <partial src="partials/cl/subnav/cards-subnav.html" />
+        </div>
+    </div>
 </div>

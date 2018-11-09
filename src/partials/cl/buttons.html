@@ -1,275 +1,282 @@
 <div class="tab-pane fade" id="buttons" role="tabpanel" aria-labelledby="buttons-tab">
-    <h2>Buttons</h2>
-    <p class="bd-lead">Custom button styles for actions in form, dialogs and more with support for multiple sizes, states and more.</p>
-    <h3>Examples</h3>
-    <p>Predefined button styles, each serving its own semantic purpose.</p>
-    <div class="bd-example">
-        <button type="button" class="btn btn-primary">Primary</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnPrimary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnPrimary">&lt;button type="button" class="btn btn-primary"&gt;<span>Primary</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-secondary">Secondary</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnSecondary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnSecondary">&lt;button type="button" class="btn btn-secondary"&gt;<span>Secondary</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-success">Success</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnSuccess"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnSuccess">&lt;button type="button" class="btn btn-success"&gt;<span>Success</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-danger">Danger</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnDanger"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnDanger">&lt;button type="button" class="btn btn-danger"&gt;<span>Danger</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-warning">Warning</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnWarning"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnWarning">&lt;button type="button" class="btn btn-warning"&gt;<span>Warning</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-info">Info</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnInfo"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnInfo">&lt;button type="button" class="btn btn-info"&gt;<span>Info</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-light">Light</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnLight"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnLight">&lt;button type="button" class="btn btn-light"&gt;<span>Light</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-dark">Dark</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnDark"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnDark">&lt;button type="button" class="btn btn-dark"&gt;<span>Dark</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Button types</h3>
-    <p>The <code class="highligher-rogue">.btn</code> classes are designed to be used with the <code <code class="highligher-rogue">&lt;button&gt;</code> element. However, you can also use these classes on <code class="highligher-rogue">&lt;a&gt;</code> or <code class="highligher-rogue">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
-    <div class="bd-example">
-        <a href="#" class="btn btn-primary" role="button">Link</a>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnLink"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnLink">&lt;a href="#" class="btn btn-primary" role="button"&gt;<span>Link</span>&lt;/a&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="submit" class="btn btn-primary">Button</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnButton"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnButton">&lt;button type="submit" class="btn btn-primary"&gt;<span>Button</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <input type="button" class="btn btn-primary" value="Input" />
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputButton"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="inputButton">&lt;input type="button" class="btn btn-primary" value="Input" /&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <input type="submit" class="btn btn-primary" value="Submit" />
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputSubmit"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="inputSubmit">&lt;input type="submit" class="btn btn-primary" value="Submit" /&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <input type="reset" class="btn btn-primary" value="Reset" />
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputReset"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="inputReset">&lt;input type="button" class="btn btn-primary" value="Reset" /&gt;</code></pre>
-    </figure>
-    <div class="bd-callout bd-callout-info" role="alert">
-        <p>When using button classes on <code class="highligher-rogue">&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code class="highligher-rogue">role="button"</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
-    </div>
-    <hr />
-    <h3>Outline buttons</h3>
-    <p>Buttons without the hefty background colors. Replace the default modifier classes with the <code class="highlighter-rogue">.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-primary">Primary</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlinePrimary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlinePrimary">&lt;button type="button" class="btn btn-outline-primary"&gt;<span>Primary</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineSecondary"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlineSecondary">&lt;button type="button" class="btn btn-outline-secondary"&gt;<span>Secondary</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-success">Success</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineSuccess"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlineSuccess">&lt;button type="button" class="btn btn-outline-success"&gt;<span>Success</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-danger">Danger</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineDanger"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlineDanger">&lt;button type="button" class="btn btn-outline-danger"&gt;<span>Danger</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-warning">Warning</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineWarning"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlineWarning">&lt;button type="button" class="btn btn-outline-warning"&gt;<span>Warning</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-info">Info</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineInfo"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlineInfo">&lt;button type="button" class="btn btn-outline-info"&gt;<span>Info</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-light">Light</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineLight"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlineLight">&lt;button type="button" class="btn btn-outline-light"&gt;<span>Light</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-outline-dark">Dark</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineDark"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnOutlineDark">&lt;button type="button" class="btn btn-outline-dark"&gt;<span>Dark</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Button sizes</h3>
-    <p>Add <code class="highlighter-rogue">.btn-lg</code> for larger or <code class="highlighter-rogue">.btn-sm</code> for smaller sizes.</p>
-    <div class="bd-example">
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnLarge"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnLarge">&lt;button type="button" class="btn btn-primary btn-lg"&gt;<span>Large button</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <div class="bd-example">
-        <button type="button" class="btn btn-primary btn-sm">Small button</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnSmall"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnSmall">&lt;button type="button" class="btn btn-primary btn-sm"&gt;<span>Small button</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <p>Create block level buttons—those that span the full width of a parent—by adding <code class="highlighter-rogue">.btn-block</code>.</p>
-    <div class="bd-example">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnBlock"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnBlock">&lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;<span>Block level button</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Button states</h3>
-    <h4>Active state</h4>
-    <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. There’s no need to add a class to <code class="highlighter-rogue">&lt;button&gt;</code>'s as they use a pseudo-class. However, you can still force the same active appearance with .active (and include the <code class="highlighter-rogue">aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.</p>
-    <div class="bd-example">
-        <a href="#" class="btn btn-primary active" role="button" aria-pressed="true">Primary link</a>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnActive"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnActive">&lt;a href="#" class="btn btn-primary active" role="button" aria-pressed="true"&gt;<span>Primary link</span>&lt;/a&gt;</code></pre>
-    </figure>
+    <div class="row">
+        <div class="col">
+            <h2>Buttons</h2>
+            <p class="bd-lead">Custom button styles for actions in form, dialogs and more with support for multiple sizes, states and more.</p>
+            <h3 id="buttonsExamples">Examples</h3>
+            <p>Predefined button styles, each serving its own semantic purpose.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnPrimary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnPrimary">&lt;button type="button" class="btn btn-primary"&gt;<span>Primary</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-secondary">Secondary</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnSecondary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnSecondary">&lt;button type="button" class="btn btn-secondary"&gt;<span>Secondary</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnSuccess"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnSuccess">&lt;button type="button" class="btn btn-success"&gt;<span>Success</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-danger">Danger</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnDanger"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnDanger">&lt;button type="button" class="btn btn-danger"&gt;<span>Danger</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-warning">Warning</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnWarning"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnWarning">&lt;button type="button" class="btn btn-warning"&gt;<span>Warning</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-info">Info</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnInfo"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnInfo">&lt;button type="button" class="btn btn-info"&gt;<span>Info</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-light">Light</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnLight"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnLight">&lt;button type="button" class="btn btn-light"&gt;<span>Light</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-dark">Dark</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnDark"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnDark">&lt;button type="button" class="btn btn-dark"&gt;<span>Dark</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="buttonTypes">Button types</h3>
+            <p>The <code class="highligher-rogue">.btn</code> classes are designed to be used with the <code <code class="highligher-rogue">&lt;button&gt;</code> element. However, you can also use these classes on <code class="highligher-rogue">&lt;a&gt;</code> or <code class="highligher-rogue">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+            <div class="bd-example">
+                <a href="#" class="btn btn-primary" role="button">Link</a>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnLink"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnLink">&lt;a href="#" class="btn btn-primary" role="button"&gt;<span>Link</span>&lt;/a&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="submit" class="btn btn-primary">Button</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnButton"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnButton">&lt;button type="submit" class="btn btn-primary"&gt;<span>Button</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <input type="button" class="btn btn-primary" value="Input" />
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputButton"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="inputButton">&lt;input type="button" class="btn btn-primary" value="Input" /&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <input type="submit" class="btn btn-primary" value="Submit" />
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputSubmit"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="inputSubmit">&lt;input type="submit" class="btn btn-primary" value="Submit" /&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <input type="reset" class="btn btn-primary" value="Reset" />
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputReset"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="inputReset">&lt;input type="button" class="btn btn-primary" value="Reset" /&gt;</code></pre>
+            </figure>
+            <div class="bd-callout bd-callout-info" role="alert">
+                <p>When using button classes on <code class="highligher-rogue">&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code class="highligher-rogue">role="button"</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+            </div>
+            <hr />
+            <h3 id="outlineButtons">Outline buttons</h3>
+            <p>Buttons without the hefty background colors. Replace the default modifier classes with the <code class="highlighter-rogue">.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlinePrimary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlinePrimary">&lt;button type="button" class="btn btn-outline-primary"&gt;<span>Primary</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineSecondary"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlineSecondary">&lt;button type="button" class="btn btn-outline-secondary"&gt;<span>Secondary</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-success">Success</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineSuccess"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlineSuccess">&lt;button type="button" class="btn btn-outline-success"&gt;<span>Success</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineDanger"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlineDanger">&lt;button type="button" class="btn btn-outline-danger"&gt;<span>Danger</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineWarning"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlineWarning">&lt;button type="button" class="btn btn-outline-warning"&gt;<span>Warning</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-info">Info</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineInfo"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlineInfo">&lt;button type="button" class="btn btn-outline-info"&gt;<span>Info</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-light">Light</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineLight"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlineLight">&lt;button type="button" class="btn btn-outline-light"&gt;<span>Light</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnOutlineDark"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnOutlineDark">&lt;button type="button" class="btn btn-outline-dark"&gt;<span>Dark</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="buttonSizes">Button sizes</h3>
+            <p>Add <code class="highlighter-rogue">.btn-lg</code> for larger or <code class="highlighter-rogue">.btn-sm</code> for smaller sizes.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnLarge"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnLarge">&lt;button type="button" class="btn btn-primary btn-lg"&gt;<span>Large button</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnSmall"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnSmall">&lt;button type="button" class="btn btn-primary btn-sm"&gt;<span>Small button</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <p>Create block level buttons—those that span the full width of a parent—by adding <code class="highlighter-rogue">.btn-block</code>.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnBlock"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnBlock">&lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;<span>Block level button</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="buttonStates">Button states</h3>
+            <h4>Active state</h4>
+            <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. There’s no need to add a class to <code class="highlighter-rogue">&lt;button&gt;</code>'s as they use a pseudo-class. However, you can still force the same active appearance with .active (and include the <code class="highlighter-rogue">aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.</p>
+            <div class="bd-example">
+                <a href="#" class="btn btn-primary active" role="button" aria-pressed="true">Primary link</a>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnActive"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnActive">&lt;a href="#" class="btn btn-primary active" role="button" aria-pressed="true"&gt;<span>Primary link</span>&lt;/a&gt;</code></pre>
+            </figure>
 
-    <h4>Disabled state</h4>
-    <p>Make buttons look inactive by adding the disabled boolean attribute to any <code class="highlighter-rogue">&lt;button&gt;</code> element.</p>
-    <div class="bd-example">
-        <button type="button" class="btn btn-primary" disabled>Primary button</button>
+            <h4>Disabled state</h4>
+            <p>Make buttons look inactive by adding the disabled boolean attribute to any <code class="highlighter-rogue">&lt;button&gt;</code> element.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary" disabled>Primary button</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnDisabled"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="btnDisabled">&lt;button type="button" class="btn btn-primary" disabled&gt;<span>Primary button</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <p>Disabled buttons using the <code class="highlight-rogue">&lt;a&gt;</code> element behave a bit different:</p>
+            <ul>
+                <li><code class="highlighter-rogue">&lt;a&gt;</code>'s don’t support the disabled attribute, so you must add the <code class="highlighter-rogue">.disabled</code> class to make it visually appear disabled.</li>
+                <li>Some future-friendly styles are included to disable all <code class="highlighter-rogue">pointer-events</code> on anchor buttons. In browsers which support that property, you won’t see the disabled cursor at all.</li>
+                <li>Disabled buttons should include the <code class="highlighter-rogue">aria-disabled="true"</code> attribute to indicate the state of the element to assistive technologies.</li>
+            </ul>
+            <div class="bd-example">
+                <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#anchorDisabled"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="anchorDisabled">&lt;a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true"&gt;<span>Primary link</span>&lt;/a&gt;</code></pre>
+            </figure>
+        </div>
+        <div class="col-2">
+            <partial src="partials/cl/subnav/buttons-subnav.html" />
+        </div>
     </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#btnDisabled"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="btnDisabled">&lt;button type="button" class="btn btn-primary" disabled&gt;<span>Primary button</span>&lt;/button&gt;</code></pre>
-    </figure>
-    <p>Disabled buttons using the <code class="highlight-rogue">&lt;a&gt;</code> element behave a bit different:</p>
-    <ul>
-        <li><code class="highlighter-rogue">&lt;a&gt;</code>'s don’t support the disabled attribute, so you must add the <code class="highlighter-rogue">.disabled</code> class to make it visually appear disabled.</li>
-        <li>Some future-friendly styles are included to disable all <code class="highlighter-rogue">pointer-events</code> on anchor buttons. In browsers which support that property, you won’t see the disabled cursor at all.</li>
-        <li>Disabled buttons should include the <code class="highlighter-rogue">aria-disabled="true"</code> attribute to indicate the state of the element to assistive technologies.</li>
-    </ul>
-    <div class="bd-example">
-        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#anchorDisabled"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="anchorDisabled">&lt;a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true"&gt;<span>Primary link</span>&lt;/a&gt;</code></pre>
-    </figure>
 </div>

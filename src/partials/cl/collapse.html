@@ -1,32 +1,35 @@
 <div class="tab-pane fade show" id="collapse" role="tabpanel" aria-labelledby="collapse-tab">
-    <h2>Collapse</h2>
-    <p class="bd-lead">Toggle the visibility of content with a few classes and JavaScript plugins.</p>
-    <h3>How it works</h3>
-    <p>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the <code class="highlighter-rogue">height</code> from it’s current value to <code class="highlighter-rogue">0</code>. Given how CSS handles animations, you cannot use <code class="highlighter-rogue">padding</code> on a <code class="highlighter-rogue">.collapse</code> element. Instead, use the class as an independent wrapping element.</p>
-    <h3>Example</h3>
-    <p>Click the buttons below to show and hide another element via class changes:</p>
-    <ul>
-        <li><code class="highlighter-rogue">.collapse</code> hides content</li>
-        <li><code class="highlighter-rogue">.collapsing</code> is applied during transitions</li>
-        <li><code class="highlighter-rogue">.collapse.show</code> shows content</li>
-    </ul>
-    <p>You can use a link with the <code class="highlighter-rogue">href</code> attribute, or a button with the <code class="highlighter-rogue">data-target</code> attribute. In both cases, the <code class="highlighter-rogue">data-toggle="collapse"</code> is required.</p>
-    <h4>Link with href</h4>
-    <div class="bd-example">
-        <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample">Link with href</a>
-        </p>
-        <div class="collapse" id="collapseLinkExample">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    <div class="row">
+        <div class="col">
+            <h2>Collapse</h2>
+            <p class="bd-lead">Toggle the visibility of content with a few classes and JavaScript plugins.</p>
+            <h3>How it works</h3>
+            <p>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the <code class="highlighter-rogue">height</code> from it’s current value to <code class="highlighter-rogue">0</code>. Given how CSS handles animations, you cannot use <code class="highlighter-rogue">padding</code> on a <code class="highlighter-rogue">.collapse</code> element. Instead, use the class as an independent wrapping element.</p>
+            <hr />
+            <h3 id="collapseExample">Example</h3>
+            <p>Click the buttons below to show and hide another element via class changes:</p>
+            <ul>
+                <li><code class="highlighter-rogue">.collapse</code> hides content</li>
+                <li><code class="highlighter-rogue">.collapsing</code> is applied during transitions</li>
+                <li><code class="highlighter-rogue">.collapse.show</code> shows content</li>
+            </ul>
+            <p>You can use a link with the <code class="highlighter-rogue">href</code> attribute, or a button with the <code class="highlighter-rogue">data-target</code> attribute. In both cases, the <code class="highlighter-rogue">data-toggle="collapse"</code> is required.</p>
+            <h4>Link with href</h4>
+            <div class="bd-example">
+                <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample">Link with href</a>
+                </p>
+                <div class="collapse" id="collapseLinkExample">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseLink"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="collapseLink">&lt;p&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseLink"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="collapseLink">&lt;p&gt;
     &lt;a class="btn btn-primary" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample"&gt;<span>Link with href</span>&lt;/a&gt;
 &lt;/p&gt;
 &lt;div class="collapse" id="collapseLinkExample"&gt;
@@ -34,23 +37,23 @@
         <span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</span>
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <h4>Button with data-target</h4>
-    <div class="bd-example">
-        <p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseButtonExample" aria-expanded="false" aria-controls="collapseButtonExample">Button with data-target</button>
-        </p>
-        <div class="collapse" id="collapseButtonExample">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+            </figure>
+            <h4>Button with data-target</h4>
+            <div class="bd-example">
+                <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseButtonExample" aria-expanded="false" aria-controls="collapseButtonExample">Button with data-target</button>
+                </p>
+                <div class="collapse" id="collapseButtonExample">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseButton"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="collapseButton">&lt;p&gt;
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseButton"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="collapseButton">&lt;p&gt;
     &lt;button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"&gt;
     Button with data-target
   &lt;/button&gt;
@@ -59,56 +62,56 @@
         <span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</span>
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Accordion</h3>
-    <p>Using the card component, you can extend the default collapse behavior to create an accordion.</p>
-    <div class="bd-example">
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</button>
-                    </h5>
-                </div>
+            </figure>
+            <hr />
+            <h3 id="accordion">Accordion</h3>
+            <p>Using the card component, you can extend the default collapse behavior to create an accordion.</p>
+            <div class="bd-example">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</button>
+                            </h5>
+                        </div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</button>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    </div>
-                </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseAccordion"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseAccordion"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="collapseAccordion">&lt;div class="accordion" id="accordionExample"&gt;
+            <figure class="highlight">
+                <pre><code id="collapseAccordion">&lt;div class="accordion" id="accordionExample"&gt;
     &lt;div class="card"&gt;
         &lt;div class="card-header" id="headingOne"&gt;
             &lt;h5 class="mb-0"&gt;
@@ -147,35 +150,41 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </figure>
-    <hr />
-    <h3>Accessibility</h3>
-    <p>Be sure to add The collapse plugin utilizes a few classes to handle the heavy lifting: aria-expanded</code> to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of <code class="highlighter-rogue">aria-expanded="false"</code>. If you’ve set the collapsible element to be open by default using the <code class="highlighter-rogue">show</code> class, set <code class="highlighter-rogue">aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element). If the control element’s HTML element is not a button (e.g., an <code class="highlighter-rogue">&lt;a&gt;</code> or <code class="highlighter-rogue">&lt;div&gt;</code>), the attribute <code class="highlighter-rogue">role="button"</code> should be added to the element.</p>
-    <p>If your control element is targeting a single collapsible element – i.e. the <code class="highlighter-rogue">data-target</code> attribute is pointing to an <code class="highlighter-rogue">id</code> selector – you should add the <code class="highlighter-rogue">aria-controls</code> attribute to the control element, containing the <code class="highlighter-rogue">id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
-    <p>Note that Bootstrap’s current implementation does not cover the various keyboard interactions described in the <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#accordion" target="
-            ">WAI-ARIA Authoring Practices 1.1 accordion pattern</a> - you will need to include these yourself with custom JavaScript.</p>
-    <hr />
-    <h3>Usage</h3>
-    <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
-    <ul>
-        <li><code class="highlighter-rogue">.collapse</code> hides the content</li>
-        <li><code class="highlighter-rogue">.collapse.show</code> shows the content</li>
-        <li><code class="highlighter-rogue">.collapsing</code> is added when the transition starts, and removed when it finishes</li>
-    </ul>
-    <p>These classes can be found in <code class="highlighter-rogue">_transitions.scss</code>.</p>
-    <h4>Data attributes</h4>
-    <p>Just add <code class="highlighter-rogue">data-toggle="collapse"</code> and a <code class="highlighter-rogue">data-target</code> to the element to automatically assign control of one or more collapsible elements. The <code class="highlighter-rogue">data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code class="highlighter-rogue">collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code class="highlighter-rogue">show</code>.</p>
-    <p>To add accordion-like group management to a collapsible area, add the data attribute <code class="highlighter-rogue">data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
-    <h4>JavaScript</h4>
-    <p>Enable manually with:</p>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseJavascript"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="collapseJavascript"><span>$(</span>'.collapse<span>').collapse()</span></code></pre>
-    </figure>
-    <h4>Options, Methods and Events</h4>
-    <div class="bd-callout bd-callout-info">
-        <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/collapse/#options" target="_blank">Bootstrap's documentation</a> for options, methods and events.</p>
+            </figure>
+            <hr />
+            <h3 id="collapseAccessibility">Accessibility</h3>
+            <p>Be sure to add The collapse plugin utilizes a few classes to handle the heavy lifting: aria-expanded</code> to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of <code class="highlighter-rogue">aria-expanded="false"</code>. If you’ve set the collapsible element to be open by default using the <code class="highlighter-rogue">show</code> class, set <code class="highlighter-rogue">aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element). If the control element’s HTML element is not a button (e.g., an <code class="highlighter-rogue">&lt;a&gt;</code> or <code class="highlighter-rogue">&lt;div&gt;</code>), the attribute <code class="highlighter-rogue">role="button"</code> should be added to the element.</p>
+            <p>If your control element is targeting a single collapsible element – i.e. the <code class="highlighter-rogue">data-target</code> attribute is pointing to an <code class="highlighter-rogue">id</code> selector – you should add the <code class="highlighter-rogue">aria-controls</code> attribute to the control element, containing the <code class="highlighter-rogue">id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
+            <p>Note that Bootstrap’s current implementation does not cover the various keyboard interactions described in the <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#accordion" target="
+                    ">WAI-ARIA Authoring Practices 1.1 accordion pattern</a> - you will need to include these yourself with custom JavaScript.</p>
+            <hr />
+            <h3 id="collapseUsage">Usage</h3>
+            <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+            <ul>
+                <li><code class="highlighter-rogue">.collapse</code> hides the content</li>
+                <li><code class="highlighter-rogue">.collapse.show</code> shows the content</li>
+                <li><code class="highlighter-rogue">.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+            </ul>
+            <p>These classes can be found in <code class="highlighter-rogue">_transitions.scss</code>.</p>
+            <h4>Data attributes</h4>
+            <p>Just add <code class="highlighter-rogue">data-toggle="collapse"</code> and a <code class="highlighter-rogue">data-target</code> to the element to automatically assign control of one or more collapsible elements. The <code class="highlighter-rogue">data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code class="highlighter-rogue">collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code class="highlighter-rogue">show</code>.</p>
+            <p>To add accordion-like group management to a collapsible area, add the data attribute <code class="highlighter-rogue">data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+            <h4>JavaScript</h4>
+            <p>Enable manually with:</p>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#collapseJavascript"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="collapseJavascript"><span>$(</span>'.collapse<span>').collapse()</span></code></pre>
+            </figure>
+            <h4>Options, Methods and Events</h4>
+            <div class="bd-callout bd-callout-info">
+                <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/collapse/#options" target="_blank">Bootstrap's documentation</a> for options, methods and events.</p>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <partial src="partials/cl/subnav/collapse-subnav.html" />
+        </div>
     </div>
 </div>

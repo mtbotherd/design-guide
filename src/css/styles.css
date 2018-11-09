@@ -6378,6 +6378,9 @@ a.text-dark:hover, a.text-dark:focus {
 /************************************************
     Base Styles
 ************************************************/
+body {
+  padding-top: 61px; }
+
 .card-deck {
   margin: 9rem 0; }
 

@@ -1,0 +1,10 @@
+/*****************************************
+    Bootstrap override styles.
+*****************************************/
+.alert-dismissible {
+    .close {
+        top: 0.75rem;
+        right: 1.25rem;
+        padding: 0;
+    }
+}
