@@ -35,12 +35,26 @@ gulp.task('javascript', function() {
         .pipe(gulp.dest('src/js'))
 });
 
+// Copy JS to dist
+gulp.task('javascriptDist', function() {
+    return gulp.src([
+            'src/js/**/*.js'
+        ])
+        .pipe(gulp.dest('dist/js'))
+});
+
 // Copy vendor css to src
 gulp.task('vendorCss', function() {
     return gulp.src([
             'src/css/**/*.css'
         ])
         .pipe(gulp.dest('dist/css'))
+});
+
+// Copy sourcemaps to dist
+gulp.task('sourcemaps', function() {
+    return gulp.src('src/maps/**/*.map')
+        .pipe(gulp.dest('dist/maps'))
 });
 
 // Compile sass to css
@@ -111,7 +125,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'vendorCss', 'images'],
+        'sass', ['useref', 'vendorCss', 'javascriptDist', 'images', 'sourcemaps'],
         callback
     )
 });

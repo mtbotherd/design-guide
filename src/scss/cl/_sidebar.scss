@@ -6,7 +6,7 @@ body {
 }
 
 .sticky-offset {
-    top: 61px;
+    top: 61px
 }
 //
 #body-row {
@@ -15,19 +15,24 @@ body {
 }
 #sidebar-container {
     min-height: 100vh;
+    // max-height: calc(200vh - 1rem);
+    // overflow-y: auto;
     background-color: #333;
     padding: 0;
 
     h2 {
-        color: $gray-600;
-        font-size: 1rem;
+        color: $gray-400;
+        font-size: 0.9rem;
         font-weight: 100;
+        border-bottom: none;
+        padding: 0.5rem 1rem;
     }
 
     .nav-link {
         color: $white;
         border-bottom: 1px solid $gray-900;
         border-radius: 0;
+        padding: 0.25rem 1rem;
 
         &:hover {
             background-color: $gray-600;

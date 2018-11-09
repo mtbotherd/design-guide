@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Metro Transit | Website Design Guide</title>
+    <link rel='shortcut icon' href='images/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
     <!-- build:css css/component-library.css -->
@@ -20,15 +21,15 @@
             <!-- Skip nav - for accessibility -->
             <a class="skip-to-content" href="#mainContent">Skip to main content</a>
 
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
+                    <img src="images/t_logo_black.png" width="35" height="35" class="d-inline-block aling-top" alt="Metro Transit T logo" /> <span class="align-middle">Metro Transit <span class="d-none d-sm-inline-block">| <small><i>Website Design Guide</i></small></span></span>
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="brand-style-guide.html">Brand Style Guide <span class="sr-only">(current)</span></a>
                         </li>
@@ -45,7 +46,7 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container-fluid">
         <div id="body-row" class="row">
             <h1 class="sr-only">Component Library</h1>
             <!-- Sidebar -->
@@ -53,7 +54,7 @@
 
 
             <!-- Main content -->
-            <div id="mainContent" class="col py-3">
+            <div class="col py-3">
                 <div class="tab-content" id="v-pills-tabContent">
                     <partial src="./partials/cl/alerts.html" />
                     <partial src="./partials/cl/badges.html" />
@@ -65,18 +66,18 @@
                     <partial src="./partials/cl/collapse.html" />
                     <partial src="./partials/cl/dropdowns.html" />
                     <partial src="./partials/cl/forms.html" />
+                    <partial src="./partials/cl/input-group.html" />
+                    <partial src="./partials/cl/list-group.html" />
+                    <partial src="./partials/cl/modals.html" />
+                    <partial src="./partials/cl/navs.html" />
+                    <partial src="./partials/cl/navbar.html" />
+                    <partial src="./partials/cl/pagination.html" />
+                    <partial src="./partials/cl/popovers.html" />
+                    <partial src="./partials/cl/tooltips.html" />
                 </div>
             </div>
         </div>
     </main>
-
-    <footer>
-        <div class="footer fixed-bottom">
-            <div class="container">
-                <partial src="partials/footer.html" />
-            </div>
-        </div>
-    </footer>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
