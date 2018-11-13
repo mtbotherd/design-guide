@@ -6433,6 +6433,9 @@ a.skip-to-content {
   border-top: 1px solid #e9ecef;
   padding: 1rem 0; }
 
+.card-deck {
+  margin: 1rem 0; }
+
 /************************************************
     Button Styles
 ************************************************/
