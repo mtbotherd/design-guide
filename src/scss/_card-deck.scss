@@ -1,3 +1,7 @@
 .card-deck {
     margin: 1rem 0;
+    
+    @include media-breakpoint-up(lg) {
+        margin: 9rem 0;
+    }
 }
