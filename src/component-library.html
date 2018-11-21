@@ -2097,7 +2097,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <div class="col">
             <h2>Forms</h2>
             <p class="bd-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
-            <h3>Form controls</h3>
+            <h3 id="formControls">Form controls</h3>
             <p>Textual form controls—like <code class="highlighter-rogue">&lt;input&gt;</code>s, <code class="highlighter-rogue">&lt;select&gt;</code>s, and <code class="highlighter-rogue">&lt;textarea&gt;</code>s—are styled with the <code class="highlighter-rogue">.form-control</code> class. Included are styles for general appearance, focus state, sizing, and more.</p>
             <h4>Inputs</h4>
             <div class="bd-callout bd-callout-info">
@@ -2493,13 +2493,141 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     &lt;button type="submit" class="btn btn-primary"&gt;<span>Sign in</span>&lt;/button&gt;
 &lt;/form&gt;</code></pre>
             </figure>
+            <div class="bd-callout bd-callout-warning">
+                <h5>Alternatives to hidden labels</h5>
+                <p>Assistive technologies such as screen readers will have trouble with your forms if you don’t include a label for every input. For these inline forms, you can hide the labels using the <code class="highlighter-rogue">.sr-only class</code>. There are further alternative methods of providing a label for assistive technologies, such as the <code class="highlighter-rogue">aria-label</code>, <code class="highlighter-rogue">aria-labelledby</code> or <code class="highlighter-rogue">title attribute</code>. If none of these are present, assistive technologies may resort to using the <code class="highlighter-rogue">placeholder</code> attribute, if present, but note that use of <code class="highlighter-rogue">placeholder</code> as a replacement for other labelling methods is not advised.</p>
+            </div>
+            <hr />
+            <h3 id="formHelpText">Help Text</h3>
+            <p>Block-level help text in forms can be created using <code class="highlighter-rogue">.form-text</code>. Inline help text can be flexibly implemented using any inline HTML element and utility classes like <code class="highlighter-rogue">.text-muted</code>.</p>
+            <div class="bd-callout bd-callout-warning">
+                <h5>Associating help text with form controls</h5>
+                <p>Help text should be explicitly associated with the form control it relates to using the <code class="highlighter-rogue">aria-describedby</code> attribute. This will ensure that assistive technologies—such as screen readers—will announce this help text when the user focuses or enters the control.</p>
+            </div>
+            <p>Help text below inputs can be styled with <code class="highlighter-rogue">.form-text</code>. This class includes <code class="highlighter-rogue">display: block</code> and adds some top margin for easy spacing from the inputs above.</p>
+            <div class="bd-example">
+                <form>
+                    <label for="inputPassword5">Password</label>
+                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                    </small>
+                </form>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#formHelpText"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="formHelpText">&lt;form&gt;
+    &lt;label for="inputPassword5"&gt;<span>Password</span>&lt;/label&gt;
+    &lt;input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"&gt;
+    &lt;small id="passwordHelpBlock" class="form-text text-muted"&gt;
+      <span>Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</span>
+    &lt;/small&gt;
+&lt;/form&gt;</code></pre>
+            </figure>
+            <p>Inline text can use any typical inline HTML element (be it a <code class="highlighter-rogue">&lt;small&gt;</code>, <code class="highlighter-rogue">&lt;span&gt;</code>, or something else) with nothing more than a utility class.</p>
+            <div class="bd-example">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="inputPassword6">Password</label>
+                        <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                        <small id="passwordHelpInline" class="text-muted">
+                          Must be 8-20 characters long.
+                        </small>
+                    </div>
+                </form>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#formHelpTextInline"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="formHelpTextInline">&lt;form class="form-inline"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="inputPassword6"&gt;<span>Password</span>&lt;/label&gt;
+        &lt;input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline"&gt;
+        &lt;small id="passwordHelpInline" class="text-muted"&gt;
+          <span>Must be 8-20 characters long.</span>
+        &lt;/small&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="disabledForms">Disabled forms</h3>
+            <p>Add the <code class="highlighter-rogue">disabled</code> boolean attribute on an input to prevent user interactions and make it appear lighter.</p>
+            <div class="bd-example">
+                <form>
+                    <input class="form-control" id="disabledInput" type="text" placeholder="This field is disabled" disabled>
+                </form>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#fieldDisabled"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="fieldDisabled">&lt;form&lt;
+    &lt;input class="form-control" id="disabledInput" type="text" placeholder="This field is disabled" disabled&lt;
+&lt;/form&lt;</code></pre>
+            </figure>
+            <p>Add the disabled attribute to a <code class="highlighter-rogue">&lt;fieldset&gt;</code> to disable all the controls within.</p>
+            <div class="bd-example">
+                <form>
+                    <fieldset disabled>
+                        <div class="form-group">
+                            <label for="disabledTextInput">Disabled input</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                        </div>
+                        <div class="form-group">
+                            <label for="disabledSelect">Disabled select menu</label>
+                            <select id="disabledSelect" class="form-control">
+                                <option>Disabled select</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                            <label class="form-check-label" for="disabledFieldsetCheck">
+                                Can't check this
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#formDisabled"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="formDisabled">&lt;form&gt;
+    &lt;fieldset disabled&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="disabledTextInput"&gt;<span>Disabled input</span>&lt;/label&gt;
+            &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="disabledSelect"&gt;<span>Disabled select menu</span>&lt;/label&gt;
+            &lt;select id="disabledSelect" class="form-control"&gt;
+                &lt;option&gt;<span>Disabled select</span>&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class="form-check"&gt;
+            &lt;input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled&gt;
+            &lt;label class="form-check-label" for="disabledFieldsetCheck"&gt;
+                <span>Can't check this</span>
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;button type="submit" class="btn btn-primary"&gt;<span>Submit</span>&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="formValidatioin">Form validation</h3>
         </div>
         <div class="col-2">
             <ul class="subnav border-left pl-4 sticky-top sticky-offset">
     <li><a href="#formControls">Form controls</a></li>
-    <li><a href="#formGroups">Form Groups</a></li>
     <li><a href="#formLayout">Layout</a></li>
     <li><a href="#formHelpText">Help text</a></li>
+    <li><a href="#disabledForms">Disabled forms</a></li>
+    <li><a href="#formValidation">Form validation</a></li>
 </ul>
 
         </div>
