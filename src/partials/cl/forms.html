@@ -525,7 +525,181 @@
 &lt;/form&gt;</code></pre>
             </figure>
             <hr />
-            <h3 id="formValidatioin">Form validation</h3>
+            <h3 id="formValidation">Form validation</h3>
+            <p>Client side form validation is handled using <a href="https://jqueryvalidation.org/">jQuery.validate.js</a>.</p>
+            <div class="bd-callout bd-callout-info">
+                <p>Each field that is to be validated must have a unqique <code class="highlighter-rogue">name</code> attribute.</p>
+            </div>
+            <div class="bd-example">
+                <form id="sampleForm" method="post" action="" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="form-group">
+                                <label for="textField">Text field</label>
+                                <input type="text" id="textFieldNormal" class="form-control" name="textField" placeholder="Can use any characters" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="form-group is-invalid has-feedback">
+                                <label for="textField">Invalid text field</label>
+                                <input type="text" id="textFieldInvalid" class="form-control" name="textField" placeholder="Can use any characters" aria-required="true" aria-describedby="textField-error" aria-invalid="true"><span class="fas fa-exclamation-triangle form-control-feedback"></span>
+                                <em id="textField-error" class="is-invalid help-block">Please add some text.</em>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback is-valid">
+                                <label for="textField">Valid text field</label>
+                                <input type="text" id="textFieldValid" class="form-control" name="textField" placeholder="Can use any characters" aria-required="true" aria-describedby="textField-error" aria-invalid="false"><span class="fas form-control-feedback fa-check"></span>
+                                <em id="textField-error" class="is-invalid help-block"></em>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p><a href="https://www.metrotransit.org/fed/form-validation">Form validation example</a></p>
+            <!-- <figure class="highlight">
+                <pre><code id="formInlineValidation">&lt;form id="sampleForm" method="post" action="" novalidate="novalidate"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="textField"&gt;<span>Text field</span>&lt;/label&gt;
+                &lt;input type="text" id="textField" class="form-control" name="textField" placeholder="Can use any characters"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="numberField"&gt;<span>Number field (+/-)</span>&lt;/label&gt;
+                &lt;input type="number" id="numberField" class="form-control" name="numberField" placeholder="Numbers only"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="emailField"&gt;<span>Email field</span>&lt;/label&gt;
+                &lt;input type="email" id="emailField" class="form-control" name="emailField" placeholder="Valid email address"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="passwordField"&gt;<span>Password field</span>&lt;/label&gt;
+                &lt;input type="password" id="passwordField" class="form-control" name="passwordField"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="dateField"&gt;<span>Date field (uses the HTML5 datepicker by default)</span>&lt;/label&gt;
+                &lt;input type="date" id="dateField" class="form-control" name="dateField"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="urlField"&gt;<span>URL field</span>&lt;/label&gt;
+                &lt;input type="url" id="urlField" class="form-control" name="urlField" value="http://"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="selectField"&gt;<span>Select field</span>&lt;/label&gt;
+                &lt;select id="selectField" class="form-control" name="selectField"&gt;
+                    &lt;option value=""&gt;<span>Choose...</span>&lt;/option&gt;
+                    &lt;option value="1"&gt;<span>One</span>&lt;/option&gt;
+                    &lt;option value="2"&gt;<span>Two</span>&lt;/option&gt;
+                    &lt;option value="3"&gt;<span>Three</span>&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="selectMultipleField"&gt;<span>Select multiple field</span>&lt;/label&gt;
+                &lt;select id="selectMultipleField" class="form-control" name="selectMultipleField" size="3" multiple=""&gt;
+                    &lt;option value="1"&gt;<span>One</span>&lt;/option&gt;
+                    &lt;option value="2"&gt;<span>Two</span>&lt;/option&gt;
+                    &lt;option value="3"&gt;<span>Three</span>&lt;/option&gt;
+                    &lt;option value="4"&gt;<span>Four</span>&lt;/option&gt;
+                    &lt;option value="5"&gt;<span>Five</span>&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="textareaField"&gt;<span>Textarea</span>&lt;/label&gt;
+                &lt;textarea id="textareaField" class="form-control" name="textareaField" rows="3" placeholder="Type here..."&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="fileUploadField"&gt;<span>File upload</span>&lt;/label&gt;
+                &lt;div class="custom-file"&gt;
+                    &lt;input type="file" id="fileUploadField" class="form-control custom-file-input" name="fileUploadField"&gt;
+                    &lt;label class="custom-file-label"&gt;<span>Choose file</span>&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-2 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="checkboxGroup"&gt;<span>Checkbox (single)</span>&lt;/label&gt;
+                &lt;div class="form-check"&gt;
+                    &lt;input type="checkbox" id="checkboxSingle" class="form-check-input" name="checkboxSingle"&gt;
+                    &lt;label class="form-check-label" for="checkbox"&gt;<span>Checkbox</span>&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-2 mb-3"&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;<span>Checkbox group</span>&lt;/legend&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="checkbox" id="checkboxGroup1" class="form-check-input" name="checkboxGroup"&gt;
+                        &lt;label class="form-check-label" for="checkboxGroup1"&gt;<span>Checkbox 1</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="checkbox" id="checkboxGroup2" class="form-check-input" name="checkboxGroup"&gt;
+                        &lt;label class="form-check-label" for="checkboxGroup2"&gt;<span>Checkbox 2</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="checkbox" id="checkboxGroup3" class="form-check-input" name="checkboxGroup"&gt;
+                        &lt;label class="form-check-label" for="checkboxGroup3"&gt;<span>Checkbox 3</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-2 offset-md-2"&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;<span>Radio group</span>&lt;/legend&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="radio" id="radioGroup1" class="form-check-input" name="radioGroup"&gt;
+                        &lt;label class="form-check-label" for="radio1"&gt;<span>Radio 1</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="radio" id="radioGroup2" class="form-check-input" name="radioGroup"&gt;
+                        &lt;label class="form-check-label" for="radio2"&gt;<span>Radio 2</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="radio" id="radioGroup3" class="form-check-input" name="radioGroup"&gt;
+                        &lt;label class="form-check-label" for="radio3"&gt;<span>Radio 3</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 offset-md-4 mb-3 text-center"&gt;
+            &lt;button type="submit" class="btn btn-primary" name="form2Submit" value="Submit form"&gt;<span>Submit form</span>&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-light"&gt;<span>Reset form</span>&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+            </figure> -->
         </div>
         <div class="col-2">
             <partial src="partials/cl/subnav/forms-subnav.html" />
