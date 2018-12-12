@@ -24,6 +24,9 @@ $(document).ready(function() {
         $(this).tooltip('hide');
     });
 
-    //Initialize clipboard.js
-    var clipboard = new Clipboard('.btn-clipboard');
+    // Initialize clipboard.js
+    var clipboard = new ClipboardJS('.btn-clipboard');
+
+    // Initialize exlink.js - used to identify and open external links in new window (replaces target="_blank" attribute)
+    exLink.init();
 });

@@ -27,12 +27,27 @@ gulp.task('browserSync', function() {
 // Copy JS to src
 gulp.task('javascript', function() {
     return gulp.src([
-            'node_modules/jquery/dist/jquery.min.js',
-            'node_modules/popper.js/dist/umd/popper.min.js',
-            'node_modules/bootstrap/dist/js/bootstrap.min.js',
-            'node_modules/clipboard/dist/clipboard.min.js'
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/popper.js/dist/umd/popper.js',
+            'node_modules/bootstrap/dist/js/bootstrap.js',
+            'node_modules/clipboard/dist/clipboard.js',
+            'node_modules/exlink/jquery.exlink.js'
         ])
         .pipe(gulp.dest('src/js'))
+});
+
+// Copy vendor css to src
+gulp.task('vendorCss', function() {
+    return gulp.src([
+            'node_modules/@fortawesome/fontawesome-free/css/all.css'
+        ])
+        .pipe(gulp.dest('src/css'))
+});
+
+// Copy FA fonts to src
+gulp.task('faFonts', function() {
+    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+        .pipe(gulp.dest('src/webfonts'))
 });
 
 // Copy JS to dist
@@ -43,10 +58,11 @@ gulp.task('javascriptDist', function() {
         .pipe(gulp.dest('dist/js'))
 });
 
-// Copy vendor css to src
-gulp.task('vendorCss', function() {
+// Copy vendor css to dist
+gulp.task('css', function() {
     return gulp.src([
-            'src/css/**/*.css'
+            'src/css/**/*.css',
+            '!src/css/all.css'
         ])
         .pipe(gulp.dest('dist/css'))
 });
@@ -55,6 +71,12 @@ gulp.task('vendorCss', function() {
 gulp.task('sourcemaps', function() {
     return gulp.src('src/maps/**/*.map')
         .pipe(gulp.dest('dist/maps'))
+});
+
+// Copy fonts to dist
+gulp.task('fonts', function() {
+    return gulp.src('src/webfonts/*')
+        .pipe(gulp.dest('dist/webfonts'))
 });
 
 // Compile sass to css
@@ -117,7 +139,7 @@ gulp.task('clean:dist', function() {
 // Build Sequence
 // --------------
 gulp.task('default', function(callback) {
-    runSequence(['javascript', 'sass', 'browserSync'], 'watch',
+    runSequence(['javascript', 'vendorCss', 'faFonts', 'sass', 'browserSync'], 'watch',
         callback
     )
 });
@@ -125,7 +147,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'vendorCss', 'javascriptDist', 'images', 'sourcemaps'],
+        'sass', ['useref', 'css', 'fonts', 'javascriptDist', 'images', 'sourcemaps'],
         callback
     )
 });
