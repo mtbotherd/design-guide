@@ -2653,149 +2653,6 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
                 </form>
             </div>
             <p><a href="https://www.metrotransit.org/fed/form-validation">Form validation example</a></p>
-            <!-- <figure class="highlight">
-                <pre><code id="formInlineValidation">&lt;form id="sampleForm" method="post" action="" novalidate="novalidate"&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-4 mb-3"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="textField"&gt;<span>Text field</span>&lt;/label&gt;
-                &lt;input type="text" id="textField" class="form-control" name="textField" placeholder="Can use any characters"&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-md-4 offset-md-2"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="numberField"&gt;<span>Number field (+/-)</span>&lt;/label&gt;
-                &lt;input type="number" id="numberField" class="form-control" name="numberField" placeholder="Numbers only"&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-4 mb-3"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="emailField"&gt;<span>Email field</span>&lt;/label&gt;
-                &lt;input type="email" id="emailField" class="form-control" name="emailField" placeholder="Valid email address"&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-md-4 offset-md-2"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="passwordField"&gt;<span>Password field</span>&lt;/label&gt;
-                &lt;input type="password" id="passwordField" class="form-control" name="passwordField"&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-4 mb-3"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="dateField"&gt;<span>Date field (uses the HTML5 datepicker by default)</span>&lt;/label&gt;
-                &lt;input type="date" id="dateField" class="form-control" name="dateField"&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-md-4 offset-md-2"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="urlField"&gt;<span>URL field</span>&lt;/label&gt;
-                &lt;input type="url" id="urlField" class="form-control" name="urlField" value="http://"&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-4 mb-3"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="selectField"&gt;<span>Select field</span>&lt;/label&gt;
-                &lt;select id="selectField" class="form-control" name="selectField"&gt;
-                    &lt;option value=""&gt;<span>Choose...</span>&lt;/option&gt;
-                    &lt;option value="1"&gt;<span>One</span>&lt;/option&gt;
-                    &lt;option value="2"&gt;<span>Two</span>&lt;/option&gt;
-                    &lt;option value="3"&gt;<span>Three</span>&lt;/option&gt;
-                &lt;/select&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-md-4 offset-md-2"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="selectMultipleField"&gt;<span>Select multiple field</span>&lt;/label&gt;
-                &lt;select id="selectMultipleField" class="form-control" name="selectMultipleField" size="3" multiple=""&gt;
-                    &lt;option value="1"&gt;<span>One</span>&lt;/option&gt;
-                    &lt;option value="2"&gt;<span>Two</span>&lt;/option&gt;
-                    &lt;option value="3"&gt;<span>Three</span>&lt;/option&gt;
-                    &lt;option value="4"&gt;<span>Four</span>&lt;/option&gt;
-                    &lt;option value="5"&gt;<span>Five</span>&lt;/option&gt;
-                &lt;/select&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-4 mb-3"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="textareaField"&gt;<span>Textarea</span>&lt;/label&gt;
-                &lt;textarea id="textareaField" class="form-control" name="textareaField" rows="3" placeholder="Type here..."&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-md-4 offset-md-2"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="fileUploadField"&gt;<span>File upload</span>&lt;/label&gt;
-                &lt;div class="custom-file"&gt;
-                    &lt;input type="file" id="fileUploadField" class="form-control custom-file-input" name="fileUploadField"&gt;
-                    &lt;label class="custom-file-label"&gt;<span>Choose file</span>&lt;/label&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-2 mb-3"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="checkboxGroup"&gt;<span>Checkbox (single)</span>&lt;/label&gt;
-                &lt;div class="form-check"&gt;
-                    &lt;input type="checkbox" id="checkboxSingle" class="form-check-input" name="checkboxSingle"&gt;
-                    &lt;label class="form-check-label" for="checkbox"&gt;<span>Checkbox</span>&lt;/label&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-md-2 mb-3"&gt;
-            &lt;fieldset&gt;
-                &lt;legend&gt;<span>Checkbox group</span>&lt;/legend&gt;
-                &lt;div class="form-group"&gt;
-                    &lt;div class="form-check"&gt;
-                        &lt;input type="checkbox" id="checkboxGroup1" class="form-check-input" name="checkboxGroup"&gt;
-                        &lt;label class="form-check-label" for="checkboxGroup1"&gt;<span>Checkbox 1</span>&lt;/label&gt;
-                    &lt;/div&gt;
-                    &lt;div class="form-check"&gt;
-                        &lt;input type="checkbox" id="checkboxGroup2" class="form-check-input" name="checkboxGroup"&gt;
-                        &lt;label class="form-check-label" for="checkboxGroup2"&gt;<span>Checkbox 2</span>&lt;/label&gt;
-                    &lt;/div&gt;
-                    &lt;div class="form-check"&gt;
-                        &lt;input type="checkbox" id="checkboxGroup3" class="form-check-input" name="checkboxGroup"&gt;
-                        &lt;label class="form-check-label" for="checkboxGroup3"&gt;<span>Checkbox 3</span>&lt;/label&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/fieldset&gt;
-        &lt;/div&gt;
-        &lt;div class="col-md-2 offset-md-2"&gt;
-            &lt;fieldset&gt;
-                &lt;legend&gt;<span>Radio group</span>&lt;/legend&gt;
-                &lt;div class="form-group"&gt;
-                    &lt;div class="form-check"&gt;
-                        &lt;input type="radio" id="radioGroup1" class="form-check-input" name="radioGroup"&gt;
-                        &lt;label class="form-check-label" for="radio1"&gt;<span>Radio 1</span>&lt;/label&gt;
-                    &lt;/div&gt;
-                    &lt;div class="form-check"&gt;
-                        &lt;input type="radio" id="radioGroup2" class="form-check-input" name="radioGroup"&gt;
-                        &lt;label class="form-check-label" for="radio2"&gt;<span>Radio 2</span>&lt;/label&gt;
-                    &lt;/div&gt;
-                    &lt;div class="form-check"&gt;
-                        &lt;input type="radio" id="radioGroup3" class="form-check-input" name="radioGroup"&gt;
-                        &lt;label class="form-check-label" for="radio3"&gt;<span>Radio 3</span>&lt;/label&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/fieldset&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-4 offset-md-4 mb-3 text-center"&gt;
-            &lt;button type="submit" class="btn btn-primary" name="form2Submit" value="Submit form"&gt;<span>Submit form</span>&lt;/button&gt;
-            &lt;button type="reset" class="btn btn-light"&gt;<span>Reset form</span>&lt;/button&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/form&gt;</code></pre>
-            </figure> -->
         </div>
         <div class="col-2">
             <ul class="subnav border-left pl-4 sticky-top sticky-offset">
@@ -2855,6 +2712,19 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <script src="js/jquery.exlink.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript">
+        (function () {
+            var tagjs = document.createElement("script");
+            var s = document.getElementsByTagName("script")[0];
+            tagjs.async = true;
+            tagjs.src = "//s.btstatic.com/tag.js#site=sPLaZHQ";
+            s.parentNode.insertBefore(tagjs, s);
+        }());
+    </script>
+    <noscript>
+        <iframe src="//s.thebrighttag.com/iframe?c=sPLaZHQ" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </noscript>
 
 </body>
 
