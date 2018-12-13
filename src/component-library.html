@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/docs.min.css" />
     <!-- build:css css/component-library.css -->
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
     <link rel="stylesheet" type="text/css" href="css/component-library.css" />
     <!-- endbuild -->
 </head>
@@ -204,7 +206,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
                 <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#alertLink"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
             <figure class="highlight">
-                <pre><code id="alertLink" class="language-html">&lt;div class="alert alert-info" role="alert"&gt;<span>This is an alert with</span> &lt;a href="#"  class="alert-link"&gt;<span>linked text</span>&lt;/a&gt;<span>.</span>&lt;/div&gt;</code></pre>
+                <pre><code id="alertLink" class="language-html">&lt;div class="alert alert-primary" role="alert"&gt;<span>This is an alert with</span> &lt;a href="#" class="alert-link"&gt;<span>linked text</span>&lt;/a&gt;<span>.</span>&lt;/div&gt;</code></pre>
             </figure>
             <hr />
             <h3 id="alertsDismissible">Dismissible</h3>
@@ -2845,13 +2847,13 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         </div>
     </main>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
     <!-- build:js js/scripts.js -->
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/jquery.exlink.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
 </body>
