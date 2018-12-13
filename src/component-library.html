@@ -100,7 +100,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <a class="nav-link" id="collapse-tab" data-toggle="pill" href="#collapse" role="menuitem" aria-control="collapse" aria-selected="false">Collapse</a>
         <a class="nav-link" id="dropdowns-tab" data-toggle="pill" href="#dropdowns" role="menuitem" aria-control="dropdowns" aria-selected="false">Dropdowns</a>
         <a class="nav-link" id="forms-tab" data-toggle="pill" href="#forms" role="menuitem" aria-controls="forms" aria-selected="false">Forms</a>
-        <a class="nav-link" id="input-group-tab" data-toggle="pill" href="#input-group" role="menuitem" aria-controls="input-group" aria-selected="false">Input Group</a>
+        <!-- <a class="nav-link" id="input-group-tab" data-toggle="pill" href="#input-group" role="menuitem" aria-controls="input-group" aria-selected="false">Input Group</a> -->
         <a class="nav-link" id="list-group-tab" data-toggle="pill" href="#list-group" role="menuitem" aria-control="list-group" aria-selected="false">List Group</a>
         <a class="nav-link" id="modals-tab" data-toggle="pill" href="#modals" role="menuitem" aria-control="modals" aria-selected="false">Modals</a>
         <a class="nav-link" id="navs-tab" data-toggle="pill" href="#navs" role="menuitem" aria-control="navs" aria-selected="false">Navs</a>
@@ -2130,24 +2130,29 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             </div>
             <figure class="highlight">
                 <pre><code id="inputText">&lt;div class="form-group"&gt;
-        &lt;label for="text"&gt;<span>Text input</span>&lt;/label&gt;
-        &lt;input type="text" class="form-control" id="text" name="text" placeholder="Enter text..."&gt;
-    &lt;/div&gt;</code></pre>
+    &lt;label for="text"&gt;<span>Text input</span>&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="text" name="text" placeholder="Enter text..."&gt;
+&lt;/div&gt;</code></pre>
             </figure>
             <div class="bd-example">
-                <div class="form-group">
-                    <label for="text">File input</label>
-                    <input type="file" class="form-control-file" id="file" name="file">
-                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="fileUploadField1">File upload</label>
+                        <div class="custom-file">
+                            <input type="file" id="fileUploadField1" class="form-control custom-file-input" name="fileUploadField">
+                            <label class="custom-file-label">Choose file</label>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="bd-clipboard">
-                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputFile"><i class="far fa-clipboard fa-2x"></i></button>
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputFile1"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
             <figure class="highlight">
-                <pre><code id="inputFile">&lt;div class="form-group"&gt;
-        &lt;label for="file"&gt;<span>File input</span>&lt;/label&gt;
-        &lt;input type="file" class="form-control-file" id="file" name="file"&gt;
-    &lt;/div&gt;</code></pre>
+                <pre><code id="inputFile1">&lt;div class="form-group"&gt;
+    &lt;label for="file"&gt;<span>File input</span>&lt;/label&gt;
+    &lt;input type="file" class="form-control-file" id="file" name="file"&gt;
+&lt;/div&gt;</code></pre>
             </figure>
             <h4>Select menu</h4>
             <p>The <code class="highlighter-rogue">&lt;select&gt;</code> element defines a list to select one or more options from. Add the <code class="highlighter-rogue">multiple</code> attribute to select multiple options.</p>
@@ -2169,15 +2174,15 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             </div>
             <figure class="highlight">
                 <pre><code id="select">&lt;div class="form-group"&gt;
-        &lt;label for="select"&gt;Example select&lt;/label&gt;
-        &lt;select class="form-control" id="select"&gt;
-            &lt;option&gt;<span>1</span>&lt;/option&gt;
-            &lt;option&gt;<span>2</span>&lt;/option&gt;
-            &lt;option&gt;<span>3</span>&lt;/option&gt;
-            &lt;option&gt;<span>4</span>&lt;/option&gt;
-            &lt;option&gt;<span>5</span>&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;</code></pre>
+    &lt;label for="select"&gt;Example select&lt;/label&gt;
+    &lt;select class="form-control" id="select"&gt;
+        &lt;option&gt;<span>1</span>&lt;/option&gt;
+        &lt;option&gt;<span>2</span>&lt;/option&gt;
+        &lt;option&gt;<span>3</span>&lt;/option&gt;
+        &lt;option&gt;<span>4</span>&lt;/option&gt;
+        &lt;option&gt;<span>5</span>&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
             </figure>
             <div class="bd-example">
                 <div class="form-group">
@@ -2652,7 +2657,155 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
                     </div>
                 </form>
             </div>
-            <p><a href="https://www.metrotransit.org/fed/form-validation">Form validation example</a></p>
+            <!-- <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#formInlineValidation"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="formInlineValidation">&lt;form id="sampleForm" method="post" action="" novalidate="novalidate"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="textField"&gt;<span>Text field</span>&lt;/label&gt;
+                &lt;input type="text" id="textField" class="form-control" name="textField" placeholder="Can use any characters"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="numberField"&gt;<span>Number field (+/-)</span>&lt;/label&gt;
+                &lt;input type="number" id="numberField" class="form-control" name="numberField" placeholder="Numbers only"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="emailField"&gt;<span>Email field</span>&lt;/label&gt;
+                &lt;input type="email" id="emailField" class="form-control" name="emailField" placeholder="Valid email address"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="passwordField"&gt;<span>Password field</span>&lt;/label&gt;
+                &lt;input type="password" id="passwordField" class="form-control" name="passwordField"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="dateField"&gt;<span>Date field (uses the HTML5 datepicker by default)</span>&lt;/label&gt;
+                &lt;input type="date" id="dateField" class="form-control" name="dateField"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="urlField"&gt;<span>URL field</span>&lt;/label&gt;
+                &lt;input type="url" id="urlField" class="form-control" name="urlField" value="http://"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="selectField"&gt;<span>Select field</span>&lt;/label&gt;
+                &lt;select id="selectField" class="form-control" name="selectField"&gt;
+                    &lt;option value=""&gt;<span>Choose...</span>&lt;/option&gt;
+                    &lt;option value="1"&gt;<span>One</span>&lt;/option&gt;
+                    &lt;option value="2"&gt;<span>Two</span>&lt;/option&gt;
+                    &lt;option value="3"&gt;<span>Three</span>&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="selectMultipleField"&gt;<span>Select multiple field</span>&lt;/label&gt;
+                &lt;select id="selectMultipleField" class="form-control" name="selectMultipleField" size="3" multiple=""&gt;
+                    &lt;option value="1"&gt;<span>One</span>&lt;/option&gt;
+                    &lt;option value="2"&gt;<span>Two</span>&lt;/option&gt;
+                    &lt;option value="3"&gt;<span>Three</span>&lt;/option&gt;
+                    &lt;option value="4"&gt;<span>Four</span>&lt;/option&gt;
+                    &lt;option value="5"&gt;<span>Five</span>&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="textareaField"&gt;<span>Textarea</span>&lt;/label&gt;
+                &lt;textarea id="textareaField" class="form-control" name="textareaField" rows="3" placeholder="Type here..."&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 offset-md-2"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="fileUploadField"&gt;<span>File upload</span>&lt;/label&gt;
+                &lt;div class="custom-file"&gt;
+                    &lt;input type="file" id="fileUploadField" class="form-control custom-file-input" name="fileUploadField"&gt;
+                    &lt;label class="custom-file-label"&gt;<span>Choose file</span>&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-2 mb-3"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="checkboxGroup"&gt;<span>Checkbox (single)</span>&lt;/label&gt;
+                &lt;div class="form-check"&gt;
+                    &lt;input type="checkbox" id="checkboxSingle" class="form-check-input" name="checkboxSingle"&gt;
+                    &lt;label class="form-check-label" for="checkbox"&gt;<span>Checkbox</span>&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-2 mb-3"&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;<span>Checkbox group</span>&lt;/legend&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="checkbox" id="checkboxGroup1" class="form-check-input" name="checkboxGroup"&gt;
+                        &lt;label class="form-check-label" for="checkboxGroup1"&gt;<span>Checkbox 1</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="checkbox" id="checkboxGroup2" class="form-check-input" name="checkboxGroup"&gt;
+                        &lt;label class="form-check-label" for="checkboxGroup2"&gt;<span>Checkbox 2</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="checkbox" id="checkboxGroup3" class="form-check-input" name="checkboxGroup"&gt;
+                        &lt;label class="form-check-label" for="checkboxGroup3"&gt;<span>Checkbox 3</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-2 offset-md-2"&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;<span>Radio group</span>&lt;/legend&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="radio" id="radioGroup1" class="form-check-input" name="radioGroup"&gt;
+                        &lt;label class="form-check-label" for="radio1"&gt;<span>Radio 1</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="radio" id="radioGroup2" class="form-check-input" name="radioGroup"&gt;
+                        &lt;label class="form-check-label" for="radio2"&gt;<span>Radio 2</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                        &lt;input type="radio" id="radioGroup3" class="form-check-input" name="radioGroup"&gt;
+                        &lt;label class="form-check-label" for="radio3"&gt;<span>Radio 3</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 offset-md-4 mb-3 text-center"&gt;
+            &lt;button type="submit" class="btn btn-primary" name="form2Submit" value="Submit form"&gt;<span>Submit form</span>&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-light"&gt;<span>Reset form</span>&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+            </figure> -->
+            <figure class="highlight">
+                <p>Refer to the project files for the <a href="https://github.com/mtbotherd/form-validation/blob/master/src/index.html">HTML markup</a> and <a href="https://github.com/mtbotherd/form-validation/blob/master/src/js/form-validation.js">JavaScript</a>.</p>
+            </figure>
         </div>
         <div class="col-2">
             <ul class="subnav border-left pl-4 sticky-top sticky-offset">
@@ -2667,12 +2820,47 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     </div>
 </div>
 
-                    <div class="tab-pane" id="input-group" role="tabpanel" aria-labelledby="input-group-tab">
-    <h2>Input group</h2>
-</div>
-
                     <div class="tab-pane fade" id="list-group" role="tabpanel" aria-labelledby="list-group-tab">
-    <h2>List group</h2>
+    <div class="row">
+        <div class="col">
+            <h2>List Group</h2>
+            <p class="bd-lead">List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
+            <h3 id="listGroupExample">Links &amp; buttons</h3>
+            <p>Use <code class="highlighter-rogue">&lt;a&gt;</code>s or <code class="highlighter-rogue">&lt;button&gt;</code>s to create actionable list group items with hover, disabled, and active states by adding <code class="highlighter-rogue">.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code class="highlighter-rogue">&lt;li&gt;</code>s or <code class="highlighter-rogue">&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
+            <div class="bd-callout bd-callout-warning">
+                <p>Be sure to not use the standard <code class="highlighter-rogue">.btn</code> classes here.</p>
+            </div>
+            <div class="bd-example">
+                <ul class="list-group">
+                    <li class="list-group-item active">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#listGroup"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="listGroup">&lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item active"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </figure>
+        </div>
+        <div class="col-2">
+            <ul class="subnav border-left pl-4 sticky-top sticky-offset">
+    <li><a href="#listGroupLinksButtons">Links &amp; buttons</a></li>
+    <li><a href="#listGroupBadges">With badges</a></li>
+    <li><a href="#listGroupCustomContent">Custom content (News/Blog)</a></li>
+</ul>
+
+        </div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="modals" role="tabpanel" aria-labelledby="modals-tab">
@@ -2712,19 +2900,6 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <script src="js/jquery.exlink.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
-
-    <script type="text/javascript">
-        (function () {
-            var tagjs = document.createElement("script");
-            var s = document.getElementsByTagName("script")[0];
-            tagjs.async = true;
-            tagjs.src = "//s.btstatic.com/tag.js#site=sPLaZHQ";
-            s.parentNode.insertBefore(tagjs, s);
-        }());
-    </script>
-    <noscript>
-        <iframe src="//s.thebrighttag.com/iframe?c=sPLaZHQ" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    </noscript>
 
 </body>
 

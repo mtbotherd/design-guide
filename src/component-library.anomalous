@@ -77,7 +77,6 @@
                     <partial src="./partials/cl/collapse.html" />
                     <partial src="./partials/cl/dropdowns.html" />
                     <partial src="./partials/cl/forms.html" />
-                    <partial src="./partials/cl/input-group.html" />
                     <partial src="./partials/cl/list-group.html" />
                     <partial src="./partials/cl/modals.html" />
                     <partial src="./partials/cl/navs.html" />

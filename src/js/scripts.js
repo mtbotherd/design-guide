@@ -28,5 +28,35 @@ $(document).ready(function() {
     var clipboard = new ClipboardJS('.btn-clipboard');
 
     // Initialize exlink.js - used to identify and open external links in new window (replaces target="_blank" attribute)
-    exLink.init();
+    exLink.init({
+     	protocols: ['http', 'https'],
+    	filetypes: ['pdf', 'xls', 'docx', 'doc', 'ppt', 'pptx'],
+    	linkWarning: false,
+    	hostCompare: false,
+    	noFollow: false,
+    	fancyBoxIgnore: true,
+    	linkCallback: null,
+        fileCallback: null,
+        gaTracking: false,
+        gaTrackLabel: 'External Links',
+        gaTrackOld: false,
+    	linkWarningBody: 'You are about to leave this website and navigate to the link below. Would you like to continue?',
+    	fileWarning: false,
+    	fileWarningBody: 'You are about to open the file below. Do you wish to continue?',
+    	dialogConfirm: '#006600',
+    	dialogCancel: '#CC0000',
+    	dialogConfirmText: '#fff',
+    	dialogCancelText: '#fff',
+    	dialogCancelButton: 'Cancel',
+    	dialogConfirmButton: 'Continue',
+    	modalWidth: "320px",
+    	modalHeight: "240px",
+    	modalDisplayBG: true,
+    	externalColor: '',
+        documentColor: '',
+        clickedColor: '',
+        newWindow: false,
+        widthWindow: '500',
+        heightWindow: '400'
+    });
 });
