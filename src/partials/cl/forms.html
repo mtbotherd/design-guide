@@ -34,24 +34,29 @@
             </div>
             <figure class="highlight">
                 <pre><code id="inputText">&lt;div class="form-group"&gt;
-        &lt;label for="text"&gt;<span>Text input</span>&lt;/label&gt;
-        &lt;input type="text" class="form-control" id="text" name="text" placeholder="Enter text..."&gt;
-    &lt;/div&gt;</code></pre>
+    &lt;label for="text"&gt;<span>Text input</span>&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="text" name="text" placeholder="Enter text..."&gt;
+&lt;/div&gt;</code></pre>
             </figure>
             <div class="bd-example">
-                <div class="form-group">
-                    <label for="text">File input</label>
-                    <input type="file" class="form-control-file" id="file" name="file">
-                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="fileUploadField1">File upload</label>
+                        <div class="custom-file">
+                            <input type="file" id="fileUploadField1" class="form-control custom-file-input" name="fileUploadField">
+                            <label class="custom-file-label">Choose file</label>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="bd-clipboard">
-                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputFile"><i class="far fa-clipboard fa-2x"></i></button>
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#inputFile1"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
             <figure class="highlight">
-                <pre><code id="inputFile">&lt;div class="form-group"&gt;
-        &lt;label for="file"&gt;<span>File input</span>&lt;/label&gt;
-        &lt;input type="file" class="form-control-file" id="file" name="file"&gt;
-    &lt;/div&gt;</code></pre>
+                <pre><code id="inputFile1">&lt;div class="form-group"&gt;
+    &lt;label for="file"&gt;<span>File input</span>&lt;/label&gt;
+    &lt;input type="file" class="form-control-file" id="file" name="file"&gt;
+&lt;/div&gt;</code></pre>
             </figure>
             <h4>Select menu</h4>
             <p>The <code class="highlighter-rogue">&lt;select&gt;</code> element defines a list to select one or more options from. Add the <code class="highlighter-rogue">multiple</code> attribute to select multiple options.</p>
@@ -73,15 +78,15 @@
             </div>
             <figure class="highlight">
                 <pre><code id="select">&lt;div class="form-group"&gt;
-        &lt;label for="select"&gt;Example select&lt;/label&gt;
-        &lt;select class="form-control" id="select"&gt;
-            &lt;option&gt;<span>1</span>&lt;/option&gt;
-            &lt;option&gt;<span>2</span>&lt;/option&gt;
-            &lt;option&gt;<span>3</span>&lt;/option&gt;
-            &lt;option&gt;<span>4</span>&lt;/option&gt;
-            &lt;option&gt;<span>5</span>&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;</code></pre>
+    &lt;label for="select"&gt;Example select&lt;/label&gt;
+    &lt;select class="form-control" id="select"&gt;
+        &lt;option&gt;<span>1</span>&lt;/option&gt;
+        &lt;option&gt;<span>2</span>&lt;/option&gt;
+        &lt;option&gt;<span>3</span>&lt;/option&gt;
+        &lt;option&gt;<span>4</span>&lt;/option&gt;
+        &lt;option&gt;<span>5</span>&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
             </figure>
             <div class="bd-example">
                 <div class="form-group">
@@ -556,8 +561,10 @@
                     </div>
                 </form>
             </div>
-            <p><a href="https://www.metrotransit.org/fed/form-validation">Form validation example</a></p>
-            <!-- <figure class="highlight">
+            <!-- <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#formInlineValidation"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
                 <pre><code id="formInlineValidation">&lt;form id="sampleForm" method="post" action="" novalidate="novalidate"&gt;
     &lt;div class="row"&gt;
         &lt;div class="col-md-4 mb-3"&gt;
@@ -700,6 +707,9 @@
     &lt;/div&gt;
 &lt;/form&gt;</code></pre>
             </figure> -->
+            <figure class="highlight">
+                <p>Refer to the project files for the <a href="https://github.com/mtbotherd/form-validation/blob/master/src/index.html">HTML markup</a> and <a href="https://github.com/mtbotherd/form-validation/blob/master/src/js/form-validation.js">JavaScript</a>.</p>
+            </figure>
         </div>
         <div class="col-2">
             <partial src="partials/cl/subnav/forms-subnav.html" />
