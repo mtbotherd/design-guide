@@ -362,32 +362,37 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 </div>
 
                     <div class="tab-pane fade" id="breadcrumbs" role="tabpanel" aria-labelledby="breadcrumbs-tab">
-    <h2>Breadcrumbs</h2>
-    <p class="bd-lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
-    <h3>Example</h3>
-    <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code class="highlighter-rogue">aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code class="highlighter-rogue">&lt;nav&gt;</code> element, as well as applying an aria-current="page" to the last item of the set to indicate that it represents the current page.</p>
-    <p>For more information, see the <a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" target="_blank">WAI-ARIA Authoring Practices for the breadcrumb pattern</a>.</p>
-    <div class="bd-example">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Web Design Guide</a></li>
-                <li class="breadcrumb-item"><a href="#">Component Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
-            </ol>
-        </nav>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#breadcrumbs"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="breadcrumbs">&lt;nav aria-label="breadcrumb"&gt;
+    <div class="row">
+        <div class="col">
+            <h2>Breadcrumbs</h2>
+            <p class="bd-lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+            <h3>Example</h3>
+            <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code class="highlighter-rogue">aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code class="highlighter-rogue">&lt;nav&gt;</code> element, as well as applying an aria-current="page" to the last item of the set to indicate that it represents the current page.</p>
+            <p>For more information, see the <a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" target="_blank">WAI-ARIA Authoring Practices for the breadcrumb pattern</a>.</p>
+            <div class="bd-example">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Web Design Guide</a></li>
+                        <li class="breadcrumb-item"><a href="#">Component Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#breadcrumbs"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="breadcrumbs">&lt;nav aria-label="breadcrumb"&gt;
     &lt;ol class="breadcrumb"&gt;
         &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;<span>Web Design Guide</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;<span>Component Library</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li class="breadcrumb-item active" aria-current="page"&gt;<span>Breadcrumbs</span>&lt;/li&gt;
-    &lt;/ol>
+    &lt;/ol&gt;
 &lt;/nav&gt;</code></pre>
-    </figure>
+            </figure>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="buttons" role="tabpanel" aria-labelledby="buttons-tab">
@@ -681,9 +686,14 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 </div>
 
                     <div class="tab-pane fade" id="button-group" role="tabpanel" aria-labelledby="button-group-tab">
-    <h2>Button Group</h2>
-    <p class="lead">Revisit if this component is warranted.</p>
-    <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/button-group/" target="_blank">Bootstap's button group</a>.</p>
+    <div class="row">
+        <div class="col">
+            <h2>Button Group</h2>
+            <p class="lead">Revisit if this component is warranted.</p>
+            <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/button-group/" target="_blank">Bootstap's button group</a>.</p>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab">
@@ -2963,6 +2973,9 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     &lt;/a&gt;
 &lt;/div&gt;</code></pre>
             </figure>
+            <div class="bd-callout bd-callout-info">
+                <p>Extended the list group to create <a href="https://getbootstrap.com/docs/4.1/components/list-group/#javascript-behavior">tabbable panes</a>.</p>
+            </div>
         </div>
         <div class="col-2">
             <ul class="subnav border-left pl-4 sticky-top sticky-offset">
@@ -2975,27 +2988,57 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 </div>
 
                     <div class="tab-pane fade" id="modals" role="tabpanel" aria-labelledby="modals-tab">
-    <h2>Modals</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Modals</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="navs" role="tabpanel" aria-labelledby="navs-tab">
-    <h2>Navs</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Navs</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="navbar" role="tabpanel" aria-labelledby="navbar-tab">
-    <h2>Navbar</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Navbar</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="pagination" role="tabpanel" aria-labelledby="pagination-tab">
-    <h2>Pagination</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Pagination</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="popovers" role="tabpanel" aria-labelledby="popovers-tab">
-    <h2>Popovers</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Popovers</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="tooltips" role="tabpanel" aria-labelledby="tooltips-tab">
-    <h2>Tooltips</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Tooltips</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                 </div>
