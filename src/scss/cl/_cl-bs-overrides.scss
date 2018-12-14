@@ -8,3 +8,10 @@
         padding: 0;
     }
 }
+
+// Disable modal functionality for static example only.
+#staticModal {
+    position: relative;
+    display: block;
+    z-index: 0;
+}
