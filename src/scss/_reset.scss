@@ -1,6 +1,11 @@
 /************************************************
-    Button Styles
+    Reset Base Styles on specific comonents
 ************************************************/
 .btn:link {
     border-bottom: none; // removed blue bottom border set by a:link in _base.css
+}
+
+a:link.list-group-item,
+a:hover.list-group-item  {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
