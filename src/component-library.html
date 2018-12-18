@@ -362,32 +362,37 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 </div>
 
                     <div class="tab-pane fade" id="breadcrumbs" role="tabpanel" aria-labelledby="breadcrumbs-tab">
-    <h2>Breadcrumbs</h2>
-    <p class="bd-lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
-    <h3>Example</h3>
-    <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code class="highlighter-rogue">aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code class="highlighter-rogue">&lt;nav&gt;</code> element, as well as applying an aria-current="page" to the last item of the set to indicate that it represents the current page.</p>
-    <p>For more information, see the <a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" target="_blank">WAI-ARIA Authoring Practices for the breadcrumb pattern</a>.</p>
-    <div class="bd-example">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Web Design Guide</a></li>
-                <li class="breadcrumb-item"><a href="#">Component Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
-            </ol>
-        </nav>
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#breadcrumbs"><i class="far fa-clipboard fa-2x"></i></button>
-    </div>
-    <figure class="highlight">
-        <pre><code id="breadcrumbs">&lt;nav aria-label="breadcrumb"&gt;
+    <div class="row">
+        <div class="col">
+            <h2>Breadcrumbs</h2>
+            <p class="bd-lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+            <h3>Example</h3>
+            <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code class="highlighter-rogue">aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code class="highlighter-rogue">&lt;nav&gt;</code> element, as well as applying an aria-current="page" to the last item of the set to indicate that it represents the current page.</p>
+            <p>For more information, see the <a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" target="_blank">WAI-ARIA Authoring Practices for the breadcrumb pattern</a>.</p>
+            <div class="bd-example">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Web Design Guide</a></li>
+                        <li class="breadcrumb-item"><a href="#">Component Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#breadcrumbs"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="breadcrumbs">&lt;nav aria-label="breadcrumb"&gt;
     &lt;ol class="breadcrumb"&gt;
         &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;<span>Web Design Guide</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;<span>Component Library</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li class="breadcrumb-item active" aria-current="page"&gt;<span>Breadcrumbs</span>&lt;/li&gt;
-    &lt;/ol>
+    &lt;/ol&gt;
 &lt;/nav&gt;</code></pre>
-    </figure>
+            </figure>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="buttons" role="tabpanel" aria-labelledby="buttons-tab">
@@ -681,9 +686,14 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 </div>
 
                     <div class="tab-pane fade" id="button-group" role="tabpanel" aria-labelledby="button-group-tab">
-    <h2>Button Group</h2>
-    <p class="lead">Revisit if this component is warranted.</p>
-    <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/button-group/" target="_blank">Bootstap's button group</a>.</p>
+    <div class="row">
+        <div class="col">
+            <h2>Button Group</h2>
+            <p class="lead">Revisit if this component is warranted.</p>
+            <p>Refer to <a href="https://getbootstrap.com/docs/4.1/components/button-group/" target="_blank">Bootstap's button group</a>.</p>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab">
@@ -2804,7 +2814,7 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 &lt;/form&gt;</code></pre>
             </figure> -->
             <figure class="highlight">
-                <p>Refer to the project files for the <a href="https://github.com/mtbotherd/form-validation/blob/master/src/index.html">HTML markup</a> and <a href="https://github.com/mtbotherd/form-validation/blob/master/src/js/form-validation.js">JavaScript</a>.</p>
+                <p>Refer to the <a href="https://dev.metrotransittest.org/fed/form-validation/">source code</a> for the HTML markup and JavaScript.</p>
             </figure>
         </div>
         <div class="col-2">
@@ -2825,38 +2835,152 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
         <div class="col">
             <h2>List Group</h2>
             <p class="bd-lead">List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
-            <h3 id="listGroupExample">Links &amp; buttons</h3>
+            <p>Although there are several use cases for list groups, the examples below are the variations available for use on metrotransit.org.</p>
+            <h3 id="listGroupSideNavigation">As side navigation</h3>
             <p>Use <code class="highlighter-rogue">&lt;a&gt;</code>s or <code class="highlighter-rogue">&lt;button&gt;</code>s to create actionable list group items with hover, disabled, and active states by adding <code class="highlighter-rogue">.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code class="highlighter-rogue">&lt;li&gt;</code>s or <code class="highlighter-rogue">&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
             <div class="bd-callout bd-callout-warning">
                 <p>Be sure to not use the standard <code class="highlighter-rogue">.btn</code> classes here.</p>
             </div>
+            <div class="bd-callout bd-callout-danger">
+                <p>The <code class="highlighter-rogue">disabled</code> attribute is not supported with <code class="highlighter-rogue">&lt;a&gt;</code> tags.  Use the <code class="highlighter-rogue">&lt;button&gt;</code> tag instead when needing to show the disabled state.</p>
+            </div>
             <div class="bd-example">
-                <ul class="list-group">
-                    <li class="list-group-item active">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Link 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 4</a>
+                    <button class="list-group-item list-group-item-action" disabled>Link 5</button>
+                </div>
             </div>
             <div class="bd-clipboard">
                 <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#listGroup"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
             <figure class="highlight">
-                <pre><code id="listGroup">&lt;ul class="list-group"&gt;
-    &lt;li class="list-group-item active"&gt;Cras justo odio&lt;/li&gt;
-    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
-    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
-    &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
-    &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre><code id="listGroup">&lt;div class="list-group"&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action active"&gt;<span>Link 1</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 2</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 3</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 4</span>&lt;/a&gt;
+    &lt;button class="list-group-item list-group-item-action" disabled&gt;<span>Link 5</span>&lt;/button&gt;
+&lt;/div&gt;</code></pre>
             </figure>
+            <h4>Active items</h4>
+            <p>The active item gets the <code class="highlighter-rogue">.active</code> class appended to the <code class="highlighter-rogue">.list-group-item</code> class.</p>
+            <div class="bd-example">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Link 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 4</a>
+                    <button class="list-group-item list-group-item-action" disabled>Link 5</button>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#listGroup"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="listGroup">&lt;div class="list-group"&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action active"&gt;<span>Link 1</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 2</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 3</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 4</span>&lt;/a&gt;
+    &lt;button class="list-group-item list-group-item-action" disabled&gt;<span>Link 5</span>&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </figure>
+            <h4>With badges</h4>
+            <p>This example shows the badge being used to show a link that is not yet available, but will be soon.  Control spacing using <a href="https://getbootstrap.com/docs/4.1/utilities/flex/">Bootstrap's flexbox utilities</a>.  In this example the <code class="highlighter-rogue">.d-flex</code> and <code class="highlighter-rogue">.justify-content-between</code> classes were added to the disabled item to align the badge to the right of the link text.</p>
+            <div class="bd-example">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Link 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 4</a>
+                    <button class="list-group-item list-group-item-action d-flex justify-content-between" disabled>Link 5 <span class="badge badge-secondary">Coming soon!</span></button>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#listGroup"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="listGroup">&lt;div class="list-group"&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action active"&gt;<span>Link 1</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 2</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 3</span>&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;<span>Link 4</span>&lt;/a&gt;
+    &lt;button class="list-group-item list-group-item-action d-flex justify-content-between" disabled&gt;<span>Link 5</span> &lt;span class="badge badge-secondary"&gt;<span>Coming soon!</span>&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="listGroupCustomContent">Custom content</h3>
+            <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of <a href="https://getbootstrap.com/docs/4.1/utilities/flex/">Bootstrap's flexbox utilities</a>.</p>
+            <div class="bd-example">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#listItemsCustomContent"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="listItemsCustomContent">&lt;div class="list-group"&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action flex-column align-items-start active"&gt;
+        &lt;div class="d-flex w-100 justify-content-between"&gt;
+            &lt;h5 class="mb-1"&gt;<span>List group item heading</span>&lt;/h5&gt;
+            &lt;small&gt;<span>3 days ago</span>&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;p class="mb-1"&gt;<span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</span>&lt;/p&gt;
+        &lt;small&gt;<span>Donec id elit non mi porta.</span>&lt;/small&gt;
+    &lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action flex-column align-items-start"&gt;
+        &lt;div class="d-flex w-100 justify-content-between"&gt;
+            &lt;h5 class="mb-1"&gt;<span>List group item heading</span>&lt;/h5&gt;
+            &lt;small class="text-muted"&gt;<span>3 days ago</span>&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;p class="mb-1"&gt;<span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</span>&lt;/p&gt;
+        &lt;small class="text-muted"&gt;<span>Donec id elit non mi porta.</span>&lt;/small&gt;
+    &lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action flex-column align-items-start"&gt;
+        &lt;div class="d-flex w-100 justify-content-between"&gt;
+            &lt;h5 class="mb-1"&gt;<span>List group item heading</span>&lt;/h5&gt;
+            &lt;small class="text-muted"&gt;<span>3 days ago</span>&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;p class="mb-1"&gt;<span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</span>&lt;/p&gt;
+        &lt;small class="text-muted"&gt;<span>Donec id elit non mi porta.</span>&lt;/small&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </figure>
+            <div class="bd-callout bd-callout-info">
+                <p>Extended the list group to create <a href="https://getbootstrap.com/docs/4.1/components/list-group/#javascript-behavior">tabbable panes</a>.</p>
+            </div>
         </div>
         <div class="col-2">
             <ul class="subnav border-left pl-4 sticky-top sticky-offset">
-    <li><a href="#listGroupLinksButtons">Links &amp; buttons</a></li>
-    <li><a href="#listGroupBadges">With badges</a></li>
-    <li><a href="#listGroupCustomContent">Custom content (News/Blog)</a></li>
+    <li><a href="#listGroupSideNav">As side navigation</a></li>
+    <li><a href="#listGroupCustomContent">Custom content</a></li>
 </ul>
 
         </div>
@@ -2864,27 +2988,275 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
 </div>
 
                     <div class="tab-pane fade" id="modals" role="tabpanel" aria-labelledby="modals-tab">
-    <h2>Modals</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Modals</h2>
+            <p class="bd-lead">Modals add dialogs for for user notifications or custom content.</p>
+            <h3>How it works</h3>
+            <p>Be sure to read this list completely.</p>
+            <ul>
+                <li>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <code class="highlighter-rogue">&lt;body&gt;</code> so that modal content scrolls instead.</li>
+                <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
+                <li>Only one modal window is supported at a time. Nested modals aren’t supported as considered to be poor user experiences.</li>
+                <li>Modals use <code class="highlighter-rogue">position: fixed</code>, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a <code class="highlighter-rogue">.modal</code> within another fixed element.</li>
+                <li>Due to <code class="highlighter-rogue">position: fixed</code>, there are some caveats with using modals on mobile devices. Refer to <a href="https://getbootstrap.com/docs/4.1/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile">Bootstrap's browser support docs</a> for details.</li>
+                <li>Due to how HTML5 defines its semantics, the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus">autofocus HTML attribute</a> has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:</li>
+            </ul>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#modalsAutofocus"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="modalsAutofocus">$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})</code></pre>
+            </figure>
+            <hr />
+            <h3 id="modalExamples">Examples</h3>
+            <h4>Modal components</h4>
+            <p>Below is a static modal example. Included are the modal header, modal body (required for padding), and modal footer (optional).</p>
+            <div class="bd-callout bd-callout-danger">
+                <p>Modals should include modal headers with dismiss actions whenever necessary.</p>
+            </div>
+            <div class="bd-example">
+                <div class="modal" id="staticModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body content goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="mt-3">Live demo</h4>
+            <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#liveDemoModal">Launch demo modal</button>
+                <div class="modal fade" id="liveDemoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Model body content goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#modalsLiveDemo"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="modalsLiveDemo">&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#liveDemoModal"&gt;<span>Launch demo modal</span>&lt;/button&gt;
+&lt;div class="modal fade" id="liveDemoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog" role="document"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="exampleModalLabel"&gt;<span>Modal title</span>&lt;/h5&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                &lt;span aria-hidden="true"&gt;<span>&times;</span>&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;p&gt;<span>Model body content goes here.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;<span>Close</span>&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;<span>Save changes</span>&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </figure>
+            <h4>Scrolling long content</h4>
+            <p>When modals become too long for the user’s viewport or device, they scroll independent of the page itself.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#scrollingLongContentModal">Launch demo modal</button>
+                <div class="modal fade" id="scrollingLongContentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#modalsScrollingLongContent"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="modalsScrollingLongContent">&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#scrollingLongContentModal"&gt;<span>Launch demo modal</span>&lt;/button&gt;
+&lt;div class="modal fade" id="scrollingLongContentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog" role="document"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="exampleModalLabel"&gt;<span>Modal title</span>&lt;/h5&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                &lt;span aria-hidden="true"&gt;<span>&times;</span>&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                <span>...</span>
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;<span>Close</span>&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;<span>Save changes</span>&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </figure>
+            <h4 class="mt-3">Vertically centered</h4>
+            <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#verticallyCenteredModal">Launch demo modal</button>
+                <div class="modal fade" id="verticallyCenteredModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Model body content goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#modalsVerticallyCentered"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="modalsVerticallyCentered">&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#verticallyCenteredModal"&gt;<span>Launch demo modal</span>&lt;/button&gt;
+&lt;div class="modal fade" id="verticallyCenteredModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog modal-dialog-centered" role="document"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="exampleModalLabel"&gt;<span>Modal title</span>&lt;/h5&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                &lt;span aria-hidden="true"&gt;<span>&times;</span>&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;p&gt;<span>Model body content goes here.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;<span>Close</span>&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;<span>Save changes</span>&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </figure>
+        </div>
+        <div class="col-2">
+            <ul class="subnav border-left pl-4 sticky-top sticky-offset">
+    <li><a href="#modalsExamples">Examples</a></li>
+    <li><a href="#modalsOptionalSizes">Optional sizes</a></li>
+    <li><a href="#modalsUsage">Usage</a></li>
+</ul>
+
+        </div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="navs" role="tabpanel" aria-labelledby="navs-tab">
-    <h2>Navs</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Navs</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="navbar" role="tabpanel" aria-labelledby="navbar-tab">
-    <h2>Navbar</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Navbar</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="pagination" role="tabpanel" aria-labelledby="pagination-tab">
-    <h2>Pagination</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Pagination</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="popovers" role="tabpanel" aria-labelledby="popovers-tab">
-    <h2>Popovers</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Popovers</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                     <div class="tab-pane fade" id="tooltips" role="tabpanel" aria-labelledby="tooltips-tab">
-    <h2>Tooltips</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Tooltips</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 
                 </div>
@@ -2900,6 +3272,19 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <script src="js/jquery.exlink.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript">
+        (function () {
+            var tagjs = document.createElement("script");
+            var s = document.getElementsByTagName("script")[0];
+            tagjs.async = true;
+            tagjs.src = "//s.btstatic.com/tag.js#site=sPLaZHQ";
+            s.parentNode.insertBefore(tagjs, s);
+        }());
+    </script>
+    <noscript>
+        <iframe src="//s.thebrighttag.com/iframe?c=sPLaZHQ" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </noscript>
 
 </body>
 
