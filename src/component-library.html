@@ -3202,11 +3202,17 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </figure>
+            <hr />
+            <h3 id="modalsAccessibility">Accessibility</h3>
+            <p>Be sure to add <code class="rogue-highlight">role="dialog"</code> and <code class="rogue-highlight">aria-labelledby="..."</code>, referencing the modal title, to <code class="rogue-highlight">.modal</code>, and <code class="rogue-highlight">role="document"</code> to the <code class="rogue-highlight">.modal-dialog</code> itself. Additionally, you may give a description of your modal dialog with <code class="rogue-highlight">aria-describedby</code> on <code class="rogue-highlight">.modal</code>.</p>
+            <hr />
+            <h3 id="modalsUsage">Usage</h3>
+            <p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code class="rogue-highlight">.modal-open</code> to the <code class="rogue-highlight">&lt;body&gt;</code> to override default scrolling behavior and generates a <code class="rogue-highlight">.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal. Refer to <a href="https://getbootstrap.com/docs/4.1/components/modal/#usage">Bootstrap's modal usage</a> for more info and code examples.</p>
         </div>
         <div class="col-2">
             <ul class="subnav border-left pl-4 sticky-top sticky-offset">
     <li><a href="#modalsExamples">Examples</a></li>
-    <li><a href="#modalsOptionalSizes">Optional sizes</a></li>
+    <li><a href="#modalsAccessibility">Accessibility</a></li>
     <li><a href="#modalsUsage">Usage</a></li>
 </ul>
 
@@ -3218,8 +3224,155 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <div class="row">
         <div class="col">
             <h2>Navs</h2>
+            <p class="bd-lead">Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+            <h3 id="baseNav">Base nav</h3>
+            <p>Navigation available in the general markup and styles, from the base <code class="highlighter-rouge">.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
+            <p>The base <code class="highlighter-rouge">.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
+            <div class="bd-callout bd-callout-info">
+                <p>The base <code class="highlighter-rouge">.nav</code> component does not include any <code class="highlighter-rouge">.active</code> state. The following examples include the class, mainly to demonstrate that this particular class does not trigger any special styling.</p>
+            </div>
+            <div class="bd-example">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsBaseNav"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navsBaseNav">&lt;ul class="nav"&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </figure>
+            <h4>Without using a list</h4>
+            <p>Classes are used throughout, so your markup can be super flexible. Use <code class="highlighter-rouge">&lt;ul&gt;</code>s like above, or roll your own with say a <code class="highlighter-rouge">&lt;nav&gt;</code> element. Because the <code class="highlighter-rouge">.nav</code> uses <code class="highlighter-rouge">display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
+            <div class="bd-example">
+                <nav class="nav">
+                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsNoList"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navsNoList">&lt;nav class="nav"&gt;
+        &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/nav&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="navsAvailableStyles">Available styles</h3>
+            <p>Change the style of <code class="highlighter-rouge">.nav</code>s component with modifiers and utilities. Mix and match as needed, or build your own.</p>
+            <h4>Horizontal alignment</h4>
+            <p>Change the horizontal alignment of your nav with <a href="/docs/4.1/layout/grid/#horizontal-alignment">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right aligned.</p>
+            <p>Centered with <code class="highlighter-rouge">.justify-content-center</code>:</p>
+            <div class="bd-example">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsJustifiedCenter"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navsJustifiedCenter">&lt;ul class="nav justify-content-center"&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+            </figure>
+            <p>Centered with <code class="highlighter-rouge">.justify-content-end</code>:</p>
+            <div class="bd-example">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsJustifiedEnd"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navsJustifiedEnd">&lt;ul class="nav justify-content-end"&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+            </figure>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <ul class="subnav border-left pl-4 sticky-top sticky-offset">
+    <li><a href="#baseNav">Base nav</a></li>
+    <li><a href="#navsAccessibility">Accessibility</a></li>
+    <li><a href="#navsUsage">Usage</a></li>
+</ul>
+
+        </div>
     </div>
 </div>
 

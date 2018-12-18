@@ -213,6 +213,12 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </figure>
+            <hr />
+            <h3 id="modalsAccessibility">Accessibility</h3>
+            <p>Be sure to add <code class="rogue-highlight">role="dialog"</code> and <code class="rogue-highlight">aria-labelledby="..."</code>, referencing the modal title, to <code class="rogue-highlight">.modal</code>, and <code class="rogue-highlight">role="document"</code> to the <code class="rogue-highlight">.modal-dialog</code> itself. Additionally, you may give a description of your modal dialog with <code class="rogue-highlight">aria-describedby</code> on <code class="rogue-highlight">.modal</code>.</p>
+            <hr />
+            <h3 id="modalsUsage">Usage</h3>
+            <p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code class="rogue-highlight">.modal-open</code> to the <code class="rogue-highlight">&lt;body&gt;</code> to override default scrolling behavior and generates a <code class="rogue-highlight">.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal. Refer to <a href="https://getbootstrap.com/docs/4.1/components/modal/#usage">Bootstrap's modal usage</a> for more info and code examples.</p>
         </div>
         <div class="col-2">
             <partial src="partials/cl/subnav/modals-subnav.html" />

@@ -6435,7 +6435,8 @@ a.skip-to-content {
 /************************************************
     Reset Base Styles on specific comonents
 ************************************************/
-.btn:link {
+.btn:link,
+a:link.nav-link {
   border-bottom: none; }
 
 a:link.list-group-item,

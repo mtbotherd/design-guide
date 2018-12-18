@@ -1,7 +1,8 @@
 /************************************************
     Reset Base Styles on specific comonents
 ************************************************/
-.btn:link {
+.btn:link,
+a:link.nav-link {
     border-bottom: none; // removed blue bottom border set by a:link in _base.css
 }
 
