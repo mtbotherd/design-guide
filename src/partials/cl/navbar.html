@@ -2,7 +2,106 @@
     <div class="row">
         <div class="col">
             <h2>Navbar</h2>
+            <p class="bd-lead">Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
+            <h3 id="navbarHowItWorks">How it works</h3>
+            <p>Here’s what you need to know before getting started with the navbar:</p>
+            <ul>
+                <li>Navbars require a wrapping <code class="highlighter-rouge">.navbar</code> with <code class="highlighter-rouge">.navbar-expand{-sm|-md|-lg|-xl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
+                <li>Navbars and their contents are fluid by default. Use <a href="#containers">optional containers</a> to limit their horizontal width.</li>
+                <li>Use our <a href="/docs/4.1/utilities/spacing/">spacing</a> and <a href="/docs/4.1/utilities/flex/">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
+                <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
+                <li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the <a href="/docs/4.1/utilities/display/">display</a> utility class.</li>
+                <li>Ensure accessibility by using a <code class="highlighter-rouge">&lt;nav&gt;</code> element or, if using a more generic element such as a <code class="highlighter-rouge">&lt;div&gt;</code>, add a <code class="highlighter-rouge">role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+            </ul>
+            <p>Read on for an example and list of supported sub-components.</p>
+            <hr />
+            <h3 id="navbarSupportedContent">Supported content</h3>
+            <p>Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:</p>
+            <ul>
+                <li><code class="highlighter-rouge">.navbar-brand</code> for your company, product, or project name.</li>
+                <li><code class="highlighter-rouge">.navbar-nav</code> for a full-height and lightweight navigation (including support for dropdowns).</li>
+                <li><code class="highlighter-rouge">.navbar-toggler</code> for use with our collapse plugin and other <a href="#responsive-behaviors">navigation toggling</a> behaviors.</li>
+                <li><code class="highlighter-rouge">.form-inline</code> for any form controls and actions.</li>
+                <li><code class="highlighter-rouge">.navbar-text</code> for adding vertically centered strings of text.</li>
+                <li><code class="highlighter-rouge">.collapse.navbar-collapse</code> for grouping and hiding navbar contents by a parent breakpoint.</li>
+            </ul>
+            <p>Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code class="highlighter-rouge">lg</code> (large) breakpoint.</p>
+            <div class="bd-example">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navbarSupportedContentExample"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navbarSupportedContentExample">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;<span>Navbar</span>&lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+
+    &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+        &lt;ul class="navbar-nav mr-auto"&gt;
+            &lt;li class="nav-item active"&gt;
+                &lt;a class="nav-link" href="#"&gt;<span>Home</span> &lt;span class="sr-only"&gt;<span>(current)</span>&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item dropdown"&gt;
+                &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;<span>Dropdown</span>&lt;/a&gt;
+                &lt;div class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;<span>Action</span>&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;<span>Another action</span>&lt;/a&gt;
+                    &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;<span>Something else here</span>&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class="form-inline my-2 my-lg-0"&gt;
+            &lt;input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"&gt;
+            &lt;button class="btn btn-outline-success my-2 my-sm-0" type="submit"&gt;<span>Search</span>&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <partial src="partials/cl/subnav/navbar-subnav.html" />
+        </div>
     </div>
 </div>

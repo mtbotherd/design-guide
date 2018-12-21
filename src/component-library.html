@@ -3277,15 +3277,15 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
                 </nav>
             </div>
             <div class="bd-clipboard">
-                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsNoList"><i class="far fa-clipboard fa-2x"></i></button>
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsHorizontalNoList"><i class="far fa-clipboard fa-2x"></i></button>
             </div>
             <figure class="highlight">
                 <pre><code id="navsNoList">&lt;nav class="nav"&gt;
-        &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
-        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-        &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/nav&gt;</code></pre>
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
             </figure>
             <hr />
             <h3 id="navsAvailableStyles">Available styles</h3>
@@ -3314,19 +3314,19 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             </div>
             <figure class="highlight">
                 <pre><code id="navsJustifiedCenter">&lt;ul class="nav justify-content-center"&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;</code></pre>
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </figure>
             <p>Centered with <code class="highlighter-rouge">.justify-content-end</code>:</p>
             <div class="bd-example">
@@ -3350,24 +3350,140 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
             </div>
             <figure class="highlight">
                 <pre><code id="navsJustifiedEnd">&lt;ul class="nav justify-content-end"&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav-item"&gt;
-            &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;</code></pre>
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </figure>
+            <h4>Vertical alignment</h4>
+            <p>Stack your navigation by changing the flex item direction with the <code class="highlighter-rouge">.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code class="highlighter-rouge">.flex-sm-column</code>).</p>
+            <div class="bd-example">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsVerticalAlignment"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navsVerticalAlignment">&lt;ul class="nav flex-column"&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul></code></pre>
+            </figure>
+            <p>Without using <code class="highlighter-rogue">&lt;ul&gt;</code>'s.</p>
+            <div class="bd-example">
+                <nav class="nav">
+                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsVerticalNoList"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navsVerticalNoList">&lt;nav class="nav flex-column"&gt;
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="navsTabs">Tabs</h3>
+            <p>Takes the basic nav from above and adds the <code class="highlighter-rouge">.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions.</p>
+            <div class="bd-example">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navsTabsNav"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navsTabsNav">&lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;&lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;<span>Active</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="navsAccessibility">Accessibility</h3>
+            <p>If you’re using navs to provide a navigation bar, be sure to add a <code class="highlighter-rouge">role="navigation"</code> to the most logical parent container of the <code class="highlighter-rouge">&lt;ul&gt;</code>, or wrap a <code class="highlighter-rouge">&lt;nav&gt;</code> element around the whole navigation. Do not add the role to the <code class="highlighter-rouge">&lt;ul&gt;</code> itself, as this would prevent it from being announced as an actual list by assistive technologies.</p>
+            <p>Note that navigation bars, even if visually styled as tabs with the <code class="highlighter-rouge">.nav-tabs</code> class, should <strong>not</strong> be given <code class="highlighter-rouge">role="tablist"</code>, <code class="highlighter-rouge">role="tab"</code> or <code class="highlighter-rouge">role="tabpanel"</code> attributes. These are only appropriate for dynamic tabbed interfaces, as described in the <a href="https://www.w3.org/TR/wai-aria-practices/#tabpanel"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices</a>. See <a href="#javascript-behavior">JavaScript behavior</a> for dynamic tabbed interfaces for an example.</p>
+            <hr />
+            <h3 id="navsUsage">Usage</h3>
+            <p>Use the tab JavaScript plugin—include it individually or through the compiled <code class="highlighter-rouge">bootstrap.js</code> file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.</p> Refer to <a href="https://getbootstrap.com/docs/4.1/components/navs/#javascript-behavior">Bootstrap's Navs JavaScript behavior</a> for more information on usage.
         </div>
         <div class="col-2">
             <ul class="subnav border-left pl-4 sticky-top sticky-offset">
     <li><a href="#baseNav">Base nav</a></li>
+    <li><a href="#navsTabs">Tabs</a></li>
     <li><a href="#navsAccessibility">Accessibility</a></li>
     <li><a href="#navsUsage">Usage</a></li>
 </ul>
@@ -3380,8 +3496,111 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <div class="row">
         <div class="col">
             <h2>Navbar</h2>
+            <p class="bd-lead">Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
+            <h3 id="navbarHowItWorks">How it works</h3>
+            <p>Here’s what you need to know before getting started with the navbar:</p>
+            <ul>
+                <li>Navbars require a wrapping <code class="highlighter-rouge">.navbar</code> with <code class="highlighter-rouge">.navbar-expand{-sm|-md|-lg|-xl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
+                <li>Navbars and their contents are fluid by default. Use <a href="#containers">optional containers</a> to limit their horizontal width.</li>
+                <li>Use our <a href="/docs/4.1/utilities/spacing/">spacing</a> and <a href="/docs/4.1/utilities/flex/">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
+                <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
+                <li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the <a href="/docs/4.1/utilities/display/">display</a> utility class.</li>
+                <li>Ensure accessibility by using a <code class="highlighter-rouge">&lt;nav&gt;</code> element or, if using a more generic element such as a <code class="highlighter-rouge">&lt;div&gt;</code>, add a <code class="highlighter-rouge">role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+            </ul>
+            <p>Read on for an example and list of supported sub-components.</p>
+            <hr />
+            <h3 id="navbarSupportedContent">Supported content</h3>
+            <p>Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:</p>
+            <ul>
+                <li><code class="highlighter-rouge">.navbar-brand</code> for your company, product, or project name.</li>
+                <li><code class="highlighter-rouge">.navbar-nav</code> for a full-height and lightweight navigation (including support for dropdowns).</li>
+                <li><code class="highlighter-rouge">.navbar-toggler</code> for use with our collapse plugin and other <a href="#responsive-behaviors">navigation toggling</a> behaviors.</li>
+                <li><code class="highlighter-rouge">.form-inline</code> for any form controls and actions.</li>
+                <li><code class="highlighter-rouge">.navbar-text</code> for adding vertically centered strings of text.</li>
+                <li><code class="highlighter-rouge">.collapse.navbar-collapse</code> for grouping and hiding navbar contents by a parent breakpoint.</li>
+            </ul>
+            <p>Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code class="highlighter-rouge">lg</code> (large) breakpoint.</p>
+            <div class="bd-example">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#navbarSupportedContentExample"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="navbarSupportedContentExample">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;<span>Navbar</span>&lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+
+    &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+        &lt;ul class="navbar-nav mr-auto"&gt;
+            &lt;li class="nav-item active"&gt;
+                &lt;a class="nav-link" href="#"&gt;<span>Home</span> &lt;span class="sr-only"&gt;<span>(current)</span>&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;<span>Link</span>&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item dropdown"&gt;
+                &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;<span>Dropdown</span>&lt;/a&gt;
+                &lt;div class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;<span>Action</span>&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;<span>Another action</span>&lt;/a&gt;
+                    &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;<span>Something else here</span>&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link disabled" href="#"&gt;<span>Disabled</span>&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class="form-inline my-2 my-lg-0"&gt;
+            &lt;input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"&gt;
+            &lt;button class="btn btn-outline-success my-2 my-sm-0" type="submit"&gt;<span>Search</span>&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <ul class="subnav border-left pl-4 sticky-top sticky-offset">
+    <li><a href="#navbarHowItWorlks">How it works</a></li>
+    <li><a href="#navbarSupportedContent">Supported content</a></li>
+</ul>
+
+        </div>
     </div>
 </div>
 
@@ -3389,8 +3608,204 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <div class="row">
         <div class="col">
             <h2>Pagination</h2>
+            <p class="bd-lead">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
+            <h3 id="paginationOverview">Overview</h3>
+            <p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code class="highlighter-rouge">&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
+            <p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code class="highlighter-rouge">aria-label</code> for the <code class="highlighter-rouge">&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code class="highlighter-rouge">aria-label="Search results pages"</code>.</p>
+            <div class="bd-example">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#paginationExample"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="paginationExample">&lt;nav aria-label="Page navigation example"&gt;
+    &lt;ul class="pagination"&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>Previous</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>1</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>2</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>3</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>Next</span>&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="paginationWorkingWithIcons">Working with icons</h3>
+            <p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code class="highlighter-rouge">aria</code> attributes and the <code class="highlighter-rouge">.sr-only</code> utility.</p>
+            <div class="bd-example">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#paginationWithIcons"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="paginationWithIcons">&lt;nav aria-label="Page navigation example"&gt;
+    &lt;ul class="pagination"&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#" aria-label="Previous"&gt;
+                &lt;span aria-hidden="true"&gt;<span>&laquo;</span>&lt;/span&gt;
+                &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>1</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>2</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>3</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#" aria-label="Next"&gt;
+                &lt;span aria-hidden="true"&gt;<span>&raquo;</span>&lt;/span&gt;
+                &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
+            <h3 id="paginationStates">Disabled and active states</h3>
+            <p>Pagination links are customizable for different circumstances. Use <code class="highlighter-rouge">.disabled</code> for links that appear un-clickable and <code class="highlighter-rouge">.active</code> to indicate the current page.</p>
+            <p>While the <code class="highlighter-rouge">.disabled</code> class uses <code class="highlighter-rouge">pointer-events: none</code> to <em>try</em> to disable the link functionality of <code class="highlighter-rouge">&lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code class="highlighter-rouge">tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
+            <div class="bd-example">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#paginationDisabledActive"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="paginationDisabledActive">&lt;nav aria-label="..."&gt;
+    &lt;ul class="pagination"&gt;
+        &lt;li class="page-item disabled"&gt;
+            &lt;a class="page-link" href="#" tabindex="-1"&gt;<span>Previous</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>1</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item active"&gt;
+            &lt;a class="page-link" href="#"&gt;<span>2</span>&lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>3</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#"&gt;<span>Next</span>&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="paginatioAlignment">Alignment</h3>
+            <p>Change the alignment of pagination components with <a href="/docs/4.1/utilities/flex/">flexbox utilities</a>.</p>
+            <p>Center aligned using <code class="highlighter-rogue">.justify-content-center</code>.</p>
+            <div class="bd-example">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#paginationCenterAlignment"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="paginationCenterAlignment">&lt;nav aria-label="Page navigation example"&gt;
+    &lt;ul class="pagination justify-content-center"&gt;
+        &lt;li class="page-item disabled"&gt;
+            &lt;a class="page-link" href="#" tabindex="-1"&gt;<span>Previous</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>1</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>2</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>3</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#"&gt;<span>Next</span>&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
+            <p>Align right with <code class="highlighter-rogue">.justify-content-end</code>.</p>
+            <div class="bd-example">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#paginationCenterAlignment"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="paginationCenterAlignment">&lt;nav aria-label="Page navigation example"&gt;
+    &lt;ul class="pagination justify-content-end"&gt;
+        &lt;li class="page-item disabled"&gt;
+            &lt;a class="page-link" href="#" tabindex="-1"&gt;<span>Previous</span>&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>1</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>2</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;<span>3</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a class="page-link" href="#"&gt;<span>Next</span>&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </figure>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <ul class="subnav border-left pl-4 sticky-top sticky-offset">
+    <li><a href="#paginationOverview">Overview</a></li>
+    <li><a href="#paginationWorkingWithIcons">Working with icons</a></li>
+    <li><a href="#paginationStates">Disabled and active states</a></li>
+    <li><a href="#paginationAlignment">Alignment</a></li>
+</ul>
+
+        </div>
     </div>
 </div>
 
@@ -3398,8 +3813,78 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <div class="row">
         <div class="col">
             <h2>Popovers</h2>
+            <p class="bd-lead">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
+            <h3 id="popoversOverview">Overview</h3>
+            <p>Things to know when using the popover plugin:</p>
+            <ul>
+                <li>Popovers rely on the 3rd party library <a href="https://popper.js.org/">Popper.js</a> for positioning. You must include <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">popper.min.js</a> before bootstrap.js or use <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code> which contains Popper.js in order for popovers to work!</li>
+                <li>Popovers require the <a href="/docs/4.1/components/tooltips/">tooltip plugin</a> as a dependency.</li>
+                <li>If you’re building our JavaScript from source, it <a href="/docs/4.1/getting-started/javascript/#util">requires <code class="highlighter-rouge">util.js</code></a>.</li>
+                <li>Popovers are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
+                <li>Zero-length <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">content</code> values will never show a popover.</li>
+                <li>Specify <code class="highlighter-rouge">container: 'body'</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
+                <li>Triggering popovers on hidden elements will not work.</li>
+                <li>Popovers for <code class="highlighter-rouge">.disabled</code> or <code class="highlighter-rouge">disabled</code> elements must be triggered on a wrapper element.</li>
+                <li>When triggered from anchors that wrap across multiple lines, popovers will be centered between the anchors’ overall width. Use <code class="highlighter-rouge">.text-nowrap</code> on your <code class="highlighter-rouge">&lt;a&gt;</code>s to avoid this behavior.</li>
+                <li>Popovers must be hidden before their corresponding elements have been removed from the DOM.</li>
+            </ul>
+            <hr />
+            <h3 id="popoversExample">Example</h3>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#popoversButtonTrigger"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="popoversButtonTrigger">&ltbutton type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"&gt;<span>Click to toggle popover</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <h4>Four directions</h4>
+            <p>Four options are available: top, right, bottom, and left aligned.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on top</button>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on right</button>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                sagittis lacus vel augue laoreet rutrum faucibus.">Popover on bottom</button>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on left</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#popoversFourDirections"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="popoversFourDirections">&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on top&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on right&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on bottom&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on left&lt;/button&gt;</code></pre>
+            </figure>
+            <h4>Dismiss on next click</h4>
+            <p>Use the <code class="highlighter-rouge">focus</code> trigger to dismiss popovers on the user’s next click of a different element than the toggle element.</p>
+            <div class="bd-callout bd-callout-danger">
+                <h4 id="specific-markup-required-for-dismiss-on-next-click">Specific markup required for dismiss-on-next-click</h4>
+                <p>For proper cross-browser and cross-platform behavior, you must use the <code class="highlighter-rouge">&lt;a&gt;</code> tag, <em>not</em> the <code class="highlighter-rouge">&lt;button&gt;</code> tag, and you also must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code class="highlighter-rouge">tabindex</code></a> attribute.</p>
+            </div>
+            <div class="bd-example">
+                <a tabindex="0" class="btn btn-secondary" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#popoversDismiss"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="popoversDismiss">&lt;a tabindex="0" class="btn btn-secondary" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"&gt;<span>Dismissible popover</span>&lt;/a&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="popoversUsage">Usage</h3>
+            <p>Popovers are enabled via JavaScript. Refer to <a href="https://getbootstrap.com/docs/4.1/components/popovers/#usage">Bootstrap's Popover Usage</a> for examples.</p>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <ul class="subnav border-left pl-4 sticky-top sticky-offset">
+    <li><a href="#popoversOverview">Overview</a></li>
+    <li><a href="#popoversExample">Example</a></li>
+    <li><a href="#popoversUsage">Usage</a></li>
+</ul>
+
+        </div>
     </div>
 </div>
 
@@ -3407,8 +3892,67 @@ The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep
     <div class="row">
         <div class="col">
             <h2>Tooltips</h2>
+            <p class="bd-lead">Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.</p>
+            <h3 id="tooltipsOverview">Overview</h3>
+            <p>Things to know when using the tooltip plugin:</p>
+            <ul>
+                <li>Tooltips rely on the 3rd party library <a href="https://popper.js.org/">Popper.js</a> for positioning. You must include <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">popper.min.js</a> before bootstrap.js or use <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code> which contains Popper.js in order for tooltips to work!</li>
+                <li>If you’re building our JavaScript from source, it <a href="/docs/4.1/getting-started/javascript/#util">requires <code class="highlighter-rouge">util.js</code></a>.</li>
+                <li>Tooltips are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
+                <li>Tooltips with zero-length titles are never displayed.</li>
+                <li>Specify <code class="highlighter-rouge">container: 'body'</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
+                <li>Triggering tooltips on hidden elements will not work.</li>
+                <li>Tooltips for <code class="highlighter-rouge">.disabled</code> or <code class="highlighter-rouge">disabled</code> elements must be triggered on a wrapper element.</li>
+                <li>When triggered from hyperlinks that span multiple lines, tooltips will be centered. Use <code class="highlighter-rouge">white-space: nowrap;</code> on your <code class="highlighter-rouge">&lt;a&gt;</code>s to avoid this behavior.</li>
+                <li>Tooltips must be hidden before their corresponding elements have been removed from the DOM.</li>
+            </ul>
+            <hr />
+            <h3 id="tooltipsExample">Example</h3>
+            <p>Hover over the links below to see tooltips:</p>
+            <div class="bd-example">
+                <p class="muted">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.</p>
+            </div>
+            <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#tooltipsHoverTrigger"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="tooltipsHoverTrigger">&lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top"&gt;<span>Tooltip on top</span>&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right"&gt;<span>Tooltip on right</span>&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"&gt;<span>Tooltip on bottom</span>&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;<span>Tooltip on left</span>&lt;/button></code></pre>
+            </figure>
+            <hr />
+            <h3 id="tooltipsUsage"></h3>
+            <p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.</p>
+            <div class="bd-callout bd-callout-warning">
+                <h5 id="overflow-auto-and-scroll">Overflow <code class="highlighter-rouge">auto</code> and <code class="highlighter-rouge">scroll</code></h5>
+                <p>Tooltip position attempts to automatically change when a parent container has <code class="highlighter-rouge">overflow: auto</code> or <code class="highlighter-rouge">overflow: scroll</code> like our <code class="highlighter-rouge">.table-responsive</code>, but still keeps the original placement’s positioning. To resolve, set the <code class="highlighter-rouge">boundary</code> option to anything other than default value, <code class="highlighter-rouge">'scrollParent'</code>, such as <code class="highlighter-rouge">'window'</code>:</p>
+                <div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#example'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">({</span> <span class="na">boundary</span><span class="p">:</span> <span class="s1">'window'</span> <span class="p">})</span></code></pre></figure>
+            </div>
+            <h4>Markup</h4>
+            <p>The required markup for a tooltip is only a <code class="highlighter-rouge">data</code> attribute and <code class="highlighter-rouge">title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to <code class="highlighter-rouge">top</code> by the plugin).</p>
+            <div class="bd-callout bd-callout-warning">
+                <h5 id="making-tooltips-work-for-keyboard-and-assistive-technology-users">Making tooltips work for keyboard and assistive technology users</h5>
+                <p>You should only add tooltips to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). Although arbitrary HTML elements (such as <code class="highlighter-rouge">&lt;span&gt;</code>s) can be made focusable by adding the <code class="highlighter-rouge">tabindex="0"</code> attribute, this will add potentially annoying and confusing tab stops on non-interactive elements for keyboard users. In addition, most assistive technologies currently do not announce the tooltip in this situation.</p>
+                <p>Additionally, do not rely solely on <code class="highlighter-rouge">hover</code> as the trigger for your tooltip, as this will make your tooltips impossible to trigger for keyboard users.</p>
+            </div>
+            <p>For more on tooltip usage refer to <a href="https://getbootstrap.com/docs/4.1/components/tooltips/#usage">Bootstrap's Tooltip Usage</a> for examples.</p>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <ul class="subnav border-left pl-4 sticky-top sticky-offset">
+    <li><a href="#tooltipsOverview">Overview</a></li>
+    <li><a href="#tooltipsExample">Example</a></li>
+    <li><a href="#tooltipsUsage">Usage</a></li>
+</ul>
+
+        </div>
     </div>
 </div>
 

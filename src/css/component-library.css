@@ -6443,6 +6443,9 @@ a:link.list-group-item,
 a:hover.list-group-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
 
+a[role="button"] {
+  text-decoration: none; }
+
 /************************************************
     CL Specific Styles
 ************************************************/

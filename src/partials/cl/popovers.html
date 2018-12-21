@@ -2,7 +2,72 @@
     <div class="row">
         <div class="col">
             <h2>Popovers</h2>
+            <p class="bd-lead">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
+            <h3 id="popoversOverview">Overview</h3>
+            <p>Things to know when using the popover plugin:</p>
+            <ul>
+                <li>Popovers rely on the 3rd party library <a href="https://popper.js.org/">Popper.js</a> for positioning. You must include <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">popper.min.js</a> before bootstrap.js or use <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code> which contains Popper.js in order for popovers to work!</li>
+                <li>Popovers require the <a href="/docs/4.1/components/tooltips/">tooltip plugin</a> as a dependency.</li>
+                <li>If you’re building our JavaScript from source, it <a href="/docs/4.1/getting-started/javascript/#util">requires <code class="highlighter-rouge">util.js</code></a>.</li>
+                <li>Popovers are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
+                <li>Zero-length <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">content</code> values will never show a popover.</li>
+                <li>Specify <code class="highlighter-rouge">container: 'body'</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
+                <li>Triggering popovers on hidden elements will not work.</li>
+                <li>Popovers for <code class="highlighter-rouge">.disabled</code> or <code class="highlighter-rouge">disabled</code> elements must be triggered on a wrapper element.</li>
+                <li>When triggered from anchors that wrap across multiple lines, popovers will be centered between the anchors’ overall width. Use <code class="highlighter-rouge">.text-nowrap</code> on your <code class="highlighter-rouge">&lt;a&gt;</code>s to avoid this behavior.</li>
+                <li>Popovers must be hidden before their corresponding elements have been removed from the DOM.</li>
+            </ul>
+            <hr />
+            <h3 id="popoversExample">Example</h3>
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#popoversButtonTrigger"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="popoversButtonTrigger">&ltbutton type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"&gt;<span>Click to toggle popover</span>&lt;/button&gt;</code></pre>
+            </figure>
+            <h4>Four directions</h4>
+            <p>Four options are available: top, right, bottom, and left aligned.</p>
+            <div class="bd-example">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on top</button>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on right</button>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                sagittis lacus vel augue laoreet rutrum faucibus.">Popover on bottom</button>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on left</button>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#popoversFourDirections"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="popoversFourDirections">&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on top&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on right&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on bottom&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;Popover on left&lt;/button&gt;</code></pre>
+            </figure>
+            <h4>Dismiss on next click</h4>
+            <p>Use the <code class="highlighter-rouge">focus</code> trigger to dismiss popovers on the user’s next click of a different element than the toggle element.</p>
+            <div class="bd-callout bd-callout-danger">
+                <h4 id="specific-markup-required-for-dismiss-on-next-click">Specific markup required for dismiss-on-next-click</h4>
+                <p>For proper cross-browser and cross-platform behavior, you must use the <code class="highlighter-rouge">&lt;a&gt;</code> tag, <em>not</em> the <code class="highlighter-rouge">&lt;button&gt;</code> tag, and you also must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code class="highlighter-rouge">tabindex</code></a> attribute.</p>
+            </div>
+            <div class="bd-example">
+                <a tabindex="0" class="btn btn-secondary" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+            </div>
+            <div class="bd-clipboard">
+                <button class="btn-clipboard" data-toggle="tooltip" data-original-title="Copy to clipboard" data-clipboard-target="#popoversDismiss"><i class="far fa-clipboard fa-2x"></i></button>
+            </div>
+            <figure class="highlight">
+                <pre><code id="popoversDismiss">&lt;a tabindex="0" class="btn btn-secondary" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"&gt;<span>Dismissible popover</span>&lt;/a&gt;</code></pre>
+            </figure>
+            <hr />
+            <h3 id="popoversUsage">Usage</h3>
+            <p>Popovers are enabled via JavaScript. Refer to <a href="https://getbootstrap.com/docs/4.1/components/popovers/#usage">Bootstrap's Popover Usage</a> for examples.</p>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <partial src="partials/cl/subnav/popovers-subnav.html" />
+        </div>
     </div>
 </div>
